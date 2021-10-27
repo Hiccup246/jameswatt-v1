@@ -11,7 +11,7 @@ const styles = {
     height: '100%'
   },
   content: {
-    backgroundColor: 'grey',
+    // backgroundColor: 'grey',
     minHeight: '100%',
     width: '100%', display: 'flex',
     flexDirection: 'column'
@@ -26,7 +26,7 @@ const styles = {
     width: '100%',
     minHeight: '100%',
     maxWidth: 768,
-    backgroundColor: 'orange'
+    // backgroundColor: 'orange'
   }
 };
 

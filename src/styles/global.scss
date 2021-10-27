@@ -1,0 +1,28 @@
+@import "./typography.css";
+
+$primary-color: #FDF5E6;
+$secondary-color: #FAE6C2;
+$tertiary-color: #808080;
+$primary-font-color: #000000;
+
+$header-regular: sf-pro-text-medium;
+$header-bold: sf-pro-text-bold;
+$body-regular: avenir-next;
+$body-bold: avenir-next-bold;
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $header-regular, "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+}
+
+p {
+  height: auto;
+  line-height: auto;
+  font-family: $body-regular, "Open Sans", "Segoe UI", Tahoma, sans-serif;
+}
+
+html {
+  background-color: $primary-color;
+}

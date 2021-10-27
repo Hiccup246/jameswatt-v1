@@ -2,7 +2,7 @@ import * as React from 'react'
 
 const styles = {
   footerWrapper: {
-    backgroundColor: 'red',
+    // backgroundColor: 'red',
     width: '100%',
     height: 35,
     display: 'flex',
@@ -12,10 +12,15 @@ const styles = {
   footerContent: {
     maxWidth: '768px',
     width: '100%',
-    backgroundColor: 'green',
+    // backgroundColor: 'green',
     flexDirection: 'row',
     display: 'flex',
     justifyContent: 'center',
+    lineHeight: '35px'
+  },
+  pH: {
+    margin: 0,
+    padding: 0,
     lineHeight: '35px'
   }
 };
@@ -23,11 +28,11 @@ const styles = {
 const Footer = () => {
   return (
     <div style={styles.footerWrapper}>
-      <header style={styles.footerContent}>
-        <div>
+      <footer style={styles.footerContent}>
+        <p style={styles.pH}>
           Made with lots of ☕ and 🤔
-        </div>
-      </header>
+        </p>
+      </footer>
     </div>
   )
 }

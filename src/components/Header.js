@@ -1,10 +1,11 @@
 import * as React from 'react'
+import moon from '../assets/moon-solid.svg'
 
 const styles = {
   headerWrapper: {
-    backgroundColor: 'blue',
+    // backgroundColor: 'blue',
     width: '100%',
-    height: 35,
+    // height: "35px",
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center'
@@ -12,25 +13,32 @@ const styles = {
   headerContent: {
     maxWidth: '768px',
     width: '100%',
-    backgroundColor: 'green',
+    // backgroundColor: 'green',
     flexDirection: 'row',
     display: 'flex',
     justifyContent: 'space-between',
-    lineHeight: '35px'
+    // height: "35px",
+    // lineHeight: '35px'
+  },
+  paraH: {
+    // lineHeight: '35px',
   }
 };
 
 const Header = () => {
   return (
     <div style={styles.headerWrapper}>
-      <header style={styles.headerContent}>
-        <div>
+      <div style={styles.headerContent}>
+        <p>
           Home
-        </div>
-        <div>
-          Icon
-        </div>
-      </header>
+        </p>
+        <p>
+          Blog
+        </p>
+        <p>
+        <img style={{height: "19px"}} src={moon} alt='Moon' />
+        </p>
+      </div>
     </div>
   )
 }
