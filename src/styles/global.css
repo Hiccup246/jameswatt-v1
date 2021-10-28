@@ -1,0 +1,38 @@
+@import "./typography.css";
+
+/* $primary-color: #FDF5E6; */
+/* $secondary-color: #FAE6C2;
+$tertiary-color: #808080;
+$primary-font-color: #000000;
+
+$header-regular: sf-pro-text-medium;
+$header-bold: sf-pro-text-bold;
+$body-regular: avenir-next;
+$body-bold: avenir-next-bold; */
+
+body {
+  --primary-font-color: black;
+  --primary-color: #FDF5E6;
+  --secondary-color: #FAE6C2;
+  --tertiary-color: #808080;
+  --body-bold: sf-pro-text-bold;
+  --body-regular: avenir-next;
+  --header-regular: sf-pro-text-medium;
+  --header-body: sf-pro-text-bold;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--header-regular), "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+}
+
+p,
+div {
+  font-family: var(--body-regular), "Open Sans", "Segoe UI", Tahoma, sans-serif;
+}
+
+.link:hover {
+  /* border-bottom: 1px solid var(--primary-font-color); */
+}

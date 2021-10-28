@@ -1,7 +1,7 @@
 import * as React from 'react'
-import BaseLayout from '../components/BaseLayout'
+import BaseLayout from '../components/base-layout/base-layout'
 import About from '../components/About'
-import "../styles/global.scss"
+import "../styles/global.css"
 
 const IndexPage = () => {
   return (
