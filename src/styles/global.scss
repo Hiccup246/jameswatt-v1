@@ -23,6 +23,7 @@ p {
   font-family: $body-regular, "Open Sans", "Segoe UI", Tahoma, sans-serif;
 }
 
-html {
+:root {
   background-color: $primary-color;
+  --test-header: $header-bold
 }

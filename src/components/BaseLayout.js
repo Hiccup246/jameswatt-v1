@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import { ThemeProvider } from 'styled-components'
 
 const styles = {
   app:{
@@ -29,9 +30,13 @@ const styles = {
     // backgroundColor: 'orange'
   }
 };
+const theme = {
+  main: "orange"
+};
 
 const Layout = ({ children }) => {
   return (
+    <ThemeProvider theme={theme}>
     <div style={styles.app}>
       <div style={styles.content}>
         <Header/>
@@ -43,6 +48,7 @@ const Layout = ({ children }) => {
         <Footer/>
       </div>
     </div>
+    </ThemeProvider>
   )
 }
 

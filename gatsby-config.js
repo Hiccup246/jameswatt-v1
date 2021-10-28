@@ -3,5 +3,5 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "James Portfolio Website",
   },
-  plugins: [`gatsby-plugin-emotion`, `gatsby-plugin-sass`],
+  plugins: [`gatsby-plugin-styled-components`, `gatsby-plugin-sass`],
 };

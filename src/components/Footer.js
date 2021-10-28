@@ -1,4 +1,15 @@
 import * as React from 'react'
+import styled from "styled-components"
+
+const FooterC = styled.div`
+  max-width: 768px;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  line-height: 35px;
+  background-color: ${({ theme }) => theme.main};
+`
 
 const styles = {
   footerWrapper: {
@@ -28,11 +39,11 @@ const styles = {
 const Footer = () => {
   return (
     <div style={styles.footerWrapper}>
-      <footer style={styles.footerContent}>
+      <FooterC>
         <p style={styles.pH}>
           Made with lots of ☕ and 🤔
         </p>
-      </footer>
+      </FooterC>
     </div>
   )
 }
