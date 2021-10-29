@@ -33,6 +33,34 @@ div {
   font-family: var(--body-regular), "Open Sans", "Segoe UI", Tahoma, sans-serif;
 }
 
-.link:hover {
-  /* border-bottom: 1px solid var(--primary-font-color); */
+/* css for underline taken from https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+.link--regular-font {
+  position: relative;
+  color: var(--primary-font-color);
+  text-decoration: none;
+  height: fit-content;
+  padding: 0;
+  cursor: pointer;
+}
+
+.link--regular-font:hover {
+  color: #000;
+}
+
+.link--regular-font::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 0.5px;
+  top: 24.5px;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.link--regular-font:hover::before {
+  transform: scaleX(1);
+  cursor: pointer;
 }

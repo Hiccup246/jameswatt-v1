@@ -13,14 +13,14 @@
   flex-direction: column;
 }
 
-.app__content__body {
+.app__body {
   flex-direction: row;
   justify-content: center;
   display: flex;
   flex: 1;
 }
 
-.app__content__body__content {
+.app__body-content {
   width: 100%;
   min-height: 100%;
   max-width: 768px;

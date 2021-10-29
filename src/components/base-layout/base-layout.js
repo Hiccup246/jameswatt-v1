@@ -8,8 +8,8 @@ const BaseLayout = ({ children }) => {
     <div className="app">
       <div className="app__content">
         <Header/>
-        <div className="app__content__body">
-          <main className="app__content__body__content">
+        <div className="app__body">
+          <main className="app__body-content">
             {children}
           </main>
         </div>

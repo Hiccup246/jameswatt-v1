@@ -6,14 +6,14 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header__content">
-        <div className="link header__content--no-margin">
+        <a className="link--regular-font">
           Home
-        </div>
-        <div className="header__content__blogmoon">
-          <div className="link header__content--no-margin">
+        </a>
+        <div className="header__blogmoon">
+          <a className="link--regular-font">
             Blog
-          </div>
-          <img className="header__content__moon" src={moon} alt='Moon' />
+          </a>
+          <img className="header__moon" src={moon} alt='Moon' />
         </div>
       </div>
     </div>

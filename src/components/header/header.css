@@ -16,7 +16,7 @@
   /* vertical-align: middle; */
 }
 
-.header__content__blogmoon {
+.header__blogmoon {
   display: flex;
   vertical-align: middle;
 }
@@ -30,7 +30,7 @@
   height: fit-content;
 }
 
-.header__content__moon {
+.header__moon {
   height: 19px;
   margin-left: 20px;
 }
