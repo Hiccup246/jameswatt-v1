@@ -6,7 +6,7 @@
   height: 100%;
 }
 
-.app__content {
+.app__wrapper {
   min-height: 100%;
   width: 100%;
   display: flex;
@@ -20,8 +20,10 @@
   flex: 1;
 }
 
-.app__body-content {
+.app__content {
   width: 100%;
   min-height: 100%;
   max-width: 768px;
+  padding-left: 16px;
+  padding-right: 16px;
 }

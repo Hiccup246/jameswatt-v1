@@ -6,10 +6,10 @@ import './base-layout.css'
 const BaseLayout = ({ children }) => {
   return (
     <div className="app">
-      <div className="app__content">
+      <div className="app__wrapper">
         <Header/>
         <div className="app__body">
-          <main className="app__body-content">
+          <main className="app__content">
             {children}
           </main>
         </div>

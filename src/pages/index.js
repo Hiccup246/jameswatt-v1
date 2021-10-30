@@ -1,6 +1,6 @@
 import * as React from 'react'
 import BaseLayout from '../components/base-layout/base-layout'
-import About from '../components/About'
+import About from '../components/about/about'
 import "../styles/global.css"
 import { ThemeProvider } from '../components/theme-context/theme-context'
 

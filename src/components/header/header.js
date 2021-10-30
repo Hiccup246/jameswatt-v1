@@ -10,9 +10,9 @@ const Header = () => {
           Home
         </a>
         <div className="header__blogmoon">
-          <a className="link--regular-font">
+          {/* <a className="link--regular-font">
             Blog
-          </a>
+          </a> */}
           <ThemeToggle />
         </div>
       </div>

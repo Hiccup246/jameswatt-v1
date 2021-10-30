@@ -13,6 +13,8 @@
   display: flex;
   justify-content: space-between;
   line-height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
   /* vertical-align: middle; */
 }
 
