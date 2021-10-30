@@ -19,15 +19,12 @@ export const COLORS = {
   gray: {
     light: 'hsl(0deg, 0%, 70%)',
     dark: 'hsl(0deg, 0%, 30%)',
-  }
-};
+  },
+}
 
 const SIZES = [
-  8,
-  16,
-  24,
-  32,
   /* And so on */
-];
-export const COLOR_MODE_KEY = 'color-mode';
-export const INITIAL_COLOR_MODE_CSS_PROP = '--initial-color-mode';
+  8, 16, 24, 32,
+]
+export const COLOR_MODE_KEY = 'color-mode'
+export const INITIAL_COLOR_MODE_CSS_PROP = '--initial-color-mode'

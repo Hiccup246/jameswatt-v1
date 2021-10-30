@@ -1,16 +1,16 @@
 .theme-toggle {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
 }
 
 .theme-toggle:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .theme-toggle__theme-icon {
-  display: block;
-  height: 19px;
-  padding-bottom: 5px;
+    display: block;
+    height: 19px;
+    padding-bottom: 5px;
 }

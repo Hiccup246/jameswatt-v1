@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 import {
-  COLOR_MODE_KEY,
-  COLORS,
-  INITIAL_COLOR_MODE_CSS_PROP,
-} from './src/constants';
+    COLOR_MODE_KEY,
+    COLORS,
+    INITIAL_COLOR_MODE_CSS_PROP,
+} from './src/constants'
 
 const MagicScriptTag = () => {
-  let codeToRunOnClient = `
+    const codeToRunOnClient = `
     (function() {
       function getInitialColorMode() {
         const persistedColorPreference = window.localStorage.getItem('color-mode');
@@ -30,7 +30,7 @@ const MagicScriptTag = () => {
       }
       const colorMode = getInitialColorMode();
       const root = document.documentElement;
-      
+
       root.style.setProperty(
         '--color-text',
         colorMode === 'light'
@@ -51,14 +51,13 @@ const MagicScriptTag = () => {
       );
       root.style.setProperty('--initial-color-mode', colorMode);
     })()
-  `;
-  // eslint-disable-next-line react/no-danger
-  return <script dangerouslySetInnerHTML={{ __html: codeToRunOnClient }} />;
-};
+  `
+    // eslint-disable-next-line react/no-danger
+    return <script dangerouslySetInnerHTML={{ __html: codeToRunOnClient }} />
+}
 
 // onRenderBody is a gatsby lifecycle method which is run when gatsby is generating our html
 export const onRenderBody = ({ setPreBodyComponents }) => {
-
-  // setPreBodyComponents will inject a react element 'above' everything else it builds in our <body> tag
-  setPreBodyComponents(<MagicScriptTag />);
-};
+    // setPreBodyComponents will inject a react element 'above' everything else it builds in our <body> tag
+    setPreBodyComponents(<MagicScriptTag />)
+}

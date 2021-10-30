@@ -1,4 +1,4 @@
-@import "./typography.css";
+@import './typography.css';
 
 /* $primary-color: #FDF5E6; */
 /* $secondary-color: #FAE6C2;
@@ -11,38 +11,40 @@ $body-regular: avenir-next;
 $body-bold: avenir-next-bold; */
 
 body {
-  --primary-color: #FDF5E6;
-  --secondary-color: #FAE6C2;
+    --primary-color: #fdf5e6;
+    --secondary-color: #fae6c2;
 
-  --header-font-color: black;
-  --body-font-color: black;
-  --grey-font-color: #808080;
-  
-  --body-bold: sf-pro-text-bold;
-  --body-regular: avenir-next;
-  --header-regular: sf-pro-text-medium;
-  --header-body: sf-pro-text-bold;
+    --header-font-color: black;
+    --body-font-color: black;
+    --grey-font-color: #808080;
+
+    --body-bold: sf-pro-text-bold;
+    --body-regular: avenir-next;
+    --header-regular: sf-pro-text-medium;
+    --header-body: sf-pro-text-bold;
 }
 
 .dark {
-  --primary-color: #290001;
-  --secondary-color: #87431D;
+    --primary-color: #290001;
+    --secondary-color: #87431d;
 
-  --header-font-color: #C87941;
-  --body-font-color: #DEBA9D;
-  --grey-font-color: #9B826D;
+    --header-font-color: #c87941;
+    --body-font-color: #deba9d;
+    --grey-font-color: #9b826d;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: var(--header-regular), "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+    font-family: var(--header-regular), 'Roboto', 'Franklin Gothic Medium',
+        Tahoma, sans-serif;
 }
 
 p,
 div {
-  font-family: var(--body-regular), "Open Sans", "Segoe UI", Tahoma, sans-serif;
+    font-family: var(--body-regular), 'Open Sans', 'Segoe UI', Tahoma,
+        sans-serif;
 }
 
 /* .toto {
@@ -50,38 +52,38 @@ div {
   color: #FFF;
 } */
 html {
-  background-color: var(--primary-color);
-  /* background-color: var(--color-background); */
+    background-color: var(--primary-color);
+    /* background-color: var(--color-background); */
 }
 
 /* css for underline taken from https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
 .link--regular-font {
-  position: relative;
-  color: var(--body-font-color);
-  text-decoration: none;
-  height: fit-content;
-  padding: 0;
-  cursor: pointer;
+    position: relative;
+    color: var(--body-font-color);
+    text-decoration: none;
+    height: fit-content;
+    padding: 0;
+    cursor: pointer;
 }
 
 .link--regular-font:hover {
-  color: #000;
+    color: #000;
 }
 
 .link--regular-font::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 0.5px;
-  top: 24.5px;
-  left: 0;
-  background-color: #000;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.5px;
+    top: 24.5px;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 
 .link--regular-font:hover::before {
-  transform: scaleX(1);
-  cursor: pointer;
+    transform: scaleX(1);
+    cursor: pointer;
 }
