@@ -1,5 +1,5 @@
 import * as React from 'react'
-import moon from '../../assets/moon-solid.svg'
+import ThemeToggle from '../theme-toggle/theme-toggle'
 import './header.css'
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
           <a className="link--regular-font">
             Blog
           </a>
-          <img className="header__moon" src={moon} alt='Moon' />
+          <ThemeToggle />
         </div>
       </div>
     </div>

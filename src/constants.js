@@ -4,8 +4,8 @@ export const COLORS = {
     dark: 'hsl(0deg, 0%, 100%)', // near-black
   },
   background: {
-    light: 'hsl(0deg, 0%, 100%)', // white
-    dark: 'hsl(250deg, 70%, 7%)', // navy navy blue
+    light: '#FFF', // white
+    dark: '#000', // navy navy blue
   },
   primary: {
     light: 'hsl(340deg, 100%, 40%)', // Pinkish-red

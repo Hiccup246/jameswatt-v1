@@ -2,12 +2,15 @@ import * as React from 'react'
 import BaseLayout from '../components/base-layout/base-layout'
 import About from '../components/About'
 import "../styles/global.css"
+import { ThemeProvider } from '../components/theme-context/theme-context'
 
 const IndexPage = () => {
   return (
-    <BaseLayout>
-      <About/>
-    </BaseLayout>
+    <ThemeProvider>
+      <BaseLayout>
+        <About/>
+      </BaseLayout>
+    </ThemeProvider>
   )
 }
 
