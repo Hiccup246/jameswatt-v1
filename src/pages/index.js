@@ -4,6 +4,7 @@ import About from '../components/about/about';
 import Author from '../components/author/author'
 import BaseLayout from '../components/base-layout/base-layout'
 import '../styles/global.css'
+import ProgrammingHistory from '../components/programming-history/programming-history'
 import { ThemeProvider } from '../components/theme-context/theme-context'
 
 const IndexPage = () => (
@@ -11,6 +12,7 @@ const IndexPage = () => (
     <BaseLayout id="top">
       <Author />
       <About />
+      <ProgrammingHistory />
     </BaseLayout>
   </ThemeProvider>
 )
