@@ -25,12 +25,12 @@ body {
 }
 
 .dark {
-    --primary-color: #290001;
-    --secondary-color: #87431d;
+  --primary-color: #290001;
+  --secondary-color: #87431d;
 
-    --header-font-color: #c87941;
-    --body-font-color: #deba9d;
-    --grey-font-color: #9b826d;
+  --header-font-color: #c87941;
+  --body-font-color: #deba9d;
+  --grey-font-color: #9b826d;
 }
 
 h1,

@@ -6,11 +6,11 @@ import '../styles/global.css';
 import { ThemeProvider } from '../components/theme-context/theme-context'
 
 const IndexPage = () => (
-    <ThemeProvider>
-        <BaseLayout>
-            <About />
-        </BaseLayout>
-    </ThemeProvider>
+  <ThemeProvider>
+    <BaseLayout id="top">
+      <About />
+    </BaseLayout>
+  </ThemeProvider>
 )
 
 export default IndexPage

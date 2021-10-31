@@ -18,6 +18,9 @@
     justify-content: center;
     display: flex;
     flex: 1;
+    /* margin-top: 40px; */
+    position: relative;
+    top: 40px;
 }
 
 .app__content {
