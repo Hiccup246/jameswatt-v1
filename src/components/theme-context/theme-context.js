@@ -25,8 +25,7 @@ export const ThemeProvider = ({ children }) => {
 
   function setSiteTheme(newValue) {
     const root = window.document.documentElement
-    // 1. Update React color-mode state
-    // 2. Update localStorage
+
     localStorage.setItem(SITE_THEME_KEY, newValue)
 
     Object.entries(THEME_COLORS).forEach(([name, colorByTheme]) => {

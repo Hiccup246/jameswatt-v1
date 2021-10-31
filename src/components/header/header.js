@@ -4,12 +4,12 @@ import ThemeToggle from '../theme-toggle/theme-toggle'
 import './header.css'
 
 const Header = () => (
-  <div className="header">
-    <div className="header__content">
-      <a href="#top" className="link--regular-font">
+  <div class="header">
+    <div class="header__content">
+      <a href="#top" class="link--regular-font">
         Home
       </a>
-      <div className="header__blogmoon">
+      <div class="header__blogmoon">
         {/* TODO Add blog nav
           <a className="link--regular-font">
             Blog

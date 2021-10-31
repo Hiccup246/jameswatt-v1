@@ -1,0 +1,38 @@
+.author {
+  width: 100%;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+  align-items: center;
+  padding: var(--side-padding) 0;
+}
+
+.author__picture {
+  height: 140px;
+  width: 140px;
+  padding: 10px 30px
+}
+
+.author__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.author__name {
+  margin: 0;
+  color: var(--body-font-color);
+}
+
+.author__description-text {
+  padding-top: 10px;
+}
+
+@media (max-width: 375px) {
+  .author {
+    text-align: center;
+    justify-content: center;
+  }
+}

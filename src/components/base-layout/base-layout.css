@@ -26,5 +26,5 @@
     width: 100%;
     min-height: 100%;
     max-width: 768px;
-    padding: 0 var(--side-padding) 0 var(--side-padding);
+    padding: 5px var(--side-padding) var(--side-padding) var(--side-padding);
 }
