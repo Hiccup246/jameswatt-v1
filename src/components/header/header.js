@@ -10,7 +10,8 @@ const Header = () => (
         Home
       </a>
       <div className="header__blogmoon">
-        {/* <a className="link--regular-font">
+        {/* TODO Add blog nav
+          <a className="link--regular-font">
             Blog
           </a> */}
         <ThemeToggle />

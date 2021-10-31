@@ -1,63 +1,46 @@
 import React from 'react'
 
 import {
-    COLOR_MODE_KEY,
-    COLORS,
-    INITIAL_COLOR_MODE_CSS_PROP,
+  SITE_THEME_KEY,
+  THEME_COLORS,
+  INITIAL_SITE_THEME_CSS_VAR,
 } from './src/constants'
 
-const MagicScriptTag = () => {
-    const codeToRunOnClient = `
+const LoadThemeTag = () => {
+  const codeToRunOnClient = `
     (function() {
-      function getInitialColorMode() {
-        const persistedColorPreference = window.localStorage.getItem('color-mode');
-        const hasPersistedPreference = typeof persistedColorPreference === 'string';
+      function getInitialSiteTheme() {
+        const persistedSiteThemePreference = window.localStorage.getItem(${SITE_THEME_KEY});
+
+        const hasPersistedSiteTheme= typeof persistedSiteThemePreference === 'string';
+
         // If the user has explicitly chosen light or dark,
         // let's use it. Otherwise, this value will be null.
-        if (hasPersistedPreference) {
-          return persistedColorPreference;
+        if (hasPersistedSiteTheme) {
+          return persistedSiteThemePreference;
         }
-        // If they haven't been explicit, let's check the media
-        // query
-        const mql = window.matchMedia('(prefers-color-scheme: dark)');
-        const hasMediaQueryPreference = typeof mql.matches === 'boolean';
-        if (hasMediaQueryPreference) {
-          return mql.matches ? 'dark' : 'light';
-        }
-        // If they are using a browser/OS that doesn't support
-        // color themes, let's default to 'light'.
+
         return 'light';
       }
-      const colorMode = getInitialColorMode();
+
+      const siteTheme = getInitialSiteTheme();
       const root = document.documentElement;
 
-      root.style.setProperty(
-        '--color-text',
-        colorMode === 'light'
-          ? '${COLORS.text.light}'
-          : '${COLORS.text.dark}'
-      );
-      root.style.setProperty(
-        '--color-background',
-        colorMode === 'light'
-          ? '${COLORS.background.light}'
-          : '${COLORS.background.dark}'
-      );
-      root.style.setProperty(
-        '--color-primary',
-        colorMode === 'light'
-          ? '${COLORS.primary.light}'
-          : '${COLORS.primary.dark}'
-      );
-      root.style.setProperty('--initial-color-mode', colorMode);
+      Object.entries(${THEME_COLORS}).forEach(([name, colorByTheme]) => {
+        const cssVarName = '--' + name
+
+        root.style.setProperty(cssVarName, colorByTheme[siteTheme])
+      })
+
+      root.style.setProperty(${INITIAL_SITE_THEME_CSS_VAR}, siteTheme);
     })()
   `
-    // eslint-disable-next-line react/no-danger
-    return <script dangerouslySetInnerHTML={{ __html: codeToRunOnClient }} />
+  // eslint-disable-next-line react/no-danger
+  return <script dangerouslySetInnerHTML={{ __html: codeToRunOnClient }} />
 }
 
 // onRenderBody is a gatsby lifecycle method which is run when gatsby is generating our html
 export const onRenderBody = ({ setPreBodyComponents }) => {
-    // setPreBodyComponents will inject a react element 'above' everything else it builds in our <body> tag
-    setPreBodyComponents(<MagicScriptTag />)
+  // setPreBodyComponents will inject a react element 'above' everything else it builds in our <body> tag
+  setPreBodyComponents(<LoadThemeTag />)
 }

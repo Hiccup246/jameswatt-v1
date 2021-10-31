@@ -1,65 +1,37 @@
 @import './typography.css';
 
-/* $primary-color: #FDF5E6; */
-/* $secondary-color: #FAE6C2;
-$tertiary-color: #808080;
-$primary-font-color: #000000;
-
-$header-regular: sf-pro-text-medium;
-$header-bold: sf-pro-text-bold;
-$body-regular: avenir-next;
-$body-bold: avenir-next-bold; */
-
 body {
-    --primary-color: #fdf5e6;
-    --secondary-color: #fae6c2;
-
-    --header-font-color: black;
-    --body-font-color: black;
-    --grey-font-color: #808080;
-
-    --body-bold: sf-pro-text-bold;
-    --body-regular: avenir-next;
-    --header-regular: sf-pro-text-medium;
-    --header-body: sf-pro-text-bold;
-}
-
-.dark {
-  --primary-color: #290001;
-  --secondary-color: #87431d;
-
-  --header-font-color: #c87941;
-  --body-font-color: #deba9d;
-  --grey-font-color: #9b826d;
+  --body-bold: sf-pro-text-bold;
+  --body-regular: avenir-next;
+  --header-regular: sf-pro-text-medium;
+  --header-body: sf-pro-text-bold;
+  --side-padding: 16px;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: var(--header-regular), 'Roboto', 'Franklin Gothic Medium',
-        Tahoma, sans-serif;
+  font-family: var(--header-regular), 'Roboto', 'Franklin Gothic Medium',
+    Tahoma, sans-serif;
+  color: var(--header-font-color)
 }
 
 p,
 div {
-    font-family: var(--body-regular), 'Open Sans', 'Segoe UI', Tahoma,
-        sans-serif;
+  font-family: var(--body-regular), 'Open Sans', 'Segoe UI', Tahoma,
+    sans-serif;
+  color: var(--body-font-color)
 }
 
-/* .toto {
-  color: #000;
-  color: #FFF;
-} */
 html {
     background-color: var(--primary-color);
-    /* background-color: var(--color-background); */
 }
 
 /* css for underline taken from https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
 .link--regular-font {
     position: relative;
-    color: var(--body-font-color);
+    color: var(--header-font-color);
     text-decoration: none;
     height: fit-content;
     padding: 0;
@@ -67,7 +39,7 @@ html {
 }
 
 .link--regular-font:hover {
-    color: #000;
+    color: var(--header-font-color);
 }
 
 .link--regular-font::before {
@@ -78,7 +50,7 @@ html {
     height: 0.5px;
     top: 24.5px;
     left: 0;
-    background-color: #000;
+   background-color: var(--header-font-color);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }

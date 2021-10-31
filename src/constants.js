@@ -1,30 +1,25 @@
-export const COLORS = {
-  text: {
-    light: 'hsl(0deg, 0%, 10%)', // white
-    dark: 'hsl(0deg, 0%, 100%)', // near-black
+export const THEME_COLORS = {
+  'primary-color': {
+    light: '#fdf5e6',
+    dark: '#290001',
   },
-  background: {
-    light: '#FFF', // white
-    dark: '#000', // navy navy blue
+  'secondary-color': {
+    light: '#fae6c2',
+    dark: '#87431d',
   },
-  primary: {
-    light: 'hsl(340deg, 100%, 40%)', // Pinkish-red
-    dark: 'hsl(50deg, 100%, 50%)', // Yellow
+  'header-font-color': {
+    light: '#000000',
+    dark: '#c87941',
   },
-  secondary: {
-    light: 'hsl(250deg, 100%, 50%)', // Purplish-blue
-    dark: 'hsl(190deg, 100%, 40%)', // Cyan
+  'body-font-color': {
+    light: '#000000',
+    dark: '#deba9d',
   },
-  // Grays, scaling from least-noticeable to most-noticeable
-  gray: {
-    light: 'hsl(0deg, 0%, 70%)',
-    dark: 'hsl(0deg, 0%, 30%)',
+  'grey-font-color': {
+    light: '#808080',
+    dark: '#9b826d',
   },
 }
 
-const SIZES = [
-  /* And so on */
-  8, 16, 24, 32,
-]
-export const COLOR_MODE_KEY = 'color-mode'
-export const INITIAL_COLOR_MODE_CSS_PROP = '--initial-color-mode'
+export const SITE_THEME_KEY = 'site-theme'
+export const INITIAL_SITE_THEME_CSS_VAR = '--initial-site-theme'
