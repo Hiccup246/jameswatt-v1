@@ -16,7 +16,9 @@ export const ThemeProvider = ({ children }) => {
 
   React.useEffect(() => {
     const root = window.document.documentElement
-    const initialSiteTheme = root.style.getPropertyValue('--initial-site-theme')
+    const initialSiteTheme = root.style.getPropertyValue(
+      INITIAL_SITE_THEME_CSS_VAR
+    )
 
     rawSetSiteTheme(initialSiteTheme)
   }, [])
@@ -25,12 +27,10 @@ export const ThemeProvider = ({ children }) => {
     const root = window.document.documentElement
     // 1. Update React color-mode state
     // 2. Update localStorage
-    localStorage.setItem('site-theme', newValue)
+    localStorage.setItem(SITE_THEME_KEY, newValue)
 
     Object.entries(THEME_COLORS).forEach(([name, colorByTheme]) => {
-      const cssVarName = '--'
-
-      root.style.setProperty(cssVarName, colorByTheme[newValue])
+      root.style.setProperty(name, colorByTheme[newValue])
     })
 
     rawSetSiteTheme(newValue)

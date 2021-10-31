@@ -1,21 +1,21 @@
 export const THEME_COLORS = {
-  'primary-color': {
+  '--primary-color': {
     light: '#fdf5e6',
     dark: '#290001',
   },
-  'secondary-color': {
+  '--secondary-color': {
     light: '#fae6c2',
     dark: '#87431d',
   },
-  'header-font-color': {
+  '--header-font-color': {
     light: '#000000',
     dark: '#c87941',
   },
-  'body-font-color': {
+  '--body-font-color': {
     light: '#000000',
     dark: '#deba9d',
   },
-  'grey-font-color': {
+  '--grey-font-color': {
     light: '#808080',
     dark: '#9b826d',
   },

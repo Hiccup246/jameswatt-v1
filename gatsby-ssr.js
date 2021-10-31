@@ -6,35 +6,40 @@ import {
   INITIAL_SITE_THEME_CSS_VAR,
 } from './src/constants'
 
-const LoadThemeTag = () => {
-  const codeToRunOnClient = `
-    (function() {
-      function getInitialSiteTheme() {
-        const persistedSiteThemePreference = window.localStorage.getItem(${SITE_THEME_KEY});
+function setInitialSiteTheme() {
+  const themeColors = 'kanye'
+  const siteThemeKey = 'west'
+  const initialSiteThemeCssVar = 'best'
+  const root = document.documentElement
+  const persistedSiteThemePreference = window.localStorage.getItem(siteThemeKey)
 
-        const hasPersistedSiteTheme= typeof persistedSiteThemePreference === 'string';
+  let initialSiteTheme = 'light'
 
-        // If the user has explicitly chosen light or dark,
-        // let's use it. Otherwise, this value will be null.
-        if (hasPersistedSiteTheme) {
-          return persistedSiteThemePreference;
-        }
+  if (persistedSiteThemePreference === 'dark') {
+    initialSiteTheme = 'dark'
+  }
 
-        return 'light';
-      }
+  root.style.setProperty(initialSiteThemeCssVar, initialSiteTheme)
 
-      const siteTheme = getInitialSiteTheme();
-      const root = document.documentElement;
+  Object.entries(themeColors).forEach(([name, colorByTheme]) => {
+    root.style.setProperty(name, colorByTheme[initialSiteTheme])
+  })
+}
 
-      Object.entries(${THEME_COLORS}).forEach(([name, colorByTheme]) => {
-        const cssVarName = '--' + name
+const MagicScriptTag = () => {
+  let functionString = String(setInitialSiteTheme)
 
-        root.style.setProperty(cssVarName, colorByTheme[siteTheme])
-      })
+  functionString = functionString.replace(
+    "'kanye'",
+    JSON.stringify(THEME_COLORS)
+  )
 
-      root.style.setProperty(${INITIAL_SITE_THEME_CSS_VAR}, siteTheme);
-    })()
-  `
+  functionString = functionString.replace('west', SITE_THEME_KEY)
+  functionString = functionString.replace('best', INITIAL_SITE_THEME_CSS_VAR)
+
+  // Wrap it in an IIFE
+  let codeToRunOnClient = `(${functionString})()`
+
   // eslint-disable-next-line react/no-danger
   return <script dangerouslySetInnerHTML={{ __html: codeToRunOnClient }} />
 }
@@ -42,5 +47,5 @@ const LoadThemeTag = () => {
 // onRenderBody is a gatsby lifecycle method which is run when gatsby is generating our html
 export const onRenderBody = ({ setPreBodyComponents }) => {
   // setPreBodyComponents will inject a react element 'above' everything else it builds in our <body> tag
-  setPreBodyComponents(<LoadThemeTag />)
+  setPreBodyComponents(<MagicScriptTag />)
 }
