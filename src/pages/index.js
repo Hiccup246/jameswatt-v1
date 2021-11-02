@@ -3,6 +3,7 @@ import * as React from 'react'
 import About from '../components/about/about';
 import Author from '../components/author/author'
 import BaseLayout from '../components/base-layout/base-layout'
+import Bookshelf from '../components/bookshelf/bookshelf'
 import '../styles/global.css'
 import ProgrammingHistory from '../components/programming-history/programming-history'
 import { ThemeProvider } from '../components/theme-context/theme-context'
@@ -13,6 +14,7 @@ const IndexPage = () => (
       <Author />
       <About />
       <ProgrammingHistory />
+      <Bookshelf />
     </BaseLayout>
   </ThemeProvider>
 )

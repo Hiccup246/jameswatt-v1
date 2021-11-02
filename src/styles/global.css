@@ -27,37 +27,37 @@ div {
 }
 
 html {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 /* css for underline taken from https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
 .link--regular-font {
-    position: relative;
-    color: var(--header-font-color);
-    text-decoration: none;
-    height: fit-content;
-    padding: 0;
-    cursor: pointer;
+  position: relative;
+  color: var(--header-font-color);
+  text-decoration: none;
+  height: fit-content;
+  padding: 0;
+  cursor: pointer;
 }
 
 .link--regular-font:hover {
-    color: var(--header-font-color);
+  color: var(--header-font-color);
 }
 
 .link--regular-font::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 0.5px;
-    top: 24.5px;
-    left: 0;
-   background-color: var(--header-font-color);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 0.5px;
+  top: 24.5px;
+  left: 0;
+  background-color: var(--header-font-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .link--regular-font:hover::before {
-    transform: scaleX(1);
-    cursor: pointer;
+  transform: scaleX(1);
+  cursor: pointer;
 }

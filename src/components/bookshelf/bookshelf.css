@@ -1,0 +1,34 @@
+.bookshelf {
+}
+
+.bookshelf__wrapper {
+  background-color: var(--secondary-color);
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: var(--side-padding);
+}
+
+.bookshelf__table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  color: var(--grey-font-color);
+}
+
+td {
+  vertical-align: top;
+}
+
+.booksheld__status {
+  text-align: center;
+}
+
+th {
+  font-size: small;
+}
+
+tbody tr + tr > td {
+  padding-top: 40px;
+}
