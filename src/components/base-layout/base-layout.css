@@ -18,13 +18,11 @@
   justify-content: center;
   display: flex;
   flex: 1;
-  position: relative;
   top: 40px;
 }
 
 .app__content {
   width: 100%;
-  /* min-height: 100%; */
   max-width: 768px;
   padding: var(--side-padding);
 }
