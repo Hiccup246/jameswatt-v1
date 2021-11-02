@@ -1,6 +1,3 @@
-.bookshelf {
-}
-
 .bookshelf__wrapper {
   background-color: var(--secondary-color);
   padding: 15px;
@@ -13,16 +10,42 @@
 }
 
 th {
+  padding-bottom: 10px;
   text-align: left;
   color: var(--grey-font-color);
 }
 
 td {
   vertical-align: top;
+  word-break: break-all;
 }
 
-.booksheld__status {
+td div {
+  font-size: small;
+}
+
+td h4 {
+  font-family: var(--header-bold);
+}
+
+.bookshelf__status-cell {
   text-align: center;
+}
+
+.bookshelf__genre-cell {
+  font-size: small;
+}
+
+.bookshelf__status-header {
+  text-align: center;
+}
+
+.bookshelf__name-cell {
+  display: inline;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-right: 10px;
 }
 
 th {
@@ -31,4 +54,30 @@ th {
 
 tbody tr + tr > td {
   padding-top: 40px;
+}
+
+.bookshelf__reading-icon,
+.bookshelf_completed-icon {
+  height: 19px;
+  fill: red;
+  stroke: red;
+  background-color: red;
+  color: red;
+}
+
+@media (max-width: 375px) {
+  .bookshelf__genre-cell {
+    display: inline;
+  }
+
+  .bookshelf__name-cell {
+    display: inline;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .bookshelf__genre-header {
+    display: none;
+  }
 }
