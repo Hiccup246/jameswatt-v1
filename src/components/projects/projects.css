@@ -1,0 +1,26 @@
+.projects__collection {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 15px;
+  overflow: scroll;
+  width: 100%;
+}
+
+.projects__card {
+  background-color: red;
+  border-radius: 18px;
+  height: 250px;
+  min-width: 200px;
+  margin-right: 20px;
+}
+
+.apple-animation {
+  visibility: hidden;
+  opacity: 0;
+  transition: none;
+  transition-property: none;
+  transition-duration: 0s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}

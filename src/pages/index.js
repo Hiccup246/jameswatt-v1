@@ -6,6 +6,7 @@ import BaseLayout from '../components/base-layout/base-layout'
 import Bookshelf from '../components/bookshelf/bookshelf'
 import '../styles/global.css'
 import ProgrammingHistory from '../components/programming-history/programming-history'
+import Projects from '../components/projects/projects'
 import TechnologySkills from '../components/technology-skills/technology-skills'
 import { ThemeProvider } from '../components/theme-context/theme-context'
 
@@ -16,6 +17,7 @@ const IndexPage = () => (
       <About />
       <ProgrammingHistory />
       <TechnologySkills />
+      <Projects />
       <Bookshelf />
     </BaseLayout>
   </ThemeProvider>
