@@ -23,6 +23,7 @@
   position: relative;
   display: flex;
   flex: 0 0 200px;
+  z-index: 4;
 }
 
 .projects__card-body {
@@ -99,7 +100,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 5;
+  z-index: 1;
   transition: transform .5s cubic-bezier(0.66,0,0.2,1);
 }
 
@@ -125,10 +126,33 @@
   width: 200px;
 } */
 
-.projects__card-description {
+.projects__body-overlay {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
+  /* height: 100%; */
+  /* z-index: 1; */
+}
+
+.icon-wrapper {
+  position: absolute;
+  right:0;
+  bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* .icon-wrapper .icon {
+  right: 0;
+  bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+} */
+
+.projects__card-description {
   background-color: var(--secondary-color);
   border-radius: 18px;
   /* z-index: 2; */

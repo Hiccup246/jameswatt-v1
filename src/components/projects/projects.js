@@ -49,12 +49,18 @@ const Projects = () => (
               <a>Go Blockchain</a>
               <img src={link} alt="Currently reading" />
             </div>
-            <Icon />
+            {/* <Icon /> */}
           </div>
         </div>
-        <div class="projects__card-description">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
+        <div class="projects__body-overlay">
+          <div class="icon-wrapper">
+            <Icon />
+          </div>
+
+          <div class="projects__card-description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
         </div>
       </div>
 
