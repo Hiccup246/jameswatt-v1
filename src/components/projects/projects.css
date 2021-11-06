@@ -18,6 +18,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .5s ease-in-out;
+}
+
+.projects__card-checked {
+  opacity: 0;
+  visibility: hidden;
+  transition: none;
 }
 
 .projects {
@@ -44,7 +54,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  /* z-index: 2; */
+  z-index: 4;
   transition: transform .5s cubic-bezier(0.66,0,0.2,1);
 }
 
@@ -82,6 +92,14 @@
   align-self: flex-end;
 }
 
+.card-link img {
+  visibility: hidden;
+}
+
+.card-link:hover img {
+  visibility: visible;
+}
+
 .card-footer {
   display: flex;
   justify-content: space-between;
@@ -96,12 +114,15 @@
   left: 0;
   background-color: var(--secondary-color);
   border-radius: 18px;
-  z-index: 999;
+  z-index: 2;
   height: 100%;
   width: 100%;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
 }
 
 .card-description-checked {
   visibility: visible;
+  opacity: 1;
 }

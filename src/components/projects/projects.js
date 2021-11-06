@@ -1,5 +1,8 @@
 import * as React from 'react'
 
+import link from '../../assets/link-solid.svg'
+import cryptozombies from '../../assets/project-images/crypto-zombies.png'
+import goblockchain from '../../assets/project-images/go-blockchain.png'
 import './projects.css'
 
 const Icon = () => {
@@ -9,6 +12,10 @@ const Icon = () => {
     document
       .getElementsByClassName('card-description')[0]
       .classList.toggle('card-description-checked')
+
+    document
+      .getElementsByClassName('projects__card')[0]
+      .classList.toggle('projects__card-checked')
   }
 
   return (
@@ -37,11 +44,14 @@ const Projects = () => (
       </div>
 
       <div class="projects__card">
-        <div class="card-description"></div>
+        <div class="card-description">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </div>
         <div class="card-image">
           <img
             class="card-picture"
-            src="https://via.placeholder.com/140"
+            src={cryptozombies}
             alt="Author Picture"
             width="160"
             height="140"
@@ -49,7 +59,13 @@ const Projects = () => (
         </div>
         <div class="card-footer">
           <div class="card-link">
+            {/* target="_blank" href="https://www.google.com" rel="noreferrer" */}
             <a>Go Blockchain</a>
+            <img
+              class="bookshelf__reading-icon"
+              src={link}
+              alt="Currently reading"
+            />
           </div>
           <Icon />
         </div>
