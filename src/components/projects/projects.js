@@ -8,14 +8,14 @@ import './projects.css'
 const Icon = () => {
   function rotateIcon(e) {
     e.preventDefault()
-    e.currentTarget.classList.toggle('icon-checked')
+    e.currentTarget.classList.toggle('icon--checked')
     document
-      .getElementsByClassName('card-description')[0]
-      .classList.toggle('card-description-checked')
+      .getElementsByClassName('projects__card-description')[0]
+      .classList.toggle('projects__card-description--checked')
 
     document
-      .getElementsByClassName('projects__card')[0]
-      .classList.toggle('projects__card-checked')
+      .getElementsByClassName('projects__card-body')[0]
+      .classList.toggle('projects__card-body--checked')
   }
 
   return (
@@ -34,42 +34,30 @@ const Projects = () => (
   <div class="projects">
     <h4>Projects</h4>
 
-    <div class="projects__collection">
+    <div class="projects__slider">
       <div class="projects__card">
-        <Icon />
-      </div>
+        <div class="projects__card-body">
+          <img
+            class="projects__card-picture"
+            src={cryptozombies}
+            alt="Author Picture"
+          />
 
-      <div class="projects__card">
-        <h5>Crypto Zombies</h5>
-      </div>
-
-      <div class="projects__card">
-        <div class="card-description">
+          <div class="projects__card-footer">
+            <div class="projects__card-link">
+              {/* target="_blank" href="https://www.google.com" rel="noreferrer" */}
+              <a>Go Blockchain</a>
+              <img src={link} alt="Currently reading" />
+            </div>
+            <Icon />
+          </div>
+        </div>
+        <div class="projects__card-description">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
         </div>
-        <div class="card-image">
-          <img
-            class="card-picture"
-            src={cryptozombies}
-            alt="Author Picture"
-            width="160"
-            height="140"
-          />
-        </div>
-        <div class="card-footer">
-          <div class="card-link">
-            {/* target="_blank" href="https://www.google.com" rel="noreferrer" */}
-            <a>Go Blockchain</a>
-            <img
-              class="bookshelf__reading-icon"
-              src={link}
-              alt="Currently reading"
-            />
-          </div>
-          <Icon />
-        </div>
       </div>
+
       <div class="projects__card"></div>
       <div class="projects__card"></div>
       <div class="projects__card"></div>

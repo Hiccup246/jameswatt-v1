@@ -48,6 +48,11 @@ td h4 {
   padding-right: 10px;
 }
 
+.bookshelf__name-cell h4 {
+  color: var(--body-font-color);
+}
+
+
 th {
   font-size: small;
 }
