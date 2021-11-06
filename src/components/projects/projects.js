@@ -40,18 +40,17 @@ const Projects = () => (
           <img
             class="projects__card-picture"
             src={cryptozombies}
-            alt="Author Picture"
+            alt="Cryto Zombies Logo"
           />
 
           <div class="projects__card-footer">
             <div class="projects__card-link">
-              {/* target="_blank" href="https://www.google.com" rel="noreferrer" */}
-              <a>Go Blockchain</a>
-              <img src={link} alt="Currently reading" />
+              <a href="https://cryptozombies.io/">Crypto Zombies</a>
+              <img src={link} alt="Link Icon" />
             </div>
-            {/* <Icon /> */}
           </div>
         </div>
+
         <div class="projects__body-overlay">
           <div class="icon-wrapper">
             <Icon />

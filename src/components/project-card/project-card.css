@@ -1,0 +1,8 @@
+.projects__card {
+  background-color: var(--secondary-color);
+  border-radius: 18px;
+  height: 215px;
+  position: relative;
+  display: flex;
+  flex: 0 0 200px;
+}
