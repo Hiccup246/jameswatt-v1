@@ -29,11 +29,9 @@ const ProjectCard = ({ imageSrc, description, link, linkText }) => {
           alt="Cryto Zombies Logo"
         />
 
-        <div class="projects__card-footer">
-          <div class="projects__card-link">
-            {/* <a href={link}>{linkText}</a>
-            <img src={linkIcon} alt="Link Icon" /> */}
-          </div>
+        <div class="projects__card-link">
+          <a href={link}>{linkText}</a>
+          <img src={linkIcon} alt="Link Icon" />
         </div>
       </div>
 

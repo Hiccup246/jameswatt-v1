@@ -12,6 +12,7 @@
   flex-direction: column;
   justify-content: space-between;
   opacity: 1;
+  position: absolute;
   visibility: visible;
   transition: opacity .5s ease-in-out;
   z-index: 1;
@@ -48,13 +49,10 @@
   height: 170px;
 }
 
-.projects__card-footer {
-  padding-left: 10px;
-  padding-bottom: 4px;
-}
-
 .projects__card-link {
   width: fit-content;
+  margin-left: 10px;
+  margin-bottom: 4px;
 }
 
 .projects__card-link img {
