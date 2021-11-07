@@ -1,0 +1,160 @@
+.tab-component {
+  margin-top: 15px;
+  width: 100%;
+  min-height: 340px;
+  background-color: #fff;
+  display: flex;
+}
+
+.tab-menu {
+  position: relative;
+  z-index: 3;
+  width: max-content;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: blue;
+}
+
+.tab-item {
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  /* transition: var(--transition); */
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  /* height: var(--tab-height); */
+  height: 42px;
+  line-height: 42px;
+  padding: 0px 20px 2px;
+  border-left: 2px solid red;
+  background-color: transparent;
+  color: orange;
+  /* font-family: var(--font-mono); */
+  /* font-size: var(--fz-xs); */
+  text-align: left;
+  white-space: nowrap;
+}
+
+.tab-content {
+  /* background-color: orange; */
+  position: relative;
+  width: 100%;
+  margin-left: 20px;
+  /* height: 100%; */
+}
+
+.tab-panel {
+  width: 100%;
+  height: auto;
+  padding: 10px 5px;
+}
+
+.experience-points {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.experience-points li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.experience-points li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: red;
+}
+
+@media (max-width: 375px) {
+  .tab-component {
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  .tab-menu {
+    width: calc(100% + 50px);
+    padding-left: 25px;
+    margin-left: -25px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .tab-menu {
+    display: flex;
+    overflow-x: scroll;
+    width: calc(100%);
+    padding-left: 50px;
+    margin-left: -50px;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .tab-item {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    min-width: 120px;
+    padding: 0px 15px;
+    border-left: 0px;
+    border-bottom: 2px solid green;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .tab-item {
+    padding: 0px 15px 2px;
+  }
+}
+
+@media (max-width: 375px) {
+  .tab-content {
+    margin-left: 0px;
+  }
+}
+
+
+.selected-tab-item {
+  visibility: visible;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 2px;
+  height: 42px;
+  border-radius: 5px;
+  background: brown;
+  transform: translateY(calc(0 * 42px));
+  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+}
+
+@media (max-width: 375px) {
+  .selected-tab-item {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .selected-tab-item {
+    top: auto;
+    bottom: 0px;
+    width: 100%;
+    max-width: 100px;
+    height: 2px;
+    margin-left: 50px;
+    transform: translateX(calc(0 * 100px));
+  }
+}
