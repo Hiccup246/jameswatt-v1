@@ -22,6 +22,41 @@ const Projects = () => (
         link="https://www.youtube.com/watch?v=mYlHT9bB6OE"
         linkText="Go Blockchain"
       />
+
+      <ProjectCard
+        imageSrc={goblockchain}
+        description="I like to eat cheese, as well as, meat"
+        link="https://www.youtube.com/watch?v=mYlHT9bB6OE"
+        linkText="Go Blockchain"
+      />
+
+      <ProjectCard
+        imageSrc={goblockchain}
+        description="I like to eat cheese, as well as, meat"
+        link="https://www.youtube.com/watch?v=mYlHT9bB6OE"
+        linkText="Go Blockchain"
+      />
+
+      <ProjectCard
+        imageSrc={goblockchain}
+        description="I like to eat cheese, as well as, meat"
+        link="https://www.youtube.com/watch?v=mYlHT9bB6OE"
+        linkText="Go Blockchain"
+      />
+
+      <ProjectCard
+        imageSrc={goblockchain}
+        description="I like to eat cheese, as well as, meat"
+        link="https://www.youtube.com/watch?v=mYlHT9bB6OE"
+        linkText="Go Blockchain"
+      />
+
+      <ProjectCard
+        imageSrc={goblockchain}
+        description="I like to eat cheese, as well as, meat"
+        link="https://www.youtube.com/watch?v=mYlHT9bB6OE"
+        linkText="Go Blockchain"
+      />
     </div>
   </div>
 )

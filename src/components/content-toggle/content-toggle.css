@@ -1,0 +1,30 @@
+.icon {
+  cursor: pointer;
+  background-color: black;
+  border-radius: 50%;
+  fill: white;
+  height: 22px;
+  width: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: transform .5s cubic-bezier(0.66,0,0.2,1);
+}
+
+.icon:hover {
+  background-color: rgba(0,0,0,.8);
+}
+
+.icon--checked {
+  transform: rotate(45deg);
+  transition: transform .5s ease-in-out;
+}
+
+.tile-icon-alt {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
