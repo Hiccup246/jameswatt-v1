@@ -27,6 +27,14 @@
   padding: var(--side-padding);
 }
 
-main > *:not(:first-child) {
+/* main > *:not(:first-child) {
+  margin-top: 100px;
+} */
+
+main > * + * {
+  margin-bottom: 100px;
+}
+
+main > *:first-child {
   margin-top: 100px;
 }
