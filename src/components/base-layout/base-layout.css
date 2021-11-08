@@ -31,10 +31,6 @@
   margin-top: 100px;
 } */
 
-main > * + * {
+main > * {
   margin-bottom: 100px;
-}
-
-main > *:first-child {
-  margin-top: 100px;
 }

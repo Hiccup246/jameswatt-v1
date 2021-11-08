@@ -6,6 +6,8 @@ body {
   --header-regular: sf-pro-text-medium;
   --header-bold: sf-pro-text-bold;
   --side-padding: 16px;
+
+  --tab-height: 42px;
 }
 
 h1,
