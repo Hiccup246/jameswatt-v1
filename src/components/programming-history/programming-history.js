@@ -71,6 +71,14 @@ const clickOnTab = (e, tabIndex) => {
 
   slider.style.width = currentTab.clientWidth + 'px'
 
+  //  slider.style.width = currentTab.clientWidth + 'px' can maybe do 120px here for tab width
+  //  slider.style.transform =
+  //    'translateX(calc(calc(' +
+  //    tabIndex +
+  //    '* 120px) + calc(' +
+  //    tabIndex +
+  //  '*0px)))'
+
   slider.style.transform =
     'translateY(calc(calc(' +
     tabIndex +
