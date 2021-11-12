@@ -49,6 +49,10 @@ const clickOnTab = (e, tabIndex) => {
       // document.getElementById('panel-' + element).style.display = 'none'
       document.getElementById('panel-' + element).style.visibility = 'hidden'
       document.getElementById('panel-' + element).style.opacity = '0'
+      document.getElementById('panel-' + element).style.height = '0'
+            document.getElementById('panel-' + element).style.padding = '0'
+
+
     }
 
     if (
@@ -62,6 +66,8 @@ const clickOnTab = (e, tabIndex) => {
   })
 
   // currentPanel.style.display = 'block'
+  currentPanel.style.height = 'auto'
+currentPanel.style.paddingTop = '10px'
   currentPanel.style.visibility = 'visible'
   currentPanel.style.opacity = '1'
   currentTab.style.color = 'var(--body-font-color)'
@@ -69,7 +75,27 @@ const clickOnTab = (e, tabIndex) => {
   // 3. Update height (maybe width of tab slider)
   const slider = tabComponent.getElementsByClassName('selected-tab-item')[0]
 
-  slider.style.width = currentTab.clientWidth + 'px'
+
+
+  const mediaQuery = window.matchMedia('(max-width: 375px)')
+
+    slider.style.width = currentTab.clientWidth + 'px'
+
+  if (mediaQuery.matches) {
+      slider.style.transform =
+     'translateX(calc(calc(' +
+     tabIndex +
+     '* 120px) + calc(' +
+     tabIndex +
+   '*0px)))'
+  } else {
+slider.style.transform =
+      'translateY(calc(calc(' +
+      tabIndex +
+      '* var(--tab-height)) + calc(' +
+      tabIndex +
+      '*31.25px)))'
+  }
 
   //  slider.style.width = currentTab.clientWidth + 'px' can maybe do 120px here for tab width
   //  slider.style.transform =
@@ -79,12 +105,6 @@ const clickOnTab = (e, tabIndex) => {
   //    tabIndex +
   //  '*0px)))'
 
-  slider.style.transform =
-    'translateY(calc(calc(' +
-    tabIndex +
-    '* var(--tab-height)) + calc(' +
-    tabIndex +
-    '*31.25px)))'
 }
 
 const tabs = experiences.map((element, index) => {
