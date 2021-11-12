@@ -1,4 +1,5 @@
-import * as React from 'react'
+// import * as React from 'react'
+import React, { useEffect } from 'react'
 
 import './programming-history.css'
 
@@ -50,9 +51,7 @@ const clickOnTab = (e, tabIndex) => {
       document.getElementById('panel-' + element).style.visibility = 'hidden'
       document.getElementById('panel-' + element).style.opacity = '0'
       document.getElementById('panel-' + element).style.height = '0'
-            document.getElementById('panel-' + element).style.padding = '0'
-
-
+      document.getElementById('panel-' + element).style.padding = '0'
     }
 
     if (
@@ -67,16 +66,13 @@ const clickOnTab = (e, tabIndex) => {
 
   // currentPanel.style.display = 'block'
   currentPanel.style.height = 'auto'
-currentPanel.style.paddingTop = '10px'
+  currentPanel.style.paddingTop = '10px'
   currentPanel.style.visibility = 'visible'
   currentPanel.style.opacity = '1'
   currentTab.style.color = 'var(--body-font-color)'
 
   // 3. Update height (maybe width of tab slider)
   const slider = tabComponent.getElementsByClassName('selected-tab-item')[0]
-
-
-
   const mediaQuery = window.matchMedia('(max-width: 375px)')
 
     slider.style.width = currentTab.clientWidth + 'px'
@@ -140,21 +136,43 @@ const contentPanels = experiences.map((element, index) => {
   )
 })
 
-const ProgrammingHistory = () => (
-  <div class="programming-history">
-    <h4>Programming History</h4>
+const initialClick = (index) => {
+  const currentPanel = document.getElementById('panel-' + index)
+  const tabComponent = currentPanel.closest('.tab-component')
+  const slider = tabComponent.getElementsByClassName('selected-tab-item')[0]
+  const currentTab = document.getElementById('tab-' + index)
 
-    <div class="tab-component">
-      <div class="tab-menu">
-        {tabs}
 
-        <div class="selected-tab-item"></div>
-        <div class="menu-border"></div>
+  currentPanel.style.height = 'auto'
+  currentPanel.style.paddingTop = '10px'
+  currentPanel.style.visibility = 'visible'
+  currentPanel.style.opacity = '1'
+  slider.style.width = currentTab.clientWidth + 'px'
+
+  currentTab.style.color = 'var(--body-font-color)'
+}
+
+const ProgrammingHistory = () => {
+  useEffect(() => {
+    initialClick(0)
+  });
+
+  return(
+    <div class="programming-history">
+      <h4>Programming History</h4>
+
+      <div class="tab-component">
+        <div class="tab-menu">
+          {tabs}
+
+          <div class="selected-tab-item"></div>
+          <div class="menu-border"></div>
+        </div>
+
+        <div class="tab-content">{contentPanels}</div>
       </div>
-
-      <div class="tab-content">{contentPanels}</div>
     </div>
-  </div>
-)
+  )
+}
 
 export default ProgrammingHistory

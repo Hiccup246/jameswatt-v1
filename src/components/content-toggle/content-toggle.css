@@ -2,7 +2,7 @@
   cursor: pointer;
   background-color: black;
   border-radius: 50%;
-  fill: white;
+  fill: var(--secondary-color);
   height: 22px;
   width: 22px;
   display: flex;

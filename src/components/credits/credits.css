@@ -1,0 +1,23 @@
+.credits-list {
+  background-color: var(--secondary-color);
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: var(--side-padding);
+}
+
+.credits-list .link--regular-font::before {
+  top: 17px;
+}
+
+.credits-list li {
+  padding: 5px 0;
+}
+
+.credits-list ul {
+  margin: 5px 0;
+}
+
+.credits-list h4 {
+  font-family: var(--header-bold);
+  color: var(--body-font-color);
+}

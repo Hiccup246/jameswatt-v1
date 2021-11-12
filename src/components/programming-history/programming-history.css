@@ -39,7 +39,7 @@
   /* height: var(--tab-height); */
   height: var(--tab-height);
   line-height: 42px;
-  padding: 0px 20px 2px;
+  padding: 0px 20px;
   /* border-left: 2px solid red; */
   background-color: transparent;
   /* color: orange; */

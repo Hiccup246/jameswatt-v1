@@ -9,6 +9,7 @@ import ProgrammingHistory from '../components/programming-history/programming-hi
 import Projects from '../components/projects/projects'
 import TechnologySkills from '../components/technology-skills/technology-skills'
 import { ThemeProvider } from '../components/theme-context/theme-context'
+import Credits from '../components/credits/credits'
 
 const IndexPage = () => (
   <ThemeProvider>
@@ -19,6 +20,7 @@ const IndexPage = () => (
       <TechnologySkills />
       <Projects />
       <Bookshelf />
+      <Credits />
     </BaseLayout>
   </ThemeProvider>
 )
