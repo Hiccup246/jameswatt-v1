@@ -10,7 +10,14 @@
 }
 
 .theme-toggle__theme-icon {
+    width: 19px;
     display: block;
     height: 19px;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
+    fill: var(--body-font-color);
+}
+
+.theme-toggle__theme-icon  svg {
+    width: 19px;
+    height: 19px;
 }

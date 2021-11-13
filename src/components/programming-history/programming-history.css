@@ -1,5 +1,5 @@
 .tab-component {
-  margin-top: 15px;
+  /* margin-top: 15px; */
   width: 100%;
   min-height: 340px;
   /* background-color: #fff; */
@@ -66,6 +66,7 @@
   /* height: 100%; */
 }
 .tab-panel-0 {
+  /* To align with first tab item */
   padding-top: 10px
 }
 

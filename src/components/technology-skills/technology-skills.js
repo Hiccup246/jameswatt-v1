@@ -5,7 +5,7 @@ import './technology-skills.css'
 const TechnologySkills = () => (
   <div class="technology-skills">
     <div class="technology-skills__header">
-      <h4>Technology Proficiency</h4>
+      <h4>🧰Technology Proficiency</h4>
     </div>
 
     <div class="technology-skills__technologies">

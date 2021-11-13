@@ -33,6 +33,26 @@ const experiences = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     ],
   },
+  {
+    role: 'Front End Developer',
+    company: 'BNZ',
+    dateRange: '2017/01/03 - 2018/03/23',
+    bullets: [
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    ],
+  },
+  {
+    role: 'Student',
+    company: 'VUW',
+    dateRange: '2017/01/03 - 2018/03/23',
+    bullets: [
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    ],
+  },
 ]
 
 const clickOnTab = (e, tabIndex) => {
@@ -159,7 +179,7 @@ const ProgrammingHistory = () => {
 
   return(
     <div class="programming-history">
-      <h4>Programming History</h4>
+      <h4>📜Programming History</h4>
 
       <div class="tab-component">
         <div class="tab-menu">

@@ -7,7 +7,7 @@ import ProjectCard from '../project-card/project-card'
 
 const Projects = () => (
   <div class="projects">
-    <h4>Projects</h4>
+    <h4>🚧Projects</h4>
 
     <div class="projects__slider">
       <ProjectCard

@@ -55,14 +55,16 @@
   margin-bottom: 4px;
 }
 
-.projects__card-link img {
+.projects__card-link .fa-link {
   visibility: hidden;
   height: 14px;
+  width: 14px;
   padding-left: 5px;
 }
 
-.projects__card-link:hover img {
+.projects__card-link:hover .fa-link {
   visibility: visible;
+  fill: var(--grey-font-color);
 }
 
 .projects__card-link:hover a {
@@ -88,4 +90,8 @@
   margin-bottom: 10px;
   margin-right: 10px;
   z-index: 4;
+}
+
+.projects__icon-wrapper--dark .icon {
+  fill: var(--body-font-color);
 }

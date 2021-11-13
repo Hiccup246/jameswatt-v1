@@ -1,7 +1,8 @@
 import * as React from 'react'
 
-import linkIcon from '../../assets/link-solid.svg'
+import Link from '../../assets/svg/link-solid.svg'
 import ContentToggle from '../content-toggle/content-toggle'
+import { ThemeContext } from '../theme-context/theme-context'
 
 import './project-card.css'
 
@@ -20,6 +21,8 @@ const ProjectCard = ({ imageSrc, description, link, linkText }) => {
       .classList.toggle('projects__card-body--checked')
   }
 
+  const { siteTheme, setSiteTheme } = React.useContext(ThemeContext)
+
   return (
     <div class="projects__card">
       <div class="projects__card-body">
@@ -30,13 +33,14 @@ const ProjectCard = ({ imageSrc, description, link, linkText }) => {
         />
 
         <div class="projects__card-link">
-          <a href={link}>{linkText}</a>
-          <img src={linkIcon} alt="Link Icon" />
+          <a href={link}>{linkText}
+            <Link class="projects__link-icon"/>
+          </a>
         </div>
       </div>
 
       <div class="projects__body-overlay">
-        <div class="projects__icon-wrapper">
+        <div className={"projects__icon-wrapper " + (siteTheme === 'dark' ? 'projects__icon-wrapper--dark' : '')}>
           <ContentToggle onClickCallback={rotateIcon} />
         </div>
 

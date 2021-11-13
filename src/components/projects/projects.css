@@ -4,7 +4,6 @@
 }
 
 .projects__slider {
-  padding-top: 15px;
   padding-bottom: 10px;
   overflow-x: scroll;
   display: flex;

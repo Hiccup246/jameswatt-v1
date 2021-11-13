@@ -6,7 +6,7 @@ const Credits = () => (
   <div class="credits">
     <h4>👏 Credits</h4>
     <div class='credits-list'>
-      <h4>Good artists borrow, great artists steal - "Pablo Picasso"</h4>
+      <h4>"Good artists borrow, great artists steal" - Pablo Picasso</h4>
       <ul>
         <li><a class='link--regular-font' href="https://icons8.com/">Icons8 (Icons)</a></li>
         <li><a class='link--regular-font' href="https://fontawesome.com/">Font Awesome (Icons)</a></li>

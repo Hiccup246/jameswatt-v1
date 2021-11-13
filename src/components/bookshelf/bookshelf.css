@@ -2,7 +2,6 @@
   background-color: var(--secondary-color);
   padding: 15px;
   border-radius: 12px;
-  margin-top: var(--side-padding);
 }
 
 .bookshelf__table {
@@ -50,6 +49,7 @@ td h4 {
 
 .bookshelf__name-cell h4 {
   color: var(--body-font-color);
+  margin-bottom: 0;
 }
 
 th {
@@ -63,10 +63,6 @@ tbody tr + tr > td {
 .bookshelf__reading-icon,
 .bookshelf_completed-icon {
   height: 19px;
-  fill: red;
-  stroke: red;
-  background-color: red;
-  color: red;
 }
 
 @media (max-width: 375px) {
@@ -84,4 +80,8 @@ tbody tr + tr > td {
   .bookshelf__genre-header {
     display: none;
   }
+}
+
+.bookshelf__completed {
+  fill: var(--body-font-color);
 }

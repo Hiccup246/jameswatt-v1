@@ -1,16 +1,18 @@
 import * as React from 'react'
 
-import moon from '../../assets/fa-moon-regular.svg'
-import sun from '../../assets/icons8-sun-regular.svg'
+import Moon from '../../assets/svg/fa-moon-regular.svg'
+import Sun from '../../assets/svg/icons8-sun-regular.svg'
 import './theme-toggle.css'
 import { ThemeContext } from '../theme-context/theme-context'
 
 function getSun() {
-  return <img class="theme-toggle__theme-icon" src={sun} alt="Sun" />
+  // return <img class="theme-toggle__theme-icon" src={sun} alt="Sun" />
+  return <Sun class='theme-toggle__theme-icon' />
 }
 
 function getMoon() {
-  return <img class="theme-toggle__theme-icon" src={moon} alt="Moon" />
+  // return <img class="theme-toggle__theme-icon" src={moon} alt="Moon" />
+  return <Moon />
 }
 
 const ThemeToggle = () => {

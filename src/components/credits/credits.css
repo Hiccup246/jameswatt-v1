@@ -2,7 +2,6 @@
   background-color: var(--secondary-color);
   padding: 15px;
   border-radius: 12px;
-  margin-top: var(--side-padding);
 }
 
 .credits-list .link--regular-font::before {

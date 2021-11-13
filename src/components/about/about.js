@@ -4,7 +4,7 @@ import './about.css'
 
 const About = () => (
   <div class="about">
-    <h4 class="about__header">About Me</h4>
+    <h4 class="about__header">💬About Me</h4>
     <p class="about__description">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the
