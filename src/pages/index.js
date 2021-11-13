@@ -10,10 +10,12 @@ import Projects from '../components/projects/projects'
 import TechnologySkills from '../components/technology-skills/technology-skills'
 import { ThemeProvider } from '../components/theme-context/theme-context'
 import Credits from '../components/credits/credits'
+import Seo from '../components/seo/seo'
 
 const IndexPage = () => (
   <ThemeProvider>
     <BaseLayout id="top">
+      <Seo title="James Watt Developer"/>
       <Author />
       <About />
       <ProgrammingHistory />
