@@ -2,7 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import sun from "../../assets/icons8-sun-50.png"
+import favIcon32 from "../../assets/favicons/favicon-32x32.png"
+import favIcon16 from "../../assets/favicons/favicon-16x16.png"
+import favIconApple from "../../assets/favicons/apple-touch-icon.png"
 
 // Taken from https://www.gatsbyjs.com/tutorial/seo-and-social-sharing-cards-tutorial
 function SEO({ description, lang, meta, image: metaImage, title }) {
@@ -35,10 +37,24 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
       htmlAttributes={{
         lang,
       }}
+      // <link rel="manifest" href="/site.webmanifest"> manifest with icons
       link={[
         {
           rel: "icon",
-          href: sun
+          href: favIcon16,
+          type: "image/png",
+          sizes: "16x16"
+        },
+        {
+          rel: "icon",
+          href: favIcon32,
+          type: "image/png",
+          sizes: "32x32"
+        },
+        {
+          rel: "apple-touch-icon",
+          href: favIconApple,
+          sizes: "180x180"
         },
         {
           rel: "author"
@@ -46,6 +62,21 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
       ]}
       title={metaTitle}
       // titleTemplate={`%s | ${site.siteMetadata.title}`}
+      // const schemaOrgJSONLD = [
+      //   {
+      //     "@context": "http://schema.org",
+      //     "@type": "WebSite",
+      //     url: site.siteMetadata.siteUrl,
+      //     name: metaTitle
+      //     // alternateName: site.siteMetadata.headline ? site.siteMetadata.headline : "",
+      //   },
+      // ]
+      // script={[
+      //   {
+      //     type: "application/ld+json",
+      //     content: JSON.stringify(schemaOrgJSONLD)
+      //   }
+      // ]}
       meta={[
         {
           name: `description`,

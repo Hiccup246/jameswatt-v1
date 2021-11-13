@@ -13,7 +13,8 @@
 .author__picture {
   height: 140px;
   width: 140px;
-  padding: 10px 30px;
+  margin: 10px 30px;
+  border-radius: 9999px;
 }
 
 .author__description {

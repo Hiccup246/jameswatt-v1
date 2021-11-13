@@ -1,12 +1,13 @@
 import * as React from 'react'
 
 import './author.css'
+import author from "../../assets/authoredit.png"
 
 const Author = () => (
   <div class="author">
     <img
       class="author__picture"
-      src="https://via.placeholder.com/140"
+      src={author}
       alt="Author Picture"
     />
     <div class="author__description">
@@ -19,3 +20,4 @@ const Author = () => (
 )
 
 export default Author
+// https://via.placeholder.com/140"

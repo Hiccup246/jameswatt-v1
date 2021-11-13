@@ -15,7 +15,7 @@ import Seo from '../components/seo/seo'
 const IndexPage = () => (
   <ThemeProvider>
     <BaseLayout id="top">
-      <Seo title="James Watt Developer"/>
+      <Seo title="James Watt"/>
       <Author />
       <About />
       <ProgrammingHistory />
