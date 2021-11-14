@@ -18,12 +18,19 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
             author
             keywords
             siteUrl
+            headline
+            siteLanguage
           }
         }
       }
     `
   )
 
+  const keywords = site.siteMetadata.keywords
+  const siteUrl = site.siteMetadata.siteUrl
+  const headline = site.siteMetadata.headline
+  const siteLanguage = lang
+  const author = site.siteMetadata.author
   const metaDescription = description || site.siteMetadata.description
   const metaTitle = title || site.siteMetadata.title
   const image =
@@ -31,6 +38,38 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
       : null
   // const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
+
+  // schema.org in JSONLD format
+  // https://developers.google.com/search/docs/guides/intro-structured-data
+  const schemaOrgWebPage = {
+    '@context': 'http://schema.org',
+    '@type': 'WebPage',
+    url: siteUrl,
+    headline,
+    inLanguage: siteLanguage,
+    mainEntityOfPage: siteUrl,
+    description: metaDescription,
+    name: metaTitle,
+    author: {
+      '@type': 'Person',
+      name: author,
+    },
+    creator: {
+      '@type': 'Person',
+      name: author,
+    },
+    publisher: {
+      '@type': 'Person',
+      name: author,
+    }
+  }
+
+  if (metaImage) {
+    schemaOrgWebPage[0]["image"] = {
+      '@type': 'ImageObject',
+      url: image,
+    }
+  }
 
   return (
     <Helmet
@@ -62,19 +101,10 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
       ]}
       title={metaTitle}
       // titleTemplate={`%s | ${site.siteMetadata.title}`}
-      // const schemaOrgJSONLD = [
-      //   {
-      //     "@context": "http://schema.org",
-      //     "@type": "WebSite",
-      //     url: site.siteMetadata.siteUrl,
-      //     name: metaTitle
-      //     // alternateName: site.siteMetadata.headline ? site.siteMetadata.headline : "",
-      //   },
-      // ]
       // script={[
       //   {
       //     type: "application/ld+json",
-      //     content: JSON.stringify(schemaOrgJSONLD)
+      //     content: JSON.stringify(schemaOrgWebPage)
       //   }
       // ]}
       meta={[
@@ -84,7 +114,7 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
         },
         {
           name: "keywords",
-          content: site.siteMetadata.keywords.join(","),
+          content: keywords.join(","),
         },
         {
           property: `og:title`,
@@ -100,7 +130,7 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: author,
         },
         {
           name: `twitter:title`,
@@ -139,7 +169,11 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
               ]
         )
         .concat(meta)}
-    />
+    >
+      <script type="application/ld+json">
+        {JSON.stringify(schemaOrgWebPage)}
+      </script>
+    </Helmet>
   )
 }
 
