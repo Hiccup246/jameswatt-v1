@@ -3,76 +3,76 @@ import * as React from 'react'
 import './technology-skills.css'
 
 const TechnologySkills = () => (
-  <div class="technology-skills">
-    <div class="technology-skills__header">
+  <div className="technology-skills">
+    <div className="technology-skills__header">
       <h4>🧰Technology Proficiency</h4>
     </div>
 
-    <div class="technology-skills__technologies">
-      <div class="technology-skills__comfortable">
+    <div className="technology-skills__technologies">
+      <div className="technology-skills__comfortable">
         <div>What I’m comfortable with...</div>
 
-        <div class="skill">
-          <div class="text-wrapper">
+        <div className="skill">
+          <div className="text-wrapper">
             <div>HTML</div>
-            <div class="percentage">50%</div>
+            <div className="percentage">50%</div>
           </div>
-          <div class="background-bar">
-            <div class="background-percentage"></div>
+          <div className="background-bar">
+            <div className="background-percentage"></div>
           </div>
         </div>
 
-        <div class="skill">
-          <div class="text-wrapper">
+        <div className="skill">
+          <div className="text-wrapper">
             <div>HTML</div>
-            <div class="percentage">50%</div>
+            <div className="percentage">50%</div>
           </div>
-          <div class="background-bar">
-            <div class="background-percentage"></div>
+          <div className="background-bar">
+            <div className="background-percentage"></div>
           </div>
         </div>
 
-        <div class="skill">
-          <div class="text-wrapper">
+        <div className="skill">
+          <div className="text-wrapper">
             <div>HTML</div>
-            <div class="percentage">50%</div>
+            <div className="percentage">50%</div>
           </div>
-          <div class="background-bar">
-            <div class="background-percentage"></div>
+          <div className="background-bar">
+            <div className="background-percentage"></div>
           </div>
         </div>
       </div>
 
-      <div class="technology-skills__play">
+      <div className="technology-skills__play">
         <div>What I’ve played with...</div>
 
-        <div class="skill">
-          <div class="text-wrapper">
+        <div className="skill">
+          <div className="text-wrapper">
             <div>HTML</div>
-            <div class="percentage">50%</div>
+            <div className="percentage">50%</div>
           </div>
-          <div class="background-bar">
-            <div class="background-percentage"></div>
+          <div className="background-bar">
+            <div className="background-percentage"></div>
           </div>
         </div>
 
-        <div class="skill">
-          <div class="text-wrapper">
+        <div className="skill">
+          <div className="text-wrapper">
             <div>Javascript</div>
-            <div class="percentage">50%</div>
+            <div className="percentage">50%</div>
           </div>
-          <div class="background-bar">
-            <div class="background-percentage"></div>
+          <div className="background-bar">
+            <div className="background-percentage"></div>
           </div>
         </div>
 
-        <div class="skill">
-          <div class="text-wrapper">
+        <div className="skill">
+          <div className="text-wrapper">
             <div>HTML</div>
-            <div class="percentage">50%</div>
+            <div className="percentage">50%</div>
           </div>
-          <div class="background-bar">
-            <div class="background-percentage"></div>
+          <div className="background-bar">
+            <div className="background-percentage"></div>
           </div>
         </div>
       </div>

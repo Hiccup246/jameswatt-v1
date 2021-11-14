@@ -3,9 +3,9 @@ import * as React from 'react'
 import './content-toggle.css'
 
 const ContentToggle = ({ onClickCallback }) => (
-  <div class="icon" onClick={onClickCallback}>
+  <div className="icon" onClick={onClickCallback}>
     <svg
-      class="tile-icon-alt"
+      className="tile-icon-alt"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
     >

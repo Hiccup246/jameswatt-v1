@@ -6,10 +6,10 @@ import './projects.css'
 import ProjectCard from '../project-card/project-card'
 
 const Projects = () => (
-  <div class="projects">
+  <div className="projects">
     <h4>🚧Projects</h4>
 
-    <div class="projects__slider">
+    <div className="projects__slider">
       <ProjectCard
         imageSrc={cryptozombies}
         description="I like to eat cheese"

@@ -24,27 +24,27 @@ const ProjectCard = ({ imageSrc, description, link, linkText }) => {
   const { siteTheme, setSiteTheme } = React.useContext(ThemeContext)
 
   return (
-    <div class="projects__card">
-      <div class="projects__card-body">
+    <div className="projects__card">
+      <div className="projects__card-body">
         <img
-          class="projects__card-picture"
+          className="projects__card-picture"
           src={imageSrc}
           alt="Cryto Zombies Logo"
         />
 
-        <div class="projects__card-link">
+        <div className="projects__card-link">
           <a href={link}>{linkText}
-            <Link class="projects__link-icon"/>
+            <Link className="projects__link fa-link"/>
           </a>
         </div>
       </div>
 
-      <div class="projects__body-overlay">
+      <div className="projects__body-overlay">
         <div className={"projects__icon-wrapper " + (siteTheme === 'dark' ? 'projects__icon-wrapper--dark' : '')}>
           <ContentToggle onClickCallback={rotateIcon} />
         </div>
 
-        <div class="projects__card-description">{description}</div>
+        <div className="projects__card-description">{description}</div>
       </div>
     </div>
   )

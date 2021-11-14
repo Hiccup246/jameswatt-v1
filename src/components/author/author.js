@@ -4,15 +4,15 @@ import './author.css'
 import author from "../../assets/authoredit.png"
 
 const Author = () => (
-  <div class="author">
+  <div className="author">
     <img
-      class="author__picture"
+      className="author__picture"
       src={author}
       alt="Author Picture"
     />
-    <div class="author__description">
-      <h1 class="author__name">James. Watt</h1>
-      <div class="author__description-text">
+    <div className="author__description">
+      <h1 className="author__name">James. Watt</h1>
+      <div className="author__description-text">
         I like to question things, mainly software
       </div>
     </div>

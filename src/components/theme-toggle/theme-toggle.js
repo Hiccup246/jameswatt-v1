@@ -6,12 +6,12 @@ import './theme-toggle.css'
 import { ThemeContext } from '../theme-context/theme-context'
 
 function getSun() {
-  // return <img class="theme-toggle__theme-icon" src={sun} alt="Sun" />
-  return <Sun class='theme-toggle__theme-icon' />
+  // return <img className="theme-toggle__theme-icon" src={sun} alt="Sun" />
+  return <Sun className='theme-toggle__theme-icon' />
 }
 
 function getMoon() {
-  // return <img class="theme-toggle__theme-icon" src={moon} alt="Moon" />
+  // return <img className="theme-toggle__theme-icon" src={moon} alt="Moon" />
   return <Moon />
 }
 
@@ -24,7 +24,7 @@ const ThemeToggle = () => {
 
   return (
     <div
-      class="theme-toggle"
+      className="theme-toggle"
       onClick={() => setSiteTheme(siteTheme === 'light' ? 'dark' : 'light')}
     >
       {siteTheme === 'dark' ? getSun() : getMoon()}

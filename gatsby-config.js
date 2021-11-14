@@ -9,7 +9,7 @@ module.exports = {
         headline: 'The personal portfolio for James Watt',
         shortName: 'James Watt',
         twitter: '@itsjameswatt',
-        keywords: ["James Watt", "James Watt Software", "James Watt Software Engineer", "James Watt Portfolio", "James Watt Software Developer"]
+        keywords: ["James Watt", "James Watt", "James Watt Software Engineer", "James Watt Portfolio", "James Watt Software Developer"]
     },
     plugins: [
         {

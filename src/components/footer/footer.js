@@ -3,8 +3,8 @@ import './footer.css'
 
 const Footer = () => {
     return (
-      <div class="footer">
-        <p class="footer__text">Made with lots of ☕ and 🤔</p>
+      <div className="footer">
+        <p className="footer__text">Made with lots of ☕ and 🤔</p>
       </div>
     )
 }

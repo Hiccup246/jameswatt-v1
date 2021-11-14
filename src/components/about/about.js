@@ -3,9 +3,9 @@ import * as React from 'react'
 import './about.css'
 
 const About = () => (
-  <div class="about">
-    <h4 class="about__header">💬About Me</h4>
-    <p class="about__description">
+  <div className="about">
+    <h4 className="about__header">💬About Me</h4>
+    <p className="about__description">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the
       1500s, when an unknown printer took a galley of type and scrambled it to

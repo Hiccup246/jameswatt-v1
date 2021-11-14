@@ -5,11 +5,11 @@ import Header from '../header/header'
 import './base-layout.css'
 
 const BaseLayout = ({ children }) => (
-  <div class="app">
-    <div class="app__wrapper">
+  <div className="app">
+    <div className="app__wrapper">
       <Header />
-      <div class="app__body">
-        <main class="app__content">{children}</main>
+      <div className="app__body">
+        <main className="app__content">{children}</main>
       </div>
       <Footer />
     </div>

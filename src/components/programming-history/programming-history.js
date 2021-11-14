@@ -1,4 +1,3 @@
-// import * as React from 'react'
 import React, { useEffect } from 'react'
 
 import './programming-history.css'
@@ -126,7 +125,8 @@ slider.style.transform =
 const tabs = experiences.map((element, index) => {
   return (
     <div
-      class="tab-item"
+      key={index}
+      className="tab-item"
       id={'tab-' + index}
       onClick={(e) => clickOnTab(e, index)}
     >
@@ -136,21 +136,21 @@ const tabs = experiences.map((element, index) => {
 })
 
 const panelBullets = (bullets) => {
-  return bullets.map((element) => {
-    return <li>{element}</li>
+  return bullets.map((element, index) => {
+    return <li key={index}>{element}</li>
   })
 }
 
 const contentPanels = experiences.map((element, index) => {
   return (
-    <div class="tab-panel" id={'panel-' + index}>
+    <div key={index} className="tab-panel" id={'panel-' + index}>
       <h3>
-        <span class="company-role">{element.role}</span>
-        <span class="company-name"> @ {element.company}</span>
+        <span className="company-role">{element.role}</span>
+        <span className="company-name"> @ {element.company}</span>
       </h3>
-      <p class="date-range">{element.dateRange}</p>
+      <p className="date-range">{element.dateRange}</p>
       <div>
-        <ul class="experience-points">{panelBullets(element.bullets)}</ul>
+        <ul className="experience-points">{panelBullets(element.bullets)}</ul>
       </div>
     </div>
   )
@@ -178,18 +178,18 @@ const ProgrammingHistory = () => {
   });
 
   return(
-    <div class="programming-history">
+    <div className="programming-history">
       <h4>📜Programming History</h4>
 
-      <div class="tab-component">
-        <div class="tab-menu">
+      <div className="tab-component">
+        <div className="tab-menu">
           {tabs}
 
-          <div class="selected-tab-item"></div>
-          <div class="menu-border"></div>
+          <div className="selected-tab-item"></div>
+          <div className="menu-border"></div>
         </div>
 
-        <div class="tab-content">{contentPanels}</div>
+        <div className="tab-content">{contentPanels}</div>
       </div>
     </div>
   )

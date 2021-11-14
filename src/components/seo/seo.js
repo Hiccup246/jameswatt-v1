@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import favIcon32 from "../../assets/favicons/favicon-32x32.png"
 import favIcon16 from "../../assets/favicons/favicon-16x16.png"
 import favIconApple from "../../assets/favicons/apple-touch-icon.png"
+import favIconIco16 from "../../assets/favicons/favicon.ico"
 
 // Taken from https://www.gatsbyjs.com/tutorial/seo-and-social-sharing-cards-tutorial
 function SEO({ description, lang, meta, image: metaImage, title }) {
@@ -94,6 +95,11 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
           rel: "apple-touch-icon",
           href: favIconApple,
           sizes: "180x180"
+        },
+        {
+          rel: "icon",
+          href: favIconIco16,
+          sizes: "16x16"
         },
         {
           rel: "author"
