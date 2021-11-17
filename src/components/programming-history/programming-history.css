@@ -160,7 +160,13 @@
 }
 
 .date-range {
+  margin-top: 5px;
   color: var(--grey-font-color);
+  /* font-size: 10px; */
+}
+
+.company-description {
+  padding-bottom: 16px;
 }
 
 @media (max-width: 375px) {

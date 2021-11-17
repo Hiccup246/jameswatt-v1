@@ -7,6 +7,8 @@ const experiences = [
     role: 'Software Engineer',
     company: 'AplyiD',
     dateRange: '2019/04/02 - Present',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     bullets: [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -16,6 +18,7 @@ const experiences = [
     role: 'Intern Node Developer',
     company: 'Halter',
     dateRange: '2018/03/23 - 2019/04/02',
+    description: '',
     bullets: [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -26,6 +29,7 @@ const experiences = [
     role: 'Full Stack Developer',
     company: 'Hypebeat',
     dateRange: '2017/01/03 - 2018/03/23',
+    description: '',
     bullets: [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -36,6 +40,7 @@ const experiences = [
     role: 'Front End Developer',
     company: 'BNZ',
     dateRange: '2017/01/03 - 2018/03/23',
+    description: '',
     bullets: [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -46,6 +51,7 @@ const experiences = [
     role: 'Student',
     company: 'VUW',
     dateRange: '2017/01/03 - 2018/03/23',
+    description: '',
     bullets: [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -94,17 +100,17 @@ const clickOnTab = (e, tabIndex) => {
   const slider = tabComponent.getElementsByClassName('selected-tab-item')[0]
   const mediaQuery = window.matchMedia('(max-width: 375px)')
 
-    slider.style.width = currentTab.clientWidth + 'px'
+  slider.style.width = currentTab.clientWidth + 'px'
 
   if (mediaQuery.matches) {
-      slider.style.transform =
-     'translateX(calc(calc(' +
-     tabIndex +
-     '* 120px) + calc(' +
-     tabIndex +
-   '*0px)))'
+    slider.style.transform =
+      'translateX(calc(calc(' +
+      tabIndex +
+      '* 120px) + calc(' +
+      tabIndex +
+      '*0px)))'
   } else {
-slider.style.transform =
+    slider.style.transform =
       'translateY(calc(calc(' +
       tabIndex +
       '* var(--tab-height)) + calc(' +
@@ -119,7 +125,6 @@ slider.style.transform =
   //    '* 120px) + calc(' +
   //    tabIndex +
   //  '*0px)))'
-
 }
 
 const tabs = experiences.map((element, index) => {
@@ -150,6 +155,7 @@ const contentPanels = experiences.map((element, index) => {
       </h3>
       <p className="date-range">{element.dateRange}</p>
       <div>
+        <div className="company-description">{element.description}</div>
         <ul className="experience-points">{panelBullets(element.bullets)}</ul>
       </div>
     </div>

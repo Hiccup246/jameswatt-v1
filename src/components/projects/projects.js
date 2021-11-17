@@ -18,7 +18,7 @@ const Projects = () => (
       />
       <ProjectCard
         imageSrc={goblockchain}
-        description="I completed a 10 part youtube tutorial which involved re creating key aspects of the bitocin blockchain such as transactions, encryption, wallets and mining using the functional programming language Go."
+        description="I completed a 10 part youtube tutorial which involved re creating key aspects of the bitcoin blockchain such as transactions, encryption, wallets and mining using the functional programming language Go."
         link="https://www.youtube.com/watch?v=mYlHT9bB6OE"
         linkText="Go Blockchain"
       />
