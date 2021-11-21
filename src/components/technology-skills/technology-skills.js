@@ -34,11 +34,6 @@ const technologies = [
     category: 'played',
   },
   {
-    name: 'Gatsby',
-    percentage: '20',
-    category: 'played',
-  },
-  {
     name: 'Python',
     percentage: '20',
     category: 'played',
@@ -60,7 +55,7 @@ const skill = (name, percentage, index) => {
     <div className="skill" key={index}>
       <div className="text-wrapper">
         <div>{name}</div>
-        <div className="percentage">{percentage}%</div>
+        {/* <div className="percentage">{percentage}%</div> */}
       </div>
       <div className="background-bar">
         <div
@@ -79,7 +74,7 @@ const comfortableSkills = () => {
 
   return (
     <div className="technology-skills__comfortable">
-      <div>What I’m comfortable with...</div>
+      <div>What I've used in Industry...</div>
 
       {comfortable.map((elem, index) =>
         skill(elem.name, elem.percentage, index)
@@ -93,7 +88,7 @@ const playedSkills = () => {
 
   return (
     <div className="technology-skills__play">
-      <div>What I’ve played with...</div>
+      <div>What I’ve played with personally...</div>
 
       {played.map((elem, index) => skill(elem.name, elem.percentage, index))}
     </div>

@@ -1,10 +1,14 @@
 .skill {
   transition: all ease-in 0.3s;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid transparent;
 }
 .skill:hover {
-    box-shadow: -4px 4px 0 0 var(--grey-font-color);
-    transform: translate(8px, -8px);
+    box-shadow: -2px 2px 0 0 var(--body-font-color);
+    transform: translate(2px, -2px);
     border-radius: 8px;
+    border: 1px solid var(--body-font-color);
     /* transform: translate(8px, -8px); */
 }
 
@@ -79,21 +83,21 @@
 }
 
 .percentage {
-  padding-right: 2px;
+  margin-right: 2px;
 }
 
 .technology-skills__comfortable .skill {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .technology-skills__comfortable .skill + .skill {
- padding-top: 40px;
+ margin-top: 40px;
 }
 
 .technology-skills__play .skill {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .technology-skills__play .skill + .skill {
- padding-top: 40px;
+ margin-top: 40px;
 }

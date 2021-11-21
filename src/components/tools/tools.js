@@ -46,7 +46,7 @@ const technologies = [
   {
     name: 'React',
     percentage: '20',
-    category: 'played',
+    category: 'comfortable',
   },
   {
     name: 'Koa',
@@ -70,7 +70,7 @@ const skill = (name, percentage, index) => {
     <div className="skill" key={index}>
       <div className="text-wrapper">
         <div>{name}</div>
-        <div className="percentage">{percentage}%</div>
+        {/* <div className="percentage">{percentage}%</div> */}
       </div>
       <div className="background-bar">
         <div
@@ -88,8 +88,8 @@ const comfortableSkills = () => {
   )
 
   return (
-    <div className="technology-skills__comfortable">
-      <div>What I’m comfortable with...</div>
+    <div className="tools-skills__comfortable">
+      <div>What I've used in Industry...</div>
 
       {comfortable.map((elem, index) =>
         skill(elem.name, elem.percentage, index)
@@ -102,8 +102,8 @@ const playedSkills = () => {
   const played = technologies.filter((skill) => skill.category === 'played')
 
   return (
-    <div className="technology-skills__play">
-      <div>What I’ve played with...</div>
+    <div className="tools-skills__play">
+      <div>What I’ve played with personally...</div>
 
       {played.map((elem, index) => skill(elem.name, elem.percentage, index))}
     </div>
@@ -111,12 +111,12 @@ const playedSkills = () => {
 }
 
 const Tools = () => (
-  <div className="technology-skills">
-    <div className="technology-skills__header">
+  <div className="tools-skills">
+    <div className="tools-skills__header">
       <h4>🧰Tooling Skills</h4>
     </div>
 
-    <div className="technology-skills__technologies">
+    <div className="tools-skills__technologies">
       {comfortableSkills()}
 
       {playedSkills()}
