@@ -4,6 +4,10 @@
   border-radius: 12px;
 }
 
+.bookshelf__genre-header {
+  width: 100px;
+}
+
 .bookshelf__table {
   width: 100%;
 }

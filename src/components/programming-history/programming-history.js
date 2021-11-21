@@ -4,14 +4,15 @@ import './programming-history.css'
 
 const experiences = [
   {
-    role: 'Software Engineer',
+    role: 'Full Stack Developer',
     company: 'AplyiD',
     dateRange: '2020/01 - Present',
     description:
-      'APLYiD is a trusted & accredited digital ID solution (AML + KYC) designed to streamline your customer onboarding with a first-class user experience.',
+      'APLYiD is a trusted & accredited digital ID solution (AML + KYC) designed to streamline your customer onboarding with a first-class user experience',
     bullets: [
-      'Joined the company as the second developer and 13th employee and helped grow the product using agile practices into a strong team of 7 and an organisation  ',
-      'Worked as a full stack developer creating end to end produc',
+      'Currently working as a full stack developer utilising Vue.JS, Angular.JS and Ruby on Rails to create AML and financial products from inception and design to deployment and maintinance',
+      'Joined the company as the second developer and 13th employee and helped grow the product using agile practices into a strong team of 7 and an organisation of over 50 people',
+      'Worked closley with the founders of the company, key sales staff, designers and customer support to design products from the ground up',
     ],
   },
   {
@@ -19,34 +20,33 @@ const experiences = [
     company: 'Hypebeat',
     dateRange: '2019/04 - 2019/09',
     description:
-      'A small social music application to aid artists in optimising their reach.',
+      'A social music application to aid artists in optimising their reach and influence using artifical intelligence',
     bullets: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      'Worked closley with the founders of the company in an agile team to develop and expand the back-end of the main product using Koa.JS (JavaScript + TypeScript)',
+      'Participated in key strategic meetings regarding business strategy and product design',
     ],
   },
   {
-    role: 'Intern Node Developer',
+    role: 'Intern Software Developer',
     company: 'Halter',
     dateRange: '2018/11 - 2019/02',
     description:
-      'Halter is a solar-powered GPS enabled smart collar, which guides cows around a farm using sound and vibrations, allowing farmers to automate herd movements and create virtual fences.',
+      'Halter is a solar-powered GPS enabled smart collar, which guides cows around a farm using sound and vibrations, allowing farmers to automate herd movements and create virtual fences',
     bullets: [
-      'Worked as part of the core agile development software team helping to develop the companies cloud infrastructure',
-      'While developing the cloud infrastructure I utilised technologises such as Nest.JS, Swagger, OpenAPI and AWS',
-      'AWS development centered around data pipeline creation where data from IoT devices was listened for, captured, transformed and sent to long term storage',
+      'Worked in two high performing agile teams which developed the minimal viable product of the company under tight product deadlines',
+      'Developed and expanded the back-end and cloud infrastructure of the main product using Nest.JS (JavaScript + TypeScript), AWS, Swagger, OpenAPI and Docker',
+      'Developed the front-end of the company by creating various internal support tools using the React.JS framework ',
     ],
   },
   {
-    role: 'Front End Developer',
+    role: 'Intern Front End Developer',
     company: 'BNZ',
     dateRange: '2017/11 - 2018/02',
     description: "Bank of New Zealand is one of New Zealand's big four banks.",
     bullets: [
-      'Helped to develop a series of internal facing front end components e.g. Date pickers, dropdowns etc',
-      'Utilised web technologies and tools such as React, CSS, HTML, Node and Javascript',
-      'Worked closely with both experienced designers and developers in a small agile team which required lots of communication',
+      'Developed front-end software using the React.JS framework alongside technologies such as JavaScript, HTML, CSS, JSS and Node.JS to create various visual frontend components',
+      'Worked closely with experienced product designers and owners in a small agile team requiring tight communication',
+      'Partially worked in an agile team to test the banks internal help and support system via automated unit tests and test plans using XMind and Postman',
     ],
   },
   {
@@ -54,11 +54,11 @@ const experiences = [
     company: 'VUW',
     dateRange: '2016 - 2020',
     description:
-      'Victoria University of Wellington is a university in Wellington, New Zealand. The university has a strong software engineering school and an impressive reputation regarding artifical intelligence research.',
+      'Victoria University of Wellington is a university in Wellington, New Zealand. The university has a strong software engineering school and an impressive reputation regarding artifical intelligence research',
     bullets: [
       'Graduated with a Bachelors of Engineering with first class honours majoring in software',
       'Key study interests included artificial intelligence, software ethics and organisational culture',
-      'Completed a year long thesis which involved developing a series of IoT connected radios. The purpose of the radios was to be able to track animal wihin a local bird park. The idea was to setup a series of radios throughout the birdpark and then attach some to the birds themeselves. The radios could then connect to each other and using novel localisation algorithms pin point the location of the birds within the parks dense bush.',
+      'Completed a year long thesis which involved developing a series of IoT connected radios for the purpose of tracking birds within dense native bush',
       'Worked as a computer science tutor helping students to understand algorithms and data structures',
     ],
   },

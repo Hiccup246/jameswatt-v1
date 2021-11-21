@@ -1,13 +1,3 @@
-.skill {
-  transition: all ease-in 0.3s;
-}
-.skill:hover {
-    box-shadow: -4px 4px 0 0 var(--grey-font-color);
-    transform: translate(8px, -8px);
-    border-radius: 8px;
-    /* transform: translate(8px, -8px); */
-}
-
 .technology-skills {
   display: flex;
   flex-direction: column;

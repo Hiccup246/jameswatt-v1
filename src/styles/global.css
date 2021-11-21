@@ -72,3 +72,7 @@ a:-webkit-any-link {
 h4 {
   margin-bottom: 10px;
 }
+
+.bold {
+  font-family: var(--body-bold);
+}

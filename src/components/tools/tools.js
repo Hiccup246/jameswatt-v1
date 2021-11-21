@@ -1,37 +1,42 @@
 import * as React from 'react'
 
-import './technology-skills.css'
+import './tools.css'
 
 const technologies = [
   {
-    name: 'Ruby On Rails',
-    percentage: '90',
+    name: 'Vue',
+    percentage: '70',
     category: 'comfortable',
   },
   {
-    name: 'Javascript',
+    name: 'Angular',
+    percentage: '75',
+    category: 'comfortable',
+  },
+  {
+    name: 'Bulma',
+    percentage: '65',
+    category: 'comfortable',
+  },
+  {
+    name: 'Git',
     percentage: '80',
     category: 'comfortable',
   },
   {
-    name: 'CSS',
-    percentage: '75',
+    name: 'Github',
+    percentage: '80',
     category: 'comfortable',
   },
   {
-    name: 'HTML',
-    percentage: '75',
+    name: 'Clubhouse (Jira Alternative)',
+    percentage: '50',
     category: 'comfortable',
   },
   {
-    name: 'Go',
-    percentage: '10',
-    category: 'played',
-  },
-  {
-    name: 'Solidity',
-    percentage: '20',
-    category: 'played',
+    name: 'Terminal',
+    percentage: '70',
+    category: 'comfortable',
   },
   {
     name: 'Gatsby',
@@ -39,19 +44,24 @@ const technologies = [
     category: 'played',
   },
   {
-    name: 'Python',
+    name: 'React',
     percentage: '20',
     category: 'played',
   },
   {
-    name: 'Bash',
-    percentage: '40',
+    name: 'Koa',
+    percentage: '5',
     category: 'played',
   },
   {
-    name: 'SQL',
-    percentage: '40',
-    category: 'comfortable',
+    name: 'React Native',
+    percentage: '5',
+    category: 'played',
+  },
+  {
+    name: 'Svelte',
+    percentage: '5',
+    category: 'played',
   },
 ]
 
@@ -100,10 +110,10 @@ const playedSkills = () => {
   )
 }
 
-const TechnologySkills = () => (
+const Tools = () => (
   <div className="technology-skills">
     <div className="technology-skills__header">
-      <h4>🔡Language Proficiency</h4>
+      <h4>🧰Tooling Skills</h4>
     </div>
 
     <div className="technology-skills__technologies">
@@ -114,4 +124,4 @@ const TechnologySkills = () => (
   </div>
 )
 
-export default TechnologySkills
+export default Tools
