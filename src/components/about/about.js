@@ -7,7 +7,7 @@ const toggleDescription = () => {}
 const About = () => (
   <div className="about">
     <div className="about__header">
-      <h4>💬About Me</h4> - <span>Short</span> - <span>Long</span>
+      <h4>💬About Me</h4>
     </div>
     <div className="about__description-short selected">
       <p>

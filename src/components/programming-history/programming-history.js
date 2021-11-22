@@ -10,7 +10,7 @@ const experiences = [
     description:
       'APLYiD is a trusted & accredited digital ID solution (AML + KYC) designed to streamline your customer onboarding with a first-class user experience',
     bullets: [
-      'Currently working as a full stack developer utilising Vue.JS, Angular.JS and Ruby on Rails to create AML and financial products from inception and design to deployment and maintinance',
+      'Currently working as a full stack developer utilising Vue.JS, Angular.JS and Ruby on Rails to create AML and financial products from inception and design to deployment and maintenance',
       'Joined the company as the second developer and 13th employee and helped grow the product using agile practices into a strong team of 7 and an organisation of over 50 people',
       'Worked closley with the founders of the company, key sales staff, designers and customer support to design products from the ground up',
     ],
@@ -56,7 +56,7 @@ const experiences = [
     description:
       'Victoria University of Wellington is a university in Wellington, New Zealand. The university has a strong software engineering school and an impressive reputation regarding artifical intelligence research',
     bullets: [
-      'Graduated with a Bachelors of Engineering with first class honours majoring in software',
+      'Graduated with a Bachelor of Engineering in Software Engineering with first class honours',
       'Key study interests included artificial intelligence, software ethics and organisational culture',
       'Completed a year long thesis which involved developing a series of IoT connected radios for the purpose of tracking birds within dense native bush',
       'Worked as a computer science tutor helping students to understand algorithms and data structures',

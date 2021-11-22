@@ -1,11 +1,13 @@
 import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
-import favIcon32 from "../../assets/favicons/favicon-32x32.png"
-import favIcon16 from "../../assets/favicons/favicon-16x16.png"
-import favIconApple from "../../assets/favicons/apple-touch-icon.png"
-import favIconIco16 from "../../assets/favicons/favicon.ico"
+
+import { useStaticQuery, graphql } from 'gatsby'
+import PropTypes from 'prop-types'
+import { Helmet } from 'react-helmet'
+
+import favIconApple from '../../assets/favicons/apple-touch-icon.png'
+import favIcon16 from '../../assets/favicons/favicon-16x16.png'
+import favIcon32 from '../../assets/favicons/favicon-32x32.png'
+import favIconIco16 from '../../assets/favicons/favicon.ico'
 
 // Taken from https://www.gatsbyjs.com/tutorial/seo-and-social-sharing-cards-tutorial
 function SEO({ description, lang, meta, image: metaImage, title }) {
@@ -62,11 +64,11 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
     publisher: {
       '@type': 'Person',
       name: author,
-    }
+    },
   }
 
   if (metaImage) {
-    schemaOrgWebPage[0]["image"] = {
+    schemaOrgWebPage[0]['image'] = {
       '@type': 'ImageObject',
       url: image,
     }
@@ -77,33 +79,76 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
       htmlAttributes={{
         lang,
       }}
-      // <link rel="manifest" href="/site.webmanifest"> manifest with icons
       link={[
         {
-          rel: "icon",
+          rel: 'icon',
           href: favIcon16,
-          type: "image/png",
-          sizes: "16x16"
+          type: '/favicon-16x16.png',
+          sizes: '16x16',
         },
         {
-          rel: "icon",
+          rel: 'icon',
           href: favIcon32,
-          type: "image/png",
-          sizes: "32x32"
+          type: 'image/png',
+          sizes: '/favicon-32x32.png',
         },
         {
-          rel: "apple-touch-icon",
-          href: favIconApple,
-          sizes: "180x180"
+          rel: 'apple-touch-icon',
+          href: '/apple-touch-icon.png',
+          sizes: '180x180',
         },
         {
-          rel: "icon",
-          href: favIconIco16,
-          sizes: "16x16"
+          rel: 'apple-touch-icon',
+          href: '/apple-touch-icon.png',
+          sizes: '152x152',
         },
         {
-          rel: "author"
-        }
+          rel: 'apple-touch-icon',
+          href: '/apple-touch-icon.png',
+          sizes: '57x57',
+        },
+        {
+          rel: 'apple-touch-icon',
+          href: '/apple-touch-icon.png',
+          sizes: '114x114',
+        },
+        {
+          rel: 'apple-touch-icon',
+          href: '/apple-touch-icon.png',
+          sizes: '72x72',
+        },
+        {
+          rel: 'apple-touch-icon',
+          href: '/apple-touch-icon.png',
+          sizes: '144x144',
+        },
+        {
+          rel: 'apple-touch-icon',
+          href: '/apple-touch-icon.png',
+          sizes: '60x60',
+        },
+        {
+          rel: 'apple-touch-icon',
+          href: '/apple-touch-icon.png',
+          sizes: '120x120',
+        },
+        {
+          rel: 'apple-touch-icon',
+          href: '/apple-touch-icon.png',
+          sizes: '76x76',
+        },
+        {
+          rel: 'icon',
+          href: '/favicon-16x16.png',
+          sizes: '16x16',
+        },
+        {
+          rel: 'manifest',
+          href: '/site.webmanifest',
+        },
+        {
+          rel: 'author',
+        },
       ]}
       title={metaTitle}
       // titleTemplate={`%s | ${site.siteMetadata.title}`}
@@ -119,8 +164,8 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
           content: metaDescription,
         },
         {
-          name: "keywords",
-          content: keywords.join(","),
+          name: 'keywords',
+          content: keywords.join(','),
         },
         {
           property: `og:title`,
@@ -151,26 +196,26 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
           metaImage
             ? [
                 {
-                  property: "og:image",
+                  property: 'og:image',
                   content: image,
                 },
                 {
-                  property: "og:image:width",
+                  property: 'og:image:width',
                   content: metaImage.width,
                 },
                 {
-                  property: "og:image:height",
+                  property: 'og:image:height',
                   content: metaImage.height,
                 },
                 {
-                  name: "twitter:card",
-                  content: "summary_large_image",
+                  name: 'twitter:card',
+                  content: 'summary_large_image',
                 },
               ]
             : [
                 {
-                  name: "twitter:card",
-                  content: "summary",
+                  name: 'twitter:card',
+                  content: 'summary',
                 },
               ]
         )

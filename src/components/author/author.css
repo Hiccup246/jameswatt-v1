@@ -17,6 +17,27 @@
   border-radius: 9999px;
 }
 
+.author__icon {
+  margin-top: 5px;
+  height: 30px;
+  fill: var(--body-font-color);
+  cursor: pointer;
+}
+
+.author__icon path {
+  fill: var(--body-font-color);
+}
+
+
+.author__icon:hover {
+  background-color: var(--secondary-color);
+  opacity: 0.7;
+}
+
+.author-icon-wrapper + .author-icon-wrapper {
+  margin-left: 10px;
+}
+
 .author__description {
   display: flex;
   flex-direction: column;

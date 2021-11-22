@@ -73,6 +73,11 @@
   color: var(--grey-font-color);
 }
 
+.projects__card-link a {
+  color: var(--body-font-color);
+  text-decoration: none;
+}
+
 .projects__card-link:hover {
   cursor: pointer;
 }

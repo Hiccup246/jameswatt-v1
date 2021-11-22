@@ -4,6 +4,11 @@
   display: none;
 }
 
+.about__description-short p,
+.about__description-long p {
+  margin-top: 0;
+}
+
 .selected {
   display: block;
 }
@@ -14,5 +19,5 @@
 }
 
 .about__header h4 {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }

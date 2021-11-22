@@ -4,12 +4,12 @@ import './tools.css'
 
 const technologies = [
   {
-    name: 'Vue',
+    name: 'Vue.JS',
     percentage: '70',
     category: 'comfortable',
   },
   {
-    name: 'Angular',
+    name: 'Angular.JS',
     percentage: '75',
     category: 'comfortable',
   },
@@ -44,12 +44,12 @@ const technologies = [
     category: 'played',
   },
   {
-    name: 'React',
+    name: 'React.JS',
     percentage: '20',
     category: 'comfortable',
   },
   {
-    name: 'Koa',
+    name: 'Koa.JS',
     percentage: '5',
     category: 'played',
   },
