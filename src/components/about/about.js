@@ -2,29 +2,66 @@ import * as React from 'react'
 
 import './about.css'
 
+const toggleDescription = () => {}
+
 const About = () => (
   <div className="about">
-    <h4 className="about__header">💬About Me</h4>
-    <p className="about__description">
-      I'm a 24 year old software engineer based in Auckland New Zealand. Since I
-      was a young lad playing pokemon on gameboy advanced and GTA on PSP I have
-      been deeply interested in technology, electronics and software. I used to
-      tear apart these (now crude) gaming consoles or phones and attempt to put
-      them back together often with little success. This interest developed into
-      me taking digital technologies at my highschool (Westlake boys for the
-      alumni) where most of my highschool time was absorbed along with an
-      interest in calculus and economics. To me software was an obvious career
-      choice, one that fit like a glove and one that I did not hesitate to make.
-      I then chose to head to the university with the strongest software school
-      and the one which would give me the most opportunites to grow my interest
-      in software. This choice culminated in me heading to the Victoria
-      University of Wellington (VUW) (Now The university of Wellington) which
-      allows students to specialise in software development from year 1 and had
-      a world recognised artifical intelligence school which receives money from
-      the likes of Huawei to perform facial recognition research. At VUW I
-      decided to take a 4 year engineering degree majoring in software.
-    </p>
-    {/* Introductiomn */}
+    <div className="about__header">
+      <h4>💬About Me</h4> - <span>Short</span> - <span>Long</span>
+    </div>
+    <div className="about__description-short selected">
+      <p>
+        I'm a 24 year old full stack software developer based out of Auckland,
+        New Zealand. I enjoy software development for its sometimes mind bending
+        mix of subjectiveness and objectivness. There isn't always a single
+        right way of doing things, there is definitely a wrong way and certainly
+        nicer ways. Figuring out for myself and exploring how others define good
+        code and how to write good code is what I find enjoyable about software
+        development.
+      </p>
+
+      <p>
+        Outside of work my technology interests include functional programming,
+        web3, blockchain and smart contract development i.e. Crypto. Outside of
+        software my interests include hiking throughout the New Zealand native
+        bush, reading various books relating to topics such as sociology,
+        politics, fantasy and philosophy, trying our American and New Zealand
+        craft beers and...sensory deprivation tanks ;)
+      </p>
+    </div>
+
+    <div className="about__description-long">
+      <p>
+        I'm a 24 year old full stack software developer based out of Auckland,
+        New Zealand. I currently have 2 years of full stack software development
+        experience within the fintech, aml domain which I attained at AplyId. I
+        gathered this experience after earning a bachelor of engineering in
+        software engineering with first class honours and a variety of
+        internships at companies such as banks, failed start ups and successful
+        start ups.
+      </p>
+
+      <p>
+        You may be wondering, why am I in the technology space? For me
+        technology has acted as a frame through which I live life. It was never
+        a question of "if" I went into the technology industry it was always a
+        question of "what" area of technology I went into. I enjoy software
+        development for its sometimes annoying mix of subjectiveness and
+        objectivness, there isn't always a single right way, there is definitely
+        a wrong way and certainly nicer ways. Figuring out for myself and
+        exploring how others define good code and how to write good code is what
+        I find enjoyable about software development.
+      </p>
+
+      <p>
+        Outside of work my technology interests include functional programming,
+        web3, blockchain and smart contract development i.e. Crypto. Outside of
+        software my interests include hiking throughout the New Zealand native
+        bush, reading various books relating to topics such as sociology,
+        politics, fantasy and philosophy, trying our American and New Zealand
+        craft beers and...sensory deprivation tanks ;)
+      </p>
+    </div>
   </div>
 )
 

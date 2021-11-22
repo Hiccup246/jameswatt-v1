@@ -1,3 +1,18 @@
-.about__description {
+.about__description-short,
+.about__description-long {
   margin-top: 0;
+  display: none;
+}
+
+.selected {
+  display: block;
+}
+
+.about__header {
+  display: flex;
+  width: 100%;
+}
+
+.about__header h4 {
+  margin-bottom: 0;
 }
