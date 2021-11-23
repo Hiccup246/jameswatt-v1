@@ -2,8 +2,8 @@ import * as React from 'react'
 
 import './author.css'
 import author from "../../assets/authoredit.png"
-import Email from '../../assets/svg/envelope-regular.svg'
-import LinkedIn from "../../assets/svg/linkedin.svg"
+import Email from '../../assets/svg/at-solid.svg'
+import LinkedIn from '../../assets/svg/linkedin-brands.svg'
 
 const Author = () => (
   <div className="author">

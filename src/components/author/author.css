@@ -1,19 +1,18 @@
 .author {
-  width: 100%;
   background-color: var(--secondary-color);
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   text-align: left;
   align-items: center;
-  padding: var(--side-padding) 0;
+  padding: var(--side-padding) 15px;
   margin-top: 25px;
 }
 
 .author__picture {
   height: 140px;
   width: 140px;
-  margin: 10px 30px;
+  margin: 10px 15px;
   border-radius: 9999px;
 }
 
@@ -42,6 +41,7 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
+  margin: 0 15px;
 }
 
 .author__name {
@@ -52,7 +52,7 @@
   padding-top: 10px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 551px) {
   .author {
     text-align: center;
     justify-content: center;
