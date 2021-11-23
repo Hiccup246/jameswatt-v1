@@ -82,64 +82,66 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
       link={[
         {
           rel: 'icon',
-          href: favIcon16,
-          type: '/favicon-16x16.png',
+          href: '/favicon-16x16.png',
+          type: 'image/png',
           sizes: '16x16',
         },
         {
           rel: 'icon',
-          href: favIcon32,
+          href: '/favicon-32x32.png',
           type: 'image/png',
-          sizes: '/favicon-32x32.png',
+          sizes: '32x32',
         },
         {
           rel: 'apple-touch-icon',
           href: '/apple-touch-icon.png',
+          type: 'image/png',
           sizes: '180x180',
         },
-        {
-          rel: 'apple-touch-icon',
-          href: '/apple-touch-icon.png',
-          sizes: '152x152',
-        },
-        {
-          rel: 'apple-touch-icon',
-          href: '/apple-touch-icon.png',
-          sizes: '57x57',
-        },
-        {
-          rel: 'apple-touch-icon',
-          href: '/apple-touch-icon.png',
-          sizes: '114x114',
-        },
-        {
-          rel: 'apple-touch-icon',
-          href: '/apple-touch-icon.png',
-          sizes: '72x72',
-        },
-        {
-          rel: 'apple-touch-icon',
-          href: '/apple-touch-icon.png',
-          sizes: '144x144',
-        },
-        {
-          rel: 'apple-touch-icon',
-          href: '/apple-touch-icon.png',
-          sizes: '60x60',
-        },
-        {
-          rel: 'apple-touch-icon',
-          href: '/apple-touch-icon.png',
-          sizes: '120x120',
-        },
-        {
-          rel: 'apple-touch-icon',
-          href: '/apple-touch-icon.png',
-          sizes: '76x76',
-        },
+        // {
+        //   rel: 'apple-touch-icon',
+        //   href: '/apple-touch-icon.png',
+        //   sizes: '152x152',
+        // },
+        // {
+        //   rel: 'apple-touch-icon',
+        //   href: '/apple-touch-icon.png',
+        //   sizes: '57x57',
+        // },
+        // {
+        //   rel: 'apple-touch-icon',
+        //   href: '/apple-touch-icon.png',
+        //   sizes: '114x114',
+        // },
+        // {
+        //   rel: 'apple-touch-icon',
+        //   href: '/apple-touch-icon.png',
+        //   sizes: '72x72',
+        // },
+        // {
+        //   rel: 'apple-touch-icon',
+        //   href: '/apple-touch-icon.png',
+        //   sizes: '144x144',
+        // },
+        // {
+        //   rel: 'apple-touch-icon',
+        //   href: '/apple-touch-icon.png',
+        //   sizes: '60x60',
+        // },
+        // {
+        //   rel: 'apple-touch-icon',
+        //   href: '/apple-touch-icon.png',
+        //   sizes: '120x120',
+        // },
+        // {
+        //   rel: 'apple-touch-icon',
+        //   href: '/apple-touch-icon.png',
+        //   sizes: '76x76',
+        // },
         {
           rel: 'icon',
           href: '/favicon-16x16.png',
+          type: 'image/png',
           sizes: '16x16',
         },
         {
