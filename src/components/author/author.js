@@ -1,13 +1,18 @@
 import * as React from 'react'
 
+import { StaticImage } from 'gatsby-plugin-image'
+
 import './author.css'
-import author from "../../assets/authoredit.png"
 import Email from '../../assets/svg/at-solid.svg'
 import LinkedIn from '../../assets/svg/linkedin-brands.svg'
 
 const Author = () => (
   <div className="author">
-    <img className="author__picture" src={author} alt="Author Picture" />
+    <StaticImage
+      className="author__picture"
+      src="../../assets/authoredit.png"
+      alt="Author Picture"
+    />
     <div className="author__description">
       <h1 className="author__name">James. Watt</h1>
       <div className="author__description-text">
@@ -26,7 +31,8 @@ const Author = () => (
         <a
           href="https://www.linkedin.com/in/james-watt-a6b682147"
           target="_blank"
-          className="author-icon-wrapper" rel="noreferrer"
+          className="author-icon-wrapper"
+          rel="noreferrer"
         >
           <LinkedIn className="author__icon" />
         </a>
