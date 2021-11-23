@@ -1,0 +1,28 @@
+.skill__text-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.skill__background-bar {
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 15px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.skill__background-percentage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  border-radius: 50px;
+  background-color: var(--body-font-color);
+  z-index: 999;
+}
+
+.percentage {
+  margin-right: 2px;
+}

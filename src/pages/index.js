@@ -6,12 +6,12 @@ import BaseLayout from '../components/base-layout/base-layout'
 import Bookshelf from '../components/bookshelf/bookshelf'
 import '../styles/global.css'
 import Credits from '../components/credits/credits'
+import LanguageSkills from '../components/language-skills/language-skills'
 import ProgrammingHistory from '../components/programming-history/programming-history'
 import Projects from '../components/projects/projects'
 import Seo from '../components/seo/seo'
-import TechnologySkills from '../components/technology-skills/technology-skills'
 import { ThemeProvider } from '../components/theme-context/theme-context'
-import Tools from '../components/tools/tools'
+import ToolSkills from '../components/tool-skills/tool-skills'
 
 const IndexPage = () => (
   <ThemeProvider>
@@ -20,8 +20,8 @@ const IndexPage = () => (
       <Author />
       <About />
       <ProgrammingHistory />
-      <TechnologySkills />
-      <Tools />
+      <LanguageSkills />
+      <ToolSkills />
       <Projects />
       <Bookshelf />
       <Credits />
