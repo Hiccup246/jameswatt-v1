@@ -1,9 +1,5 @@
 .tab-component {
-  /* margin-top: 15px; */
   width: 100%;
-  /* min-height: 340px; */
-  height: 410px;
-  /* background-color: #fff; */
   display: flex;
 }
 
@@ -14,12 +10,8 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
   padding-top: 10px;
   padding-bottom: 10px;
-  /* background-color: blue; */
 }
 
 .tab-menu > .tab-item:not(:first-child) {
@@ -31,28 +23,24 @@
   text-decoration: none;
   text-decoration-skip-ink: auto;
   position: relative;
-  /* transition: var(--transition); */
   display: flex;
   -webkit-box-align: center;
   align-items: center;
   width: 80px;
   width: fit-content;
-  /* height: var(--tab-height); */
   height: var(--tab-height);
   line-height: 42px;
   padding: 0px 20px;
-  /* border-left: 2px solid red; */
   background-color: transparent;
-  /* color: orange; */
-  /* font-family: var(--font-mono); */
-  /* font-size: var(--fz-xs); */
   text-align: left;
   white-space: nowrap;
-
-  /* background-color: var(--secondary-color); */
   z-index: 4;
-  /* background-color: blue; */
   color: var(--grey-font-color);
+}
+
+.tab-item:focus-visible {
+  border: none;
+  background-color: transparent;
 }
 
 .selected-tab {
@@ -60,44 +48,21 @@
 }
 
 .tab-content {
-  /* background-color: orange; */
   position: relative;
   width: 100%;
   margin-left: 20px;
-  /* height: 100%; */
 }
 .tab-panel-0 {
-  /* To align with first tab item */
   padding-top: 10px
 }
 
 .tab-panel {
-  position: relative;
-  height: 0;
+  position: absolute;
   margin: 0;
   padding: 0;
-  /* position: absolute; */
-
-  /* height: 0; */
-  /* display: none; */
-  /* top: 0;
-  left: 0; */
-  /* left: 0;
-  visibility: hidden;
-  /* display: none; */
   width: 100%;
-  /* height: auto; */
-  /* padding: 10px 5px; */
   opacity: 0;
   transition: opacity 0.6s ease-in-out;
-  /* transition: visibility 2s ease-in; */
-
-  /* transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
-  transition-property: opacity, transform;
-  transition-duration: 0.5s, 0.5s;
-  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1), cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition-delay: 0.2s, 0.2s; */
 }
 
 .experience-points {
@@ -129,11 +94,7 @@
   height: 42px;
   margin-top: 10px;
   margin-bottom: 10px;
-  /* border-radius: 5px; */
   background: var(--secondary-color);
-  /* background-color: red; */
-  /* margin-left: 4px; */
-  /* transform: translateX(calc(0)); */
   transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s, width 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
 }
 
@@ -142,14 +103,10 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  /* z-index: 10; */
   width: 2px;
   height: 340px;
-  /* border-radius: 5px; */
   background: var(--body-font-color);
   margin-left: 4px;
-  /* transform: translateY(calc(0 * 42px)); */
-  /* transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s; */
 }
 
 .company-name {
@@ -171,12 +128,6 @@
 }
 
 @media (max-width: 550px) {
-  .tab-panel {
-    /* position: relative;
-    height: 0;
-    padding: 0; */
-
-  }
   .tab-menu > .tab-item:not(:first-child) {
     margin-top: 0px;
   }
@@ -187,20 +138,10 @@
   }
 
   .tab-menu {
-    /* width: calc(100% + 50px); */
-    /* padding-left: 25px;
-    margin-left: -25px; */
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
     width: 100%;
-    /* width: calc(100%); */
-    /* padding-left: 50px; */
-    /* justify-content: flex-center; */
-    /* margin-left: -50px; */
-    /* margin-bottom: 30px; */
-    /* border-bottom: 2px solid var(--secondary-color); */
-
   }
 
   .menu-border {
@@ -213,15 +154,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 00px; */
-    /* padding: 0 15px; */
     margin: 0;
     padding: 0;
-    /* padding: 0px 15px; */
-    /* border-left: 0px; */
     border-bottom: 2px solid var(--secondary-color);
     text-align: center;
-    /* padding: 0px 15px 2px; */
   }
 
   .tab-content {
@@ -235,8 +171,6 @@
     height: 2px;
     z-index: 5;
     background-color: var(--body-font-color);
-    /* margin-left: 50px; */
     transform: translateX(calc(0 * 120px));
-    /* margin-left: 25px; */
   }
 }

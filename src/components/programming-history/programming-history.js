@@ -79,7 +79,7 @@ const clickOnTab = (e, tabIndex) => {
       // document.getElementById('panel-' + element).style.display = 'none'
       document.getElementById('panel-' + element).style.visibility = 'hidden'
       document.getElementById('panel-' + element).style.opacity = '0'
-      document.getElementById('panel-' + element).style.height = '0'
+      // document.getElementById('panel-' + element).style.height = '0'
       document.getElementById('panel-' + element).style.padding = '0'
     }
 
@@ -93,8 +93,6 @@ const clickOnTab = (e, tabIndex) => {
     }
   })
 
-  // currentPanel.style.display = 'block'
-  currentPanel.style.height = 'auto'
   currentPanel.style.paddingTop = '10px'
   currentPanel.style.visibility = 'visible'
   currentPanel.style.opacity = '1'
@@ -121,14 +119,6 @@ const clickOnTab = (e, tabIndex) => {
       tabIndex +
       '*31.25px)))'
   }
-
-  //  slider.style.width = currentTab.clientWidth + 'px' can maybe do 120px here for tab width
-  //  slider.style.transform =
-  //    'translateX(calc(calc(' +
-  //    tabIndex +
-  //    '* 120px) + calc(' +
-  //    tabIndex +
-  //  '*0px)))'
 }
 
 const tabs = experiences.map((element, index) => {
@@ -152,15 +142,17 @@ const panelBullets = (bullets) => {
 
 const contentPanels = experiences.map((element, index) => {
   return (
-    <div key={index} className="tab-panel" id={'panel-' + index}>
-      <h3>
-        <span className="company-role">{element.role}</span>
-        <span className="company-name"> @ {element.company}</span>
-      </h3>
-      <p className="date-range">{element.dateRange}</p>
-      <div>
-        <div className="company-description">{element.description}</div>
-        <ul className="experience-points">{panelBullets(element.bullets)}</ul>
+    <div>
+      <div key={index} className="tab-panel" id={'panel-' + index}>
+        <h3>
+          <span className="company-role">{element.role}</span>
+          <span className="company-name"> @ {element.company}</span>
+        </h3>
+        <p className="date-range">{element.dateRange}</p>
+        <div>
+          <div className="company-description">{element.description}</div>
+          <ul className="experience-points">{panelBullets(element.bullets)}</ul>
+        </div>
       </div>
     </div>
   )
@@ -172,8 +164,7 @@ const initialClick = (index) => {
   const slider = tabComponent.getElementsByClassName('selected-tab-item')[0]
   const currentTab = document.getElementById('tab-' + index)
 
-
-  currentPanel.style.height = 'auto'
+  // currentPanel.style.height = 'auto'
   currentPanel.style.paddingTop = '10px'
   currentPanel.style.visibility = 'visible'
   currentPanel.style.opacity = '1'
