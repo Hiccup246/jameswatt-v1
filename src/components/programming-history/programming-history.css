@@ -162,6 +162,7 @@
 
   .tab-content {
     margin-left: 0px;
+    position: relative;
   }
 
   .selected-tab-item {
