@@ -26,21 +26,23 @@ const ProjectCard = ({ imageSrc, description, link, linkText }) => {
   return (
     <div className="projects__card">
       <div className="projects__card-body">
-        <img
-          className="projects__card-picture"
-          src={imageSrc}
-          alt="Cryto Zombies Logo"
-        />
+        {imageSrc}
 
         <div className="projects__card-link">
-          <a href={link}>{linkText}
-            <Link className="projects__link fa-link"/>
+          <a href={link}>
+            {linkText}
+            <Link className="projects__link fa-link" />
           </a>
         </div>
       </div>
 
       <div className="projects__body-overlay">
-        <div className={"projects__icon-wrapper " + (siteTheme === 'dark' ? 'projects__icon-wrapper--dark' : '')}>
+        <div
+          className={
+            'projects__icon-wrapper ' +
+            (siteTheme === 'dark' ? 'projects__icon-wrapper--dark' : '')
+          }
+        >
           <ContentToggle onClickCallback={rotateIcon} />
         </div>
 
