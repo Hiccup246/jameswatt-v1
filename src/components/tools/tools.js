@@ -113,7 +113,7 @@ const playedSkills = () => {
 const Tools = () => (
   <div className="tools-skills">
     <div className="tools-skills__header">
-      <h4>🧰Tooling Skills</h4>
+      <h4>⚙️Tooling Skills</h4>
     </div>
 
     <div className="tools-skills__technologies">

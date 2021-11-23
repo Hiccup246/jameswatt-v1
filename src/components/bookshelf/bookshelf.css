@@ -53,6 +53,7 @@ td h4 {
   justify-content: flex-start;
   flex-direction: column;
   padding-right: 10px;
+  word-break: keep-all;
 }
 
 .bookshelf__name-cell h4 {
