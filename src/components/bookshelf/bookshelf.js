@@ -1,119 +1,19 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import bookDark from '../../assets/book-dark.gif'
 import bookLight from '../../assets/book-light.gif'
 import Completed from '../../assets/svg/clipboard-check.svg'
+import { BOOKS } from '../../constants'
 import { ThemeContext } from '../theme-context/theme-context'
 
 import './bookshelf.css'
 
 const Bookshelf = () => {
-  const { siteTheme, setSiteTheme } = React.useContext(ThemeContext)
-
-  const books = [
-    {
-      name: 'Rage',
-      author: 'Bob Woodward',
-      genre: 'Politics',
-      status: 'Reading',
-      dateCompleted: '',
-    },
-    {
-      name: 'On Having No Head',
-      author: 'Tolkien',
-      genre: 'Fantasy',
-      status: 'Read',
-      dateCompleted: '',
-    },
-    {
-      name: 'The Lord of the Rings The Return of the King',
-      author: 'J.R.R. Tolkien',
-      genre: 'Fantasy',
-      status: 'Read',
-      dateCompleted: '',
-    },
-    {
-      name: 'The Lord of the Rings The Two Towers',
-      author: 'J.R.R. Tolkien',
-      genre: 'Fantasy',
-      status: 'Read',
-      dateCompleted: '',
-    },
-    {
-      name: 'Lord of the Rings the Fellowship of the Ring',
-      author: 'J.R.R. Tolkien',
-      genre: 'Fantasy',
-      status: 'Read',
-      dateCompleted: '',
-    },
-    {
-      name: 'The Hobbit',
-      author: 'J.R.R. Tolkien',
-      genre: 'Fantasy',
-      status: 'Read',
-      dateCompleted: '',
-    },
-    {
-      name: '12 Rules for Life: An Antidote to Chaos',
-      author: 'Jordan B. Peterson',
-      genre: 'Self Help',
-      status: 'Read',
-      dateCompleted: '',
-    },
-    {
-      name: 'Sapiens: A Brief History of Humankind',
-      author: 'Yuval Noah Harari',
-      genre: 'History',
-      status: 'Read',
-      dateCompleted: '',
-    },
-    {
-      name: 'Propaganda',
-      author: 'Edward L. Bernays',
-      genre: 'Psychology',
-      status: 'Read',
-      dateCompleted: '',
-    },
-    {
-      name: 'Fear: Trump in the White House',
-      author: 'Bob Woodward',
-      genre: 'Politics',
-      status: 'Read',
-      dateCompleted: '',
-    },
-    {
-      name: 'Animal Farm',
-      author: 'George Orwell',
-      genre: 'Politics',
-      status: 'Read',
-      dateCompleted: '',
-    },
-    {
-      name: '1984',
-      author: 'George Orwell',
-      genre: 'Politics',
-      status: 'Read',
-      dateCompleted: '',
-    },
-    {
-      name: 'Manufacturing Consent',
-      author: 'Edward S. Herman, Noam Chomsky',
-      genre: 'Politics',
-      status: 'Read',
-      dateCompleted: '',
-    },
-    {
-      name: 'The Power of Now',
-      author: 'Eckhart Tolle',
-      genre: 'Spirituality',
-      status: 'Read',
-      dateCompleted: '',
-    },
-  ]
+  const { siteTheme } = React.useContext(ThemeContext)
 
   const showHideBooks = () => {
     const shortBooksLength = 4
-    const totalBooks = books.length
+    const totalBooks = BOOKS.length
 
     for (let step = shortBooksLength; step < totalBooks; step++) {
       document.getElementById('book-' + step).classList.toggle('inactive')
@@ -145,7 +45,7 @@ const Bookshelf = () => {
     }
   }
 
-  const booksList = books.map((book, index) => {
+  const booksList = BOOKS.map((book, index) => {
     return (
       <tr
         key={index}

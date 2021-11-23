@@ -1,3 +1,17 @@
+.skill {
+  transition: all ease-in 0.3s;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.skill:hover {
+  box-shadow: -2px 2px 0 0 var(--body-font-color);
+  transform: translate(2px, -2px);
+  border-radius: 8px;
+  border: 1px solid var(--body-font-color);
+}
+
 .skill__text-wrapper {
   display: flex;
   flex-direction: row;

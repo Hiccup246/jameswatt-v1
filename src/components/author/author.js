@@ -42,4 +42,3 @@ const Author = () => (
 )
 
 export default Author
-// https://via.placeholder.com/140"
