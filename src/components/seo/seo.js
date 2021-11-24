@@ -81,6 +81,10 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
       }}
       link={[
         {
+          rel: 'canonical',
+          href: site.siteMetadata.siteUrl,
+        },
+        {
           rel: 'icon',
           href: '/favicon-16x16.png',
           type: 'image/png',

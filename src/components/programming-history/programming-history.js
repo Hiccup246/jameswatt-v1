@@ -39,7 +39,7 @@ const clickOnTab = (e, tabIndex) => {
 
   // 3. Update height (maybe width of tab slider)
   const slider = tabComponent.getElementsByClassName('selected-tab-item')[0]
-  const mediaQuery = window.matchMedia('(max-width: 375px)')
+  const mediaQuery = window.matchMedia('(max-width: 550px)')
 
   slider.style.width = currentTab.clientWidth + 'px'
 

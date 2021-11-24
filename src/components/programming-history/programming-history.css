@@ -120,6 +120,7 @@
 .date-range {
   margin-top: 5px;
   color: var(--grey-font-color);
+  -webkit-text-fill-color: var(--grey-font-color);
   /* font-size: 10px; */
 }
 
