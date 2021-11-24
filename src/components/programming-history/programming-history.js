@@ -17,6 +17,8 @@ const clickOnTab = (e, tabIndex) => {
     ) {
       // document.getElementById('panel-' + element).style.display = 'none'
       document.getElementById('panel-' + element).style.visibility = 'hidden'
+      document.getElementById('panel-' + element).style.position = 'absolute'
+
       document.getElementById('panel-' + element).style.opacity = '0'
       // document.getElementById('panel-' + element).style.height = '0'
       document.getElementById('panel-' + element).style.padding = '0'
@@ -36,6 +38,7 @@ const clickOnTab = (e, tabIndex) => {
   currentPanel.style.visibility = 'visible'
   currentPanel.style.opacity = '1'
   currentTab.style.color = 'var(--body-font-color)'
+  currentPanel.style.position = 'relative'
 
   // 3. Update height (maybe width of tab slider)
   const slider = tabComponent.getElementsByClassName('selected-tab-item')[0]
@@ -103,13 +106,16 @@ const initialClick = (index) => {
   const slider = tabComponent.getElementsByClassName('selected-tab-item')[0]
   const currentTab = document.getElementById('tab-' + index)
 
-  // currentPanel.style.height = 'auto'
   currentPanel.style.paddingTop = '10px'
   currentPanel.style.visibility = 'visible'
   currentPanel.style.opacity = '1'
   slider.style.width = currentTab.clientWidth + 'px'
 
   currentTab.style.color = 'var(--body-font-color)'
+
+  const largestPanel = document.getElementById('panel-' + 4)
+  const content = largestPanel.closest('.tab-content')
+  content.style.height = largestPanel.clientHeight + 'px'
 }
 
 const ProgrammingHistory = () => {
