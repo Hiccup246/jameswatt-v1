@@ -101,6 +101,7 @@ tbody tr + tr > td {
   padding: 5px 10px;
   border-radius: 5px;
   margin: 10px auto;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .bookshelf__show-more:hover {

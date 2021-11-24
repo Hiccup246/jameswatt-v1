@@ -36,6 +36,7 @@
   white-space: nowrap;
   z-index: 4;
   color: var(--grey-font-color);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .tab-item:focus-visible {

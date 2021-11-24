@@ -39,6 +39,7 @@ html {
   height: fit-content;
   padding: 0;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .link--regular-font:hover {

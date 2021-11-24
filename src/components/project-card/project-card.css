@@ -58,6 +58,10 @@
   margin-bottom: 4px;
 }
 
+.projects__card-link a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .projects__card-link .fa-link {
   visibility: hidden;
   height: 14px;

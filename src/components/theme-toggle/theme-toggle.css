@@ -3,6 +3,7 @@
     justify-content: center;
     flex-direction: column;
     margin-left: 20px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .theme-toggle:hover {
