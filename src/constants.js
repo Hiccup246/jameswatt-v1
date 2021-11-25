@@ -1,11 +1,11 @@
 export const THEME_COLORS = {
   '--primary-color': {
     light: '#fdf5e6',
-    dark: '#290001',
+    dark: '#291500',
   },
   '--secondary-color': {
     light: '#fae6c2',
-    dark: '#87431d',
+    dark: '#5c2f00',
   },
   '--header-font-color': {
     light: '#000000',
@@ -24,6 +24,11 @@ export const SITE_THEME_KEY = 'site-theme'
 export const INITIAL_SITE_THEME_CSS_VAR = '--initial-site-theme'
 export const TOOLS = [
   {
+    name: 'Ruby On Rails',
+    percentage: '90',
+    category: 'comfortable',
+  },
+  {
     name: 'Vue.JS',
     percentage: '70',
     category: 'comfortable',
@@ -35,26 +40,11 @@ export const TOOLS = [
   },
   {
     name: 'Bulma',
-    percentage: '65',
+    percentage: '55',
     category: 'comfortable',
   },
   {
-    name: 'Git',
-    percentage: '80',
-    category: 'comfortable',
-  },
-  {
-    name: 'Github',
-    percentage: '80',
-    category: 'comfortable',
-  },
-  {
-    name: 'Clubhouse (Jira Alternative)',
-    percentage: '50',
-    category: 'comfortable',
-  },
-  {
-    name: 'Terminal',
+    name: 'Agile',
     percentage: '70',
     category: 'comfortable',
   },
@@ -65,7 +55,7 @@ export const TOOLS = [
   },
   {
     name: 'React.JS',
-    percentage: '20',
+    percentage: '30',
     category: 'comfortable',
   },
   {
@@ -83,10 +73,15 @@ export const TOOLS = [
     percentage: '5',
     category: 'played',
   },
+  {
+    name: 'Figma',
+    percentage: '10',
+    category: 'comfortable',
+  },
 ]
 export const LANGUAGES = [
   {
-    name: 'Ruby On Rails',
+    name: 'Ruby',
     percentage: '90',
     category: 'comfortable',
   },
@@ -97,7 +92,7 @@ export const LANGUAGES = [
   },
   {
     name: 'CSS',
-    percentage: '75',
+    percentage: '70',
     category: 'comfortable',
   },
   {
@@ -127,7 +122,7 @@ export const LANGUAGES = [
   },
   {
     name: 'SQL',
-    percentage: '40',
+    percentage: '20',
     category: 'comfortable',
   },
 ]

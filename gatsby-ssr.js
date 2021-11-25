@@ -47,5 +47,5 @@ const MagicScriptTag = () => {
 // onRenderBody is a gatsby lifecycle method which is run when gatsby is generating our html
 export const onRenderBody = ({ setPreBodyComponents }) => {
   // setPreBodyComponents will inject a react element 'above' everything else it builds in our <body> tag
-  setPreBodyComponents(<MagicScriptTag />)
+  setPreBodyComponents(<MagicScriptTag key={69} />)
 }

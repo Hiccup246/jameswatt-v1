@@ -11,7 +11,7 @@ const LanguageSkills = () => {
   return (
     <div className="language-skills">
       <div className="language-skills__header">
-        <h4>🔡Language Skills</h4>
+        <h4>🔡Language Proficiency Highlights</h4>
       </div>
 
       <div className="language-skills__technologies">

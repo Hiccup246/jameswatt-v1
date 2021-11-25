@@ -1,6 +1,6 @@
 import React from 'react'
 
-import bookDark from '../../assets/book-dark.gif'
+import bookDark from '../../assets/book-dark-2.gif'
 import bookLight from '../../assets/book-light.gif'
 import Completed from '../../assets/svg/clipboard-check.svg'
 import { BOOKS } from '../../constants'
