@@ -86,7 +86,7 @@ export const LANGUAGES = [
     category: 'comfortable',
   },
   {
-    name: 'Javascript',
+    name: 'Javascript + Typescript',
     percentage: '80',
     category: 'comfortable',
   },
@@ -135,7 +135,7 @@ export const PROGRAMMING_EXPERIENCES = [
       'APLYiD is a trusted & accredited digital ID solution (AML + KYC) designed to streamline your customer onboarding with a first-class user experience',
     bullets: [
       'Currently working as a full stack developer utilising Vue.JS, Angular.JS and Ruby on Rails to create AML and financial products from inception and design to deployment and maintenance',
-      'Joined the company as the second developer and 13th employee and helped grow the product using agile practices into a strong team of 7 and an organisation of over 50 people',
+      'Joined the company as the second developer and 13th employee. Helped grow the product, team and organisation using agile practices into a strong team of 7 and an organisation of over 50 people',
       'Worked closley with the founders of the company, key sales staff, designers and customer support to design products from the ground up',
     ],
   },
@@ -166,7 +166,7 @@ export const PROGRAMMING_EXPERIENCES = [
     role: 'Intern Front End Developer',
     company: 'BNZ',
     dateRange: '2017/11 - 2018/02',
-    description: "Bank of New Zealand is one of New Zealand's big four banks.",
+    description: "Bank of New Zealand is one of New Zealand's big four banks",
     bullets: [
       'Developed front-end software using the React.JS framework alongside technologies such as JavaScript, HTML, CSS, JSS and Node.JS to create various visual frontend components',
       'Worked closely with experienced product designers and owners in a small agile team requiring tight communication',
