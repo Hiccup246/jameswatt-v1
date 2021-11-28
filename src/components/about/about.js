@@ -13,11 +13,11 @@ const About = () => (
       <p>
         I'm a 24 year old full stack software developer based out of Auckland,
         New Zealand. I enjoy software development for its sometimes mind bending
-        mix of subjectiveness and objectivness. There isn't always a single
-        right way of doing things, there is definitely a wrong way and certainly
-        nicer ways. Figuring out for myself and exploring how others define good
-        code and how to write good code is what I find enjoyable about software
-        development.
+        mix of subjectiveness and objectivness. There is almost never a single
+        right way of doing things in software. There are definitely confusing
+        ways and certainly nicer, cleaner ways. Figuring out for myself and
+        exploring how others define good code and how to write good code is what
+        I find enjoyable about software development.
       </p>
 
       <p>

@@ -197,8 +197,8 @@ export const BOOKS = [
   },
   {
     name: 'On Having No Head',
-    author: 'Tolkien',
-    genre: 'Fantasy',
+    author: 'Douglas E. Harding',
+    genre: 'Spirituality',
     status: 'Read',
     dateCompleted: '',
   },

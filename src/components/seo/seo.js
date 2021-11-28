@@ -230,6 +230,20 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
       <script type="application/ld+json">
         {JSON.stringify(schemaOrgWebPage)}
       </script>
+      Global site tag (gtag.js) - Google Analytics
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-SZ6258S46F"
+      ></script>
+      <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-SZ6258S46F');
+        `}
+      </script>
     </Helmet>
   )
 }
