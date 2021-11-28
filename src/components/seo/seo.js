@@ -4,11 +4,6 @@ import { useStaticQuery, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 
-import favIconApple from '../../assets/favicons/apple-touch-icon.png'
-import favIcon16 from '../../assets/favicons/favicon-16x16.png'
-import favIcon32 from '../../assets/favicons/favicon-32x32.png'
-import favIconIco16 from '../../assets/favicons/favicon.ico'
-
 // Taken from https://www.gatsbyjs.com/tutorial/seo-and-social-sharing-cards-tutorial
 function SEO({ description, lang, meta, image: metaImage, title }) {
   const { site } = useStaticQuery(
