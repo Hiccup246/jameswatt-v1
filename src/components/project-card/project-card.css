@@ -1,10 +1,10 @@
 .projects__card {
   background-color: var(--secondary-color);
   border-radius: 18px;
-  height: 215px;
+  height: 350px;
   position: relative;
   display: flex;
-  flex: 0 0 200px;
+  flex: 0 0 290px;
 }
 
 .projects__card-body {
@@ -71,6 +71,8 @@
 
 .projects__card-link:hover .fa-link {
   visibility: visible;
+  transform: translate(8px, 0px);
+  transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
   fill: var(--grey-font-color);
 }
 
