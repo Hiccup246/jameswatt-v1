@@ -189,10 +189,17 @@ export const PROGRAMMING_EXPERIENCES = [
 ]
 export const BOOKS = [
   {
-    name: 'Rage',
+    name: 'Peril',
     author: 'Bob Woodward',
     genre: 'Politics',
     status: 'Reading',
+    dateCompleted: '',
+  },
+  {
+    name: 'Rage',
+    author: 'Bob Woodward',
+    genre: 'Politics',
+    status: 'Read',
     dateCompleted: '',
   },
   {
