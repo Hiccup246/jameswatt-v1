@@ -189,9 +189,9 @@ export const PROGRAMMING_EXPERIENCES = [
 ]
 export const BOOKS = [
   {
-    name: 'Peril',
-    author: 'Bob Woodward',
-    genre: 'Politics',
+    name: 'Clean Code',
+    author: 'Robert C. Martin',
+    genre: 'Programming',
     status: 'Reading',
     dateCompleted: '',
   },
