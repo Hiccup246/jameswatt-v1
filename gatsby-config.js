@@ -11,10 +11,16 @@ module.exports = {
     twitter: '@itsjameswatt',
     keywords: [
       'James Watt',
-      'James Watt',
       'James Watt Software Engineer',
       'James Watt Portfolio',
       'James Watt Software Developer',
+      'James Watt Tech',
+      'James Watt Developer',
+      'James Watt Website',
+      'James Watt Coder',
+      'James Watt Programmer',
+      'James Watt Full Stach Developer',
+      'James Watt Crypto',
     ],
   },
   plugins: [
