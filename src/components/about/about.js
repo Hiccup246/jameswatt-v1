@@ -25,7 +25,7 @@ const About = () => (
         web3, blockchain and smart contract development i.e. Crypto. Outside of
         software my interests include hiking throughout the New Zealand native
         bush, reading various books relating to topics such as sociology,
-        politics, fantasy and philosophy, trying our American and New Zealand
+        politics, fantasy and philosophy, trying out American and New Zealand
         craft beers and...sensory deprivation tanks ;)
       </p>
     </div>
