@@ -6,7 +6,14 @@ import { ThemeContext } from '../theme-context/theme-context'
 
 import './project-card.css'
 
-const ProjectCard = ({ imageSrc, description, link, linkText }) => {
+const ProjectCard = ({
+  imageSrc,
+  description,
+  name,
+  completedDate,
+  type,
+  links,
+}) => {
   function rotateIcon(e) {
     e.preventDefault()
 
@@ -21,19 +28,36 @@ const ProjectCard = ({ imageSrc, description, link, linkText }) => {
       .classList.toggle('projects__card-body--checked')
   }
 
-  const { siteTheme, setSiteTheme } = React.useContext(ThemeContext)
+  const { siteTheme } = React.useContext(ThemeContext)
 
   return (
     <div className="projects__card">
       <div className="projects__card-body">
         {imageSrc}
+        <div className="projects__content-container">
+          <div>
+            <div className="projects__name">{name}</div>
+            <div className="projects__sub-content">
+              {type}
+              <ul className="projects__links-list">
+                {links.map((item) => (
+                  <li>
+                    <a href={item.link}>{item.linkText}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
 
-        <div className="projects__card-link">
+          <div className="projects__completed-date">{completedDate}</div>
+        </div>
+        {/* <div className="projects__card-link">
+          {name}
           <a href={link}>
             {linkText}
             <Link className="projects__link fa-link" />
           </a>
-        </div>
+        </div> */}
       </div>
 
       <div className="projects__body-overlay">
