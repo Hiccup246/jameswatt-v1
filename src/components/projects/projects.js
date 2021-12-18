@@ -22,6 +22,13 @@ const Projects = () => {
     />
   )
 
+  function cardImage(imageName) {
+    return {
+      'crypto-zombies': zombieImg,
+      'go-blockchain': goImg,
+    }[imageName]
+  }
+
   return (
     <div className="projects">
       <h4>🚧Projects</h4>
@@ -29,7 +36,7 @@ const Projects = () => {
       <div className="projects__slider">
         <ProjectCard
           name="Crypto Zombies Course"
-          imageSrc={zombieImg}
+          imageSrc={cardImage('crypto-zombies')}
           description="Crypto zombies is a solidity programming course (the smart contracts language notably used by etherium). I completed the beginner, intermediate and advanced solidity programming tutorials which introduced concepts such as oracles and smart contract design."
           completedDate="09/92/1020"
           type="Online Course"
@@ -39,7 +46,7 @@ const Projects = () => {
         />
         <ProjectCard
           name="Bitcoin Blockchain in Go"
-          imageSrc={goImg}
+          imageSrc={cardImage('go-blockchain')}
           description="I completed a 10 part youtube tutorial which involved re creating key aspects of the bitcoin blockchain such as transactions, encryption, wallets and mining using the functional programming language Go."
           completedDate="22/03/2022"
           type="Youtube Tutorial Series"
