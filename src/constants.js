@@ -294,3 +294,56 @@ export const BOOKS = [
     dateCompleted: '',
   },
 ]
+export const PROJECTS = [
+  {
+    name: 'Crypto Zombies Course',
+    imageName: 'cryptoZombies',
+    description:
+      'Crypto zombies is a solidity programming course (the smart contracts language notably used by etherium). I completed the beginner, intermediate and advanced solidity programming tutorials which introduced concepts such as oracles and smart contract design.',
+    completedDate: '09/92/1020',
+    type: 'Online Course',
+    links: [
+      { linkText: 'Course home page', link: 'https://cryptozombies.io/' },
+    ],
+  },
+  {
+    name: 'Bitcoin Blockchain in Go',
+    imageName: 'goBlockchain',
+    description:
+      'I completed a 10 part youtube tutorial which involved re creating key aspects of the bitcoin blockchain such as transactions, encryption, wallets and mining using the functional programming language Go.',
+    completedDate: '22/03/2022',
+    type: 'Youtube Tutorial Series',
+    links: [
+      {
+        linkText: 'Tutorial page',
+        link: 'https://www.youtube.com/watch?v=mYlHT9bB6OE',
+      },
+    ],
+  },
+  {
+    name: 'Simple Online Text Edit',
+    imageName: 'simpleOnlineTextEdit',
+    description: '',
+    completedDate: '22/03/2022',
+    type: 'Personal Project',
+    links: [
+      {
+        linkText: 'freeonlinetextedit.com',
+        link: 'https://www.freeonlinetextedit.com',
+      },
+    ],
+  },
+  {
+    name: 'Personal Website (This Site)',
+    imageName: 'jamesWattWebsite',
+    description: '',
+    completedDate: '22/03/2022',
+    type: 'Personal Project',
+    links: [
+      {
+        linkText: 'jameswatt.io',
+        link: 'https://www.jameswatt.io',
+      },
+    ],
+  },
+]
