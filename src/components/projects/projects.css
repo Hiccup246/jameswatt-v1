@@ -13,3 +13,9 @@
 .projects__slider > div + div {
   margin-left: 40px;
 }
+
+.jameswatt-site {
+  height: 140px;
+  width: 140px;
+  border-radius: 9999px;
+}

@@ -64,13 +64,20 @@
   opacity: 1;
 }
 
-.projects__card-picture {
+/* .projects__card-picture {
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
   width: 260px;
   height: 175px;
-  /* height: 170px; */
   z-index: 1;
+} */
+
+.projects__image {
+  /* height: 175px; */
+}
+
+.projects__card-picture {
+  /* height: 175px; */
 }
 
 .projects__image-container {

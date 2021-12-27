@@ -9,22 +9,28 @@ import ProjectCard from '../project-card/project-card'
 const Projects = () => {
   const goBlockchainImg = (
     <StaticImage
+      height="175px"
+      objectFit="contain"
       className="projects__card-picture"
-      src="../../assets/project-images/go-blockchain.png"
+      src="../../assets/project-images/test.png"
       alt="Tensor Go Blockchain Tutorial Logo"
     />
   )
 
   const cryptoZombiesImg = (
     <StaticImage
+      height="175px"
+      objectFit="contain"
       className="projects__card-picture"
-      src="../../assets/project-images/crypto-zombies.png"
+      src="../../assets/project-images/toto.png"
       alt="Crypto Zombies Logo"
     />
   )
 
   const freeOnlineTextEditImg = (
     <StaticImage
+      height="175px"
+      objectFit="contain"
       className="projects__card-picture"
       src="../../assets/project-images/free-online-text-edit.png"
       alt="Free Online Text Edit Logo"
@@ -33,7 +39,9 @@ const Projects = () => {
 
   const jamesWattWebsiteImg = (
     <StaticImage
-      className="projects__card-picture"
+      height="175px"
+      objectFit="contain"
+      className="jameswatt-site projects__card-picture"
       src="../../assets/project-images/jameswatt-personal-website.png"
       alt="James Watt Personal Website Logo"
     />
