@@ -1,72 +1,12 @@
 import * as React from 'react'
 
-import { StaticImage } from 'gatsby-plugin-image'
-
 import './projects.css'
 import { PROJECTS } from '../../constants'
 import ProjectCard from '../project-card/project-card'
 
 const Projects = () => {
-  const goBlockchainImg = (
-    <StaticImage
-      height="175px"
-      objectFit="contain"
-      className="projects__card-picture"
-      src="../../assets/project-images/test.png"
-      alt="Tensor Go Blockchain Tutorial Logo"
-    />
-  )
-
-  const cryptoZombiesImg = (
-    <StaticImage
-      height="175px"
-      objectFit="contain"
-      className="projects__card-picture"
-      src="../../assets/project-images/toto.png"
-      alt="Crypto Zombies Logo"
-    />
-  )
-
-  const freeOnlineTextEditImg = (
-    <StaticImage
-      height="175px"
-      objectFit="contain"
-      className="projects__card-picture"
-      src="../../assets/project-images/free-online-text-edit.png"
-      alt="Free Online Text Edit Logo"
-    />
-  )
-
-  const jamesWattWebsiteImg = (
-    <StaticImage
-      height="175px"
-      objectFit="contain"
-      className="jameswatt-site projects__card-picture"
-      src="../../assets/project-images/jameswatt-personal-website.png"
-      alt="James Watt Personal Website Logo"
-    />
-  )
-
-  function cardImage(imageName) {
-    return {
-      cryptoZombies: cryptoZombiesImg,
-      goBlockchain: goBlockchainImg,
-      simpleOnlineTextEdit: freeOnlineTextEditImg,
-      jamesWattWebsite: jamesWattWebsiteImg,
-    }[imageName]
-  }
-
-  const projectCards = PROJECTS.map((project) => {
-    return (
-      <ProjectCard
-        name={project.name}
-        imageSrc={cardImage(project.imageName)}
-        description={project.description}
-        completedDate={project.completedDate}
-        type={project.type}
-        links={project.links}
-      />
-    )
+  const projectCards = PROJECTS.map((project, index) => {
+    return <ProjectCard data={project} key={index} />
   })
 
   return (

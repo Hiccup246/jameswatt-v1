@@ -1,3 +1,8 @@
+import cryptoZombies from './assets/project-images/crypto-zombies-eth.png'
+import freeOnlineTextEdit from './assets/project-images/free-online-text-edit.png'
+import goBlockchain from './assets/project-images/golang-blockchain.png'
+import jamesWattWebsite from './assets/project-images/jameswatt-personal-website.png'
+
 export const THEME_COLORS = {
   '--primary-color': {
     light: '#fdf5e6',
@@ -298,6 +303,7 @@ export const PROJECTS = [
   {
     name: 'Crypto Zombies Course',
     imageName: 'cryptoZombies',
+    imageSrc: cryptoZombies,
     description:
       'Crypto zombies is a solidity programming course (the smart contracts language notably used by etherium). I completed the beginner, intermediate and advanced solidity programming tutorials which introduced concepts such as oracles and smart contract design.',
     completedDate: '09/92/1020',
@@ -309,6 +315,7 @@ export const PROJECTS = [
   {
     name: 'Bitcoin Blockchain in Go',
     imageName: 'goBlockchain',
+    imageSrc: goBlockchain,
     description:
       'I completed a 10 part youtube tutorial which involved re creating key aspects of the bitcoin blockchain such as transactions, encryption, wallets and mining using the functional programming language Go.',
     completedDate: '22/03/2022',
@@ -323,6 +330,7 @@ export const PROJECTS = [
   {
     name: 'Simple Online Text Edit',
     imageName: 'simpleOnlineTextEdit',
+    imageSrc: freeOnlineTextEdit,
     description: '',
     completedDate: '22/03/2022',
     type: 'Personal Project',
@@ -336,6 +344,7 @@ export const PROJECTS = [
   {
     name: 'Personal Website (This Site)',
     imageName: 'jamesWattWebsite',
+    imageSrc: jamesWattWebsite,
     description: '',
     completedDate: '22/03/2022',
     type: 'Personal Project',

@@ -1,0 +1,36 @@
+.project-overview {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.project-overview__name {
+  font-family: var(--body-bold);
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+
+.project-overview__links-list {
+  margin-top: 5px;
+}
+
+.project-overview__description {
+  height: 40%;
+  overflow: scroll;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.project-overview__image-wrapper {
+  height: 60%;
+}
+
+.project-overview__image {
+  margin: 0 auto;
+  object-fit: scale-down;
+  height: 100%;
+  width: 100%;
+}

@@ -1,19 +1,15 @@
 import * as React from 'react'
 
-import Link from '../../assets/svg/link-solid.svg'
 import ContentToggle from '../content-toggle/content-toggle'
 import { ThemeContext } from '../theme-context/theme-context'
+import ProjectDescription from './project-description/project-description'
+import ProjectOverview from './project-overview/project-overview'
 
 import './project-card.css'
 
-const ProjectCard = ({
-  imageSrc,
-  description,
-  name,
-  completedDate,
-  type,
-  links,
-}) => {
+const ProjectCard = ({ data }) => {
+  const { imageSrc, description, name, completedDate, type, links } = data
+
   function rotateIcon(e) {
     e.preventDefault()
 
@@ -21,46 +17,29 @@ const ProjectCard = ({
 
     card.getElementsByClassName('icon')[0].classList.toggle('icon--checked')
     card
-      .getElementsByClassName('projects__card-description')[0]
-      .classList.toggle('projects__card-description--checked')
+      .getElementsByClassName('projects__description-wrapper')[0]
+      .classList.toggle('projects__description-wrapper--checked')
     card
-      .getElementsByClassName('projects__card-body')[0]
-      .classList.toggle('projects__card-body--checked')
+      .getElementsByClassName('projects__overview-wrapper')[0]
+      .classList.toggle('projects__overview-wrapper--checked')
   }
 
   const { siteTheme } = React.useContext(ThemeContext)
 
   return (
     <div className="projects__card">
-      <div className="projects__card-body">
-        {imageSrc}
-        <div className="projects__content-container">
-          <div>
-            <div className="projects__name">{name}</div>
-            <div className="projects__sub-content">
-              {type}
-              <ul className="projects__links-list">
-                {links.map((item) => (
-                  <li>
-                    <a href={item.link}>{item.linkText}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="projects__completed-date">{completedDate}</div>
+      <div className="projects__content-wrapper">
+        <div className="projects__overview-wrapper">
+          <ProjectOverview
+            className="projects__card-body"
+            imageSrc={imageSrc}
+            name={name}
+            type={type}
+            links={links}
+            completedDate={completedDate}
+          />
         </div>
-        {/* <div className="projects__card-link">
-          {name}
-          <a href={link}>
-            {linkText}
-            <Link className="projects__link fa-link" />
-          </a>
-        </div> */}
-      </div>
 
-      <div className="projects__body-overlay">
         <div
           className={
             'projects__icon-wrapper ' +
@@ -70,7 +49,12 @@ const ProjectCard = ({
           <ContentToggle onClickCallback={rotateIcon} />
         </div>
 
-        <div className="projects__card-description">{description}</div>
+        <div className="projects__description-wrapper">
+          <ProjectDescription
+            className="projects__body-overlay"
+            description={description}
+          />
+        </div>
       </div>
     </div>
   )

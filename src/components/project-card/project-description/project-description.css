@@ -1,0 +1,7 @@
+.projects__card-description {
+  background-color: var(--secondary-color);
+  overflow-y: scroll;
+  font-size: 15px;
+  height: 100%;
+  width: 100%;
+}
