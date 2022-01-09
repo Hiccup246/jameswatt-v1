@@ -194,11 +194,25 @@ export const PROGRAMMING_EXPERIENCES = [
 ]
 export const BOOKS = [
   {
+    name: '21 Lessons for the 21st Century',
+    author: 'Yuval Noah Harari',
+    genre: 'Sociology',
+    status: 'Reading',
+    dateCompleted: '',
+  },
+  {
+    name: 'The Anthropocene Reviewed',
+    author: 'John Green',
+    genre: 'Short Stories',
+    status: 'Read',
+    dateCompleted: '2022',
+  },
+  {
     name: 'Clean Code',
     author: 'Robert C. Martin',
     genre: 'Programming',
-    status: 'Reading',
-    dateCompleted: '',
+    status: 'Read',
+    dateCompleted: '2021',
   },
   {
     name: 'Rage',
