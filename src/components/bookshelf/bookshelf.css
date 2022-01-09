@@ -54,11 +54,13 @@ td h4 {
   flex-direction: column;
   padding-right: 10px;
   word-break: keep-all;
+  width: 520px;
 }
 
 .bookshelf__name-cell h4 {
   color: var(--body-font-color);
   margin-bottom: 0;
+  max-width: 540px;
 }
 
 th {
