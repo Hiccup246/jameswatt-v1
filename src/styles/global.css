@@ -82,3 +82,6 @@ h4 {
 .bold {
   font-family: var(--body-bold);
 }
+ b {
+   font-family: var(--body-bold);
+ }

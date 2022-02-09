@@ -1,5 +1,5 @@
 ## TODO
-- Update the projects component
+- ~~Update the projects component~~
 - Update projects text and images
 - Refactor any messy components
 - Check lighthouse report and fix performance issues

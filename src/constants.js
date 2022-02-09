@@ -1,3 +1,5 @@
+import * as React from 'react'
+
 import cryptoZombies from './assets/project-images/crypto-zombies-eth.png'
 import freeOnlineTextEdit from './assets/project-images/free-online-text-edit.png'
 import goBlockchain from './assets/project-images/golang-blockchain.png'
@@ -329,29 +331,34 @@ export const BOOKS = [
 ]
 export const PROJECTS = [
   {
-    name: 'Crypto Zombies Course',
-    imageName: 'cryptoZombies',
-    imageSrc: cryptoZombies,
-    description:
-      'Crypto zombies is a solidity programming course (the smart contracts language notably used by etherium). I completed the beginner, intermediate and advanced solidity programming tutorials which introduced concepts such as oracles and smart contract design.',
-    completedDate: '09/92/1020',
-    type: 'Online Course',
-    links: [
-      { linkText: 'Course home page', link: 'https://cryptozombies.io/' },
-    ],
-  },
-  {
-    name: 'Bitcoin Blockchain in Go',
-    imageName: 'goBlockchain',
-    imageSrc: goBlockchain,
-    description:
-      'I completed a 10 part youtube tutorial which involved re creating key aspects of the bitcoin blockchain such as transactions, encryption, wallets and mining using the functional programming language Go.',
-    completedDate: '22/03/2022',
-    type: 'Youtube Tutorial Series',
+    name: 'Personal Website (This Site)',
+    imageName: 'jamesWattWebsite',
+    imageSrc: jamesWattWebsite,
+    description: (
+      <div>
+        <p>
+          I created my own personal online resume website which you are
+          currently viewing.
+        </p>
+        <p>
+          The website was designed in <b>figma</b> and developed using{' '}
+          <b>Gatsby</b>, a static site generator using a <b>react</b>-based
+          framework. During construction I developed my knowledge of:
+          <ul>
+            <li>SEO</li>
+            <li>Static site generation</li>
+            <li>Light/Dark Theme</li>
+            <li>Figma Design</li>
+          </ul>
+        </p>
+      </div>
+    ),
+    completedDate: 'Completed - 2022',
+    type: 'Personal Project',
     links: [
       {
-        linkText: 'Tutorial page',
-        link: 'https://www.youtube.com/watch?v=mYlHT9bB6OE',
+        linkText: 'jameswatt.io',
+        link: 'https://www.jameswatt.io',
       },
     ],
   },
@@ -359,8 +366,19 @@ export const PROJECTS = [
     name: 'Simple Online Text Edit',
     imageName: 'simpleOnlineTextEdit',
     imageSrc: freeOnlineTextEdit,
-    description: '',
-    completedDate: '22/03/2022',
+    description: (
+      <div>
+        <p>
+          I created a simple free online text edit application using raw HTML,
+          CSS and Javascript to aid myself during development.
+        </p>
+        <p>
+          The orignal purpose of the application was to serve as a easy place to
+          remove formatting from copy pasted text.
+        </p>
+      </div>
+    ),
+    completedDate: 'Completed - 2021',
     type: 'Personal Project',
     links: [
       {
@@ -370,16 +388,54 @@ export const PROJECTS = [
     ],
   },
   {
-    name: 'Personal Website (This Site)',
-    imageName: 'jamesWattWebsite',
-    imageSrc: jamesWattWebsite,
-    description: '',
-    completedDate: '22/03/2022',
-    type: 'Personal Project',
+    name: 'Crypto Zombies Course',
+    imageName: 'cryptoZombies',
+    imageSrc: cryptoZombies,
+    description: (
+      <div>
+        <p>
+          Crypto zombies is a solidity programming course (the smart contracts
+          language notably used by <b>etherium</b>)
+        </p>
+        <p>
+          I completed the beginner, intermediate and advanced solidity
+          programming tutorials which introduced concepts such as <b>oracles</b>{' '}
+          and <b>smart contract design</b>.
+        </p>
+      </div>
+    ),
+
+    completedDate: 'Completed - 2021',
+    type: 'Online Course',
+    links: [
+      { linkText: 'Course home page', link: 'https://cryptozombies.io/' },
+    ],
+  },
+  {
+    name: 'Bitcoin Blockchain in Go',
+    imageName: 'goBlockchain',
+    imageSrc: goBlockchain,
+    description: (
+      <div>
+        <p>
+          I completed a 10 part youtube tutorial which involved using the using
+          the <b>functional programming language Go</b> to re creating key
+          aspects of the bitcoin blockchain such as:
+          <ul>
+            <li>transactions</li>
+            <li>encryption</li>
+            <li>wallets</li>
+            <li>mining</li>
+          </ul>
+        </p>
+      </div>
+    ),
+    completedDate: 'Completed - 2021',
+    type: 'Youtube Tutorial Series',
     links: [
       {
-        linkText: 'jameswatt.io',
-        link: 'https://www.jameswatt.io',
+        linkText: 'Tutorial page',
+        link: 'https://www.youtube.com/watch?v=mYlHT9bB6OE',
       },
     ],
   },

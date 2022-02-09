@@ -34,3 +34,7 @@
   height: 100%;
   width: 100%;
 }
+
+.project-overview__completed-date {
+  font-size: small;
+}

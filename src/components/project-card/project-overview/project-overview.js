@@ -6,7 +6,9 @@ const ProjectOverview = ({ imageSrc, name, type, links, completedDate }) => {
   function generateLinksList(projectLinks) {
     return projectLinks.map((item, index) => (
       <li key={index}>
-        <a href={item.link}>{item.linkText}</a>
+        <a className="link--regular-font link--bottom" href={item.link}>
+          {item.linkText}
+        </a>
       </li>
     ))
   }
@@ -23,7 +25,7 @@ const ProjectOverview = ({ imageSrc, name, type, links, completedDate }) => {
         </ul>
       </div>
 
-      <div>{completedDate}</div>
+      <div className="project-overview__completed-date">{completedDate}</div>
     </div>
   )
 
