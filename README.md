@@ -1,11 +1,13 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+## TODO
+- Update the projects component
+- Update projects text and images
+- Refactor any messy components
+- Check lighthouse report and fix performance issues
+- Convert divs to buttons where possible
+- Fix contrast colour issues
+- Make employment history buttons more button like
+- Update skills section
+
 
 ## 🚀 Quick start
 

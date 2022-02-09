@@ -194,11 +194,25 @@ export const PROGRAMMING_EXPERIENCES = [
 ]
 export const BOOKS = [
   {
+    name: 'The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life',
+    author: 'Mark Manson',
+    genre: 'Self Help',
+    status: 'Reading',
+    dateCompleted: '',
+  },
+  {
+    name: 'Peril',
+    author: 'Bob Woodward, Robert Costa',
+    genre: 'Politics',
+    status: 'Read',
+    dateCompleted: '2022',
+  },
+  {
     name: '21 Lessons for the 21st Century',
     author: 'Yuval Noah Harari',
     genre: 'Sociology',
-    status: 'Reading',
-    dateCompleted: '',
+    status: 'Read',
+    dateCompleted: '2022',
   },
   {
     name: 'The Anthropocene Reviewed',
