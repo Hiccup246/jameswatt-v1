@@ -1,6 +1,6 @@
 ## TODO
 - ~~Update the projects component~~
-- Update projects text and images
+- ~~Update projects text and images~~
 - Refactor any messy components
 - Check lighthouse report and fix performance issues
 - Convert divs to buttons where possible

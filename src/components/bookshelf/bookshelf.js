@@ -37,6 +37,8 @@ const Bookshelf = () => {
     } else {
       return (
         <img
+          width="19px"
+          height="19px"
           className="bookshelf__reading-icon"
           src={siteTheme === 'dark' ? bookDark : bookLight}
           alt="Currently reading"

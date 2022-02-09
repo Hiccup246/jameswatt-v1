@@ -1,9 +1,9 @@
 import * as React from 'react'
 
-import cryptoZombies from './assets/project-images/crypto-zombies-eth.png'
-import freeOnlineTextEdit from './assets/project-images/free-online-text-edit.png'
-import goBlockchain from './assets/project-images/golang-blockchain.png'
-import jamesWattWebsite from './assets/project-images/jameswatt-personal-website.png'
+import cryptoZombies from './assets/project-images/crypto-zombies-eth.webp'
+import freeOnlineTextEdit from './assets/project-images/free-online-text-edit.webp'
+import goBlockchain from './assets/project-images/golang-blockchain.webp'
+import jamesWattWebsite from './assets/project-images/jameswatt-personal-website.webp'
 
 export const THEME_COLORS = {
   '--primary-color': {
