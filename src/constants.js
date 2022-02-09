@@ -1,5 +1,7 @@
 import * as React from 'react'
 
+import { StaticImage } from 'gatsby-plugin-image'
+
 import cryptoZombies from './assets/project-images/crypto-zombies-eth.webp'
 import freeOnlineTextEdit from './assets/project-images/free-online-text-edit.webp'
 import goBlockchain from './assets/project-images/golang-blockchain.webp'
@@ -333,8 +335,15 @@ export const PROJECTS = [
   {
     name: 'Personal Website (This Site)',
     imageName: 'jamesWattWebsite',
-    imageSrc: jamesWattWebsite,
-    imageAlt: 'Photo of James Watt',
+    imageSrc: (
+      <StaticImage
+        width={258}
+        height={210}
+        className="project-overview__image"
+        src="./assets/project-images/jameswatt-personal-website.webp"
+        alt="Photo of James Watt"
+      />
+    ),
     description: (
       <div>
         <p>
@@ -345,13 +354,13 @@ export const PROJECTS = [
           The website was designed in <b>figma</b> and developed using{' '}
           <b>Gatsby</b>, a static site generator using a <b>react</b>-based
           framework. During construction I developed my knowledge of:
-          <ul>
-            <li>SEO</li>
-            <li>Static site generation</li>
-            <li>Light/Dark Theme</li>
-            <li>Figma Design</li>
-          </ul>
         </p>
+        <ul>
+          <li>SEO</li>
+          <li>Static site generation</li>
+          <li>Light/Dark Theme</li>
+          <li>Figma Design</li>
+        </ul>
       </div>
     ),
     completedDate: 'Completed - 2022',
@@ -366,8 +375,16 @@ export const PROJECTS = [
   {
     name: 'Simple Online Text Edit',
     imageName: 'simpleOnlineTextEdit',
-    imageSrc: freeOnlineTextEdit,
-    imageAlt: 'Windows 95 notepad logo',
+    imageSrc: (
+      <StaticImage
+        width={258}
+        height={210}
+        className="project-overview__image"
+        transformOptions={{ fit: 'fit', cropFocus: 'attention' }}
+        src="./assets/project-images/free-online-text-edit.webp"
+        alt="Windows 95 notepad logo"
+      />
+    ),
     description: (
       <div>
         <p>
@@ -392,7 +409,15 @@ export const PROJECTS = [
   {
     name: 'Crypto Zombies Course',
     imageName: 'cryptoZombies',
-    imageSrc: cryptoZombies,
+    imageSrc: (
+      <StaticImage
+        width={258}
+        height={210}
+        className="project-overview__image"
+        src="./assets/project-images/crypto-zombies-eth.webp"
+        alt="Windows 95 notepad logo"
+      />
+    ),
     imageAlt: 'Crypto Zombies Logo',
     description: (
       <div>
@@ -417,7 +442,15 @@ export const PROJECTS = [
   {
     name: 'Bitcoin Blockchain in Go',
     imageName: 'goBlockchain',
-    imageSrc: goBlockchain,
+    imageSrc: (
+      <StaticImage
+        width={258}
+        height={210}
+        className="project-overview__image"
+        src="./assets/project-images/golang-blockchain.webp"
+        alt="Go Logo"
+      />
+    ),
     imageAlt: 'Go Logo',
     description: (
       <div>
@@ -425,13 +458,13 @@ export const PROJECTS = [
           I completed a 10 part youtube tutorial which involved using the using
           the <b>functional programming language Go</b> to re creating key
           aspects of the bitcoin blockchain such as:
-          <ul>
-            <li>transactions</li>
-            <li>encryption</li>
-            <li>wallets</li>
-            <li>mining</li>
-          </ul>
         </p>
+        <ul>
+          <li>transactions</li>
+          <li>encryption</li>
+          <li>wallets</li>
+          <li>mining</li>
+        </ul>
       </div>
     ),
     completedDate: 'Completed - 2021',

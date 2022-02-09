@@ -39,13 +39,14 @@ const ProjectOverview = ({
   function projectOverviewImage() {
     return (
       <div className="project-overview__image-wrapper">
-        <img
+        {imageSrc}
+        {/* <img
           width="258px"
           height="110px"
           className="project-overview__image"
           src={imageSrc}
           alt={imageAlt}
-        />
+        /> */}
       </div>
     )
   }
