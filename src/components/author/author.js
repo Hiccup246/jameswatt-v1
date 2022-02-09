@@ -10,7 +10,7 @@ const Author = () => (
   <div className="author">
     <StaticImage
       className="author__picture"
-      src="../../assets/authoredit.png"
+      src="../../assets/authoredit.webp"
       alt="Author Picture"
     />
     <div className="author__description">
