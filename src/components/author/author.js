@@ -9,6 +9,8 @@ import LinkedIn from '../../assets/svg/linkedin-brands.svg'
 const Author = () => (
   <div className="author">
     <StaticImage
+      width="140px"
+      height="140px"
       className="author__picture"
       src="../../assets/authoredit.webp"
       alt="Author Picture"

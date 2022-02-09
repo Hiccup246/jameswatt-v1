@@ -40,6 +40,8 @@ const ProjectOverview = ({
     return (
       <div className="project-overview__image-wrapper">
         <img
+          width="258px"
+          height="110px"
           className="project-overview__image"
           src={imageSrc}
           alt={imageAlt}
