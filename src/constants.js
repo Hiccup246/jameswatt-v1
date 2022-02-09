@@ -334,6 +334,7 @@ export const PROJECTS = [
     name: 'Personal Website (This Site)',
     imageName: 'jamesWattWebsite',
     imageSrc: jamesWattWebsite,
+    imageAlt: 'Photo of James Watt',
     description: (
       <div>
         <p>
@@ -366,6 +367,7 @@ export const PROJECTS = [
     name: 'Simple Online Text Edit',
     imageName: 'simpleOnlineTextEdit',
     imageSrc: freeOnlineTextEdit,
+    imageAlt: 'Windows 95 notepad logo',
     description: (
       <div>
         <p>
@@ -391,6 +393,7 @@ export const PROJECTS = [
     name: 'Crypto Zombies Course',
     imageName: 'cryptoZombies',
     imageSrc: cryptoZombies,
+    imageAlt: 'Crypto Zombies Logo',
     description: (
       <div>
         <p>
@@ -415,6 +418,7 @@ export const PROJECTS = [
     name: 'Bitcoin Blockchain in Go',
     imageName: 'goBlockchain',
     imageSrc: goBlockchain,
+    imageAlt: 'Go Logo',
     description: (
       <div>
         <p>
