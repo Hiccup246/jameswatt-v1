@@ -26,6 +26,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-netlify`,
     `gatsby-transformer-sharp`,
     {
       resolve: 'gatsby-plugin-react-svg',

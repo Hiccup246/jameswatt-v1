@@ -8,6 +8,8 @@
 - ~~Fix header accessability issues~~
 - Make employment history buttons more button like
 - Update skills sections
+- Optimise for lighthouse mobile
+- Try to load text from cdn
 
 
 ## 🚀 Quick start
