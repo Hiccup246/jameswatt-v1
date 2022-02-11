@@ -11,7 +11,7 @@ const Projects = () => {
 
   return (
     <div className="projects">
-      <h4>🚧Projects</h4>
+      <h2>🚧Projects</h2>
 
       <div className="projects__slider">{projectCards}</div>
     </div>

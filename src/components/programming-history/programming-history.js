@@ -123,9 +123,9 @@ const ProgrammingHistory = () => {
     initialClick(0)
   });
 
-  return(
+  return (
     <div className="programming-history">
-      <h4>📜Programming History</h4>
+      <h2>📜Programming History</h2>
 
       <div className="tab-component">
         <div className="tab-menu">

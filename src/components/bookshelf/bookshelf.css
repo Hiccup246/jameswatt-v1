@@ -57,9 +57,10 @@ td h4 {
   width: 520px;
 }
 
-.bookshelf__name-cell h4 {
+.bookshelf__name-cell h3 {
   color: var(--body-font-color);
   margin-bottom: 0;
+  margin-top: 0;
   max-width: 540px;
 }
 

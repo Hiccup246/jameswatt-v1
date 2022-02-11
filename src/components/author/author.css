@@ -46,6 +46,10 @@
   margin: 0 15px;
 }
 
+.author__description h1 {
+  margin: 0;
+}
+
 .author__name {
   color: var(--body-font-color);
 }

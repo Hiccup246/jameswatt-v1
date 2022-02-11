@@ -26,6 +26,7 @@ const Author = () => (
           target="_blank"
           rel="noopener noreferrer"
           className="author-icon-wrapper"
+          aria-label="Email Link"
         >
           <Email className="author__icon" />
         </a>
@@ -35,6 +36,7 @@ const Author = () => (
           target="_blank"
           className="author-icon-wrapper"
           rel="noreferrer"
+          aria-label="Linked In Profile"
         >
           <LinkedIn className="author__icon" />
         </a>

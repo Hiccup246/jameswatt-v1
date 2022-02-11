@@ -16,7 +16,18 @@ h4 {
   font-family: var(--header-regular), 'Roboto', 'Franklin Gothic Medium',
     Tahoma, sans-serif;
   color: var(--header-font-color);
-  margin: 0;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+h4 {
+  font-size: 1em;
 }
 
 p,

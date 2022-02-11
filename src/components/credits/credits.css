@@ -18,7 +18,9 @@
   margin: 5px 0;
 }
 
-.credits-list h4 {
+.credits-list h3 {
   font-family: var(--header-bold);
   color: var(--body-font-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }

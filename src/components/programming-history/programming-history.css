@@ -66,6 +66,10 @@
   transition: opacity 0.6s ease-in-out;
 }
 
+.tab-panel h3 {
+  margin: 0;
+}
+
 .experience-points {
   padding: 0px;
   margin: 0px;

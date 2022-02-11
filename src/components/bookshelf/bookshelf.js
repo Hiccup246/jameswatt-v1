@@ -55,7 +55,7 @@ const Bookshelf = () => {
         className={index > 3 ? 'inactive' : ''}
       >
         <td className="bookshelf__name-cell">
-          <h4>{book.name}</h4>
+          <h3>{book.name}</h3>
           <div>{book.author}</div>
         </td>
         <td className="bookshelf__genre-cell">{book.genre}</td>
@@ -68,7 +68,7 @@ const Bookshelf = () => {
 
   return (
     <div className="bookshelf" id="bookshelf">
-      <h4>📚Bookshelf</h4>
+      <h2>📚Bookshelf</h2>
       <div className="bookshelf__wrapper">
         <table className="bookshelf__table td_hide">
           {/* <caption>
