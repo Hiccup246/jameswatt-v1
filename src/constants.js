@@ -2,11 +2,6 @@ import * as React from 'react'
 
 import { StaticImage } from 'gatsby-plugin-image'
 
-import cryptoZombies from './assets/project-images/crypto-zombies-eth.webp'
-import freeOnlineTextEdit from './assets/project-images/free-online-text-edit.webp'
-import goBlockchain from './assets/project-images/golang-blockchain.webp'
-import jamesWattWebsite from './assets/project-images/jameswatt-personal-website.webp'
-
 export const THEME_COLORS = {
   '--primary-color': {
     light: '#fdf5e6',
