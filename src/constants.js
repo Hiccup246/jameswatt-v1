@@ -337,8 +337,8 @@ export const PROJECTS = [
     imageName: 'jamesWattWebsite',
     imageSrc: (
       <StaticImage
-        width={258}
         height={210}
+        imgStyle={{ objectFit: 'scale-down' }}
         className="project-overview__image"
         src="./assets/project-images/jameswatt-personal-website.webp"
         alt="Photo of James Watt"
@@ -356,9 +356,9 @@ export const PROJECTS = [
           framework. During construction I developed my knowledge of:
         </p>
         <ul>
+          <li>HTML, CSS and HTML</li>
           <li>SEO</li>
           <li>Static site generation</li>
-          <li>Light/Dark Theme</li>
           <li>Figma Design</li>
         </ul>
       </div>
@@ -377,10 +377,9 @@ export const PROJECTS = [
     imageName: 'simpleOnlineTextEdit',
     imageSrc: (
       <StaticImage
-        width={258}
         height={210}
         className="project-overview__image"
-        transformOptions={{ fit: 'fit', cropFocus: 'attention' }}
+        imgStyle={{ objectFit: 'scale-down' }}
         src="./assets/project-images/free-online-text-edit.webp"
         alt="Windows 95 notepad logo"
       />
@@ -411,8 +410,8 @@ export const PROJECTS = [
     imageName: 'cryptoZombies',
     imageSrc: (
       <StaticImage
-        width={258}
         height={210}
+        imgStyle={{ objectFit: 'scale-down' }}
         className="project-overview__image"
         src="./assets/project-images/crypto-zombies-eth.webp"
         alt="Windows 95 notepad logo"
@@ -444,8 +443,8 @@ export const PROJECTS = [
     imageName: 'goBlockchain',
     imageSrc: (
       <StaticImage
-        width={258}
         height={210}
+        imgStyle={{ objectFit: 'scale-down' }}
         className="project-overview__image"
         src="./assets/project-images/golang-blockchain.webp"
         alt="Go Logo"

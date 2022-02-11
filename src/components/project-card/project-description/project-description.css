@@ -5,3 +5,7 @@
   height: 100%;
   width: 100%;
 }
+
+.projects__card-description p:first-child {
+  margin-top: 0;
+}
