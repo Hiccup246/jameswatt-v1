@@ -11,7 +11,7 @@ const ToolSkills = () => {
   return (
     <div className="tools-skills">
       <div className="tools-skills__header">
-        <h2>⚙️Tooling Competency Highlights</h2>
+        <h2>⚙️ Tooling Competency Highlights</h2>
       </div>
 
       <div className="tools-skills__technologies">

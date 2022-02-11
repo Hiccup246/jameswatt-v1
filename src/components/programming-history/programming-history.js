@@ -125,7 +125,7 @@ const ProgrammingHistory = () => {
 
   return (
     <div className="programming-history">
-      <h2>📜Programming History</h2>
+      <h2>📜 Programming History</h2>
 
       <div className="tab-component">
         <div className="tab-menu">
