@@ -2,11 +2,12 @@
 - ~~Update the projects component~~
 - ~~Update projects text and images~~
 - Refactor any messy components
-- Check lighthouse report and fix performance issues
+- ~~Check lighthouse report and fix performance issues~~
 - Convert divs to buttons where possible
-- Fix contrast colour issues
+- Fix contrast colour issues (1/2 Completed)
+- ~~Fix header accessability issues~~
 - Make employment history buttons more button like
-- Update skills section
+- Update skills sections
 
 
 ## 🚀 Quick start
