@@ -101,4 +101,5 @@ b {
 button {
   background-color: var(--primary-color);
   border: none;
+  font: unset;
 }

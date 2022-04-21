@@ -65,14 +65,14 @@ const clickOnTab = (e, tabIndex) => {
 
 const tabs = PROGRAMMING_EXPERIENCES.map((element, index) => {
   return (
-    <div
+    <button
       key={index}
       className="tab-item"
       id={'tab-' + index}
       onClick={(e) => clickOnTab(e, index)}
     >
       {element.company}
-    </div>
+    </button>
   )
 })
 
