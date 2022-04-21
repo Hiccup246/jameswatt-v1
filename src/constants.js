@@ -193,10 +193,17 @@ export const PROGRAMMING_EXPERIENCES = [
 ]
 export const BOOKS = [
   {
+    name: 'A Promised Land',
+    author: 'Barack Obama',
+    genre: 'Politics',
+    status: 'Reading',
+    dateCompleted: '',
+  },
+  {
     name: 'The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life',
     author: 'Mark Manson',
     genre: 'Self Help',
-    status: 'Reading',
+    status: 'Read',
     dateCompleted: '',
   },
   {
