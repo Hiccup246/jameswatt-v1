@@ -4,7 +4,7 @@ import {
   SITE_THEME_KEY,
   THEME_COLORS,
   INITIAL_SITE_THEME_CSS_VAR,
-} from './src/constants'
+} from './src/constants/theme-config'
 
 function setInitialSiteTheme() {
   const themeColors = 'kanye'

@@ -11,7 +11,7 @@ export const PROJECTS = [
         height={210}
         imgStyle={{ objectFit: 'scale-down' }}
         className="project-overview__image"
-        src="./assets/project-images/jameswatt-personal-website.webp"
+        src="../assets/project-images/jameswatt-personal-website.webp"
         alt="Photo of James Watt"
       />
     ),
@@ -51,7 +51,7 @@ export const PROJECTS = [
         height={210}
         className="project-overview__image"
         imgStyle={{ objectFit: 'scale-down' }}
-        src="./assets/project-images/free-online-text-edit.webp"
+        src="../assets/project-images/free-online-text-edit.webp"
         alt="Windows 95 notepad logo"
       />
     ),
@@ -84,7 +84,7 @@ export const PROJECTS = [
         height={210}
         imgStyle={{ objectFit: 'scale-down' }}
         className="project-overview__image"
-        src="./assets/project-images/crypto-zombies-eth.webp"
+        src="../assets/project-images/crypto-zombies-eth.webp"
         alt="Windows 95 notepad logo"
       />
     ),
@@ -117,7 +117,7 @@ export const PROJECTS = [
         height={210}
         imgStyle={{ objectFit: 'scale-down' }}
         className="project-overview__image"
-        src="./assets/project-images/golang-blockchain.webp"
+        src="../assets/project-images/golang-blockchain.webp"
         alt="Go Logo"
       />
     ),
