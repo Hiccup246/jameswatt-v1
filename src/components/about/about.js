@@ -11,22 +11,19 @@ const About = () => (
     </div>
     <div className="about__description-short selected">
       <p>
-        I'm a 24 year old full stack software developer based out of Auckland,
-        New Zealand. I enjoy software development for its sometimes mind bending
-        mix of subjectiveness and objectivness. There is almost never a single
-        right way of doing things in software. There are definitely confusing
-        ways and certainly nicer, cleaner ways. Figuring out for myself and
-        exploring how others define good code and how to write good code is what
-        I find enjoyable about software development.
+        I'm a 24 year old full stack software developer based out of London,
+        England and an xpat of New Zealand. I enjoy software development for its
+        sometimes mind bending mix of subjectiveness and objectivness where
+        there is almost never a sliver bullet. This has helped me develop
+        extensive software skill over 6 years of programming and 3 years of
+        working in high performing agile teams.
       </p>
 
       <p>
-        Outside of work my technology interests include functional programming,
-        web3, blockchain and smart contract development i.e. Crypto. Outside of
-        software my interests include hiking throughout the New Zealand native
-        bush, reading various books relating to topics such as sociology,
-        politics, fantasy and philosophy, trying out American and New Zealand
-        craft beers and...sensory deprivation tanks ;)
+        Outside of programming my interests include writing, politics, hiking
+        throughout the world, exploring Londons historic pubs, running, reading
+        books relating to topics such as sociology, politics, fantasy,
+        philosophy and...sensory deprivation tanks ;)
       </p>
     </div>
 
