@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
 import './programming-history.css'
-import { PROGRAMMING_EXPERIENCES } from '../../constants'
+import { PROGRAMMING_EXPERIENCES } from '../../constants/programming-experiences'
 
 const clickOnTab = (e, tabIndex) => {
   const currentTab = e.currentTarget

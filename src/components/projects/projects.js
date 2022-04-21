@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import './projects.css'
-import { PROJECTS } from '../../constants'
+import { PROJECTS } from '../../constants/projects'
 import ProjectCard from '../project-card/project-card'
 
 const Projects = () => {

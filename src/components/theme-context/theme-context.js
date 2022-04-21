@@ -4,7 +4,7 @@ import {
   SITE_THEME_KEY,
   THEME_COLORS,
   INITIAL_SITE_THEME_CSS_VAR,
-} from '../../constants'
+} from '../../constants/theme-config'
 
 // Code taken from https://www.joshwcomeau.com/react/dark-mode/#appendix-tweaks
 // Github of code https://github.com/joshwcomeau/dark-mode-minimal/blob/master/src/components/DarkToggle.js
