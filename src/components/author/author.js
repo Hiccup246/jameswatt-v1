@@ -40,6 +40,7 @@ const Author = () => (
         >
           <LinkedIn className="author__icon" />
         </a>
+        {/* TODO Add CV Icon */}
       </div>
     </div>
   </div>
