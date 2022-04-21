@@ -23,12 +23,12 @@ const ThemeToggle = () => {
   }
 
   return (
-    <div
+    <button
       className="theme-toggle"
       onClick={() => setSiteTheme(siteTheme === 'light' ? 'dark' : 'light')}
     >
       {siteTheme === 'dark' ? getSun() : getMoon()}
-    </div>
+    </button>
   )
 }
 

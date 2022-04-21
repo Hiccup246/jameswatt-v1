@@ -93,6 +93,12 @@ h4 {
 .bold {
   font-family: var(--body-bold);
 }
- b {
-   font-family: var(--body-bold);
- }
+
+b {
+  font-family: var(--body-bold);
+}
+
+button {
+  background-color: var(--primary-color);
+  border: none;
+}
