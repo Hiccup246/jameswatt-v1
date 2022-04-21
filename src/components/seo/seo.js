@@ -35,7 +35,6 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
     metaImage && metaImage.src
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
       : null
-  // const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
 
   // schema.org in JSONLD format
   // https://developers.google.com/search/docs/guides/intro-structured-data
@@ -97,46 +96,6 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
           type: 'image/png',
           sizes: '180x180',
         },
-        // {
-        //   rel: 'apple-touch-icon',
-        //   href: '/apple-touch-icon.png',
-        //   sizes: '152x152',
-        // },
-        // {
-        //   rel: 'apple-touch-icon',
-        //   href: '/apple-touch-icon.png',
-        //   sizes: '57x57',
-        // },
-        // {
-        //   rel: 'apple-touch-icon',
-        //   href: '/apple-touch-icon.png',
-        //   sizes: '114x114',
-        // },
-        // {
-        //   rel: 'apple-touch-icon',
-        //   href: '/apple-touch-icon.png',
-        //   sizes: '72x72',
-        // },
-        // {
-        //   rel: 'apple-touch-icon',
-        //   href: '/apple-touch-icon.png',
-        //   sizes: '144x144',
-        // },
-        // {
-        //   rel: 'apple-touch-icon',
-        //   href: '/apple-touch-icon.png',
-        //   sizes: '60x60',
-        // },
-        // {
-        //   rel: 'apple-touch-icon',
-        //   href: '/apple-touch-icon.png',
-        //   sizes: '120x120',
-        // },
-        // {
-        //   rel: 'apple-touch-icon',
-        //   href: '/apple-touch-icon.png',
-        //   sizes: '76x76',
-        // },
         {
           rel: 'icon',
           href: '/favicon-16x16.png',
@@ -152,13 +111,6 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
         },
       ]}
       title={metaTitle}
-      // titleTemplate={`%s | ${site.siteMetadata.title}`}
-      // script={[
-      //   {
-      //     type: "application/ld+json",
-      //     content: JSON.stringify(schemaOrgWebPage)
-      //   }
-      // ]}
       meta={[
         {
           name: `description`,
