@@ -84,9 +84,12 @@ const Bookshelf = () => {
           <tbody>{booksList}</tbody>
         </table>
 
-        <div className="bookshelf__show-more" onClick={() => showHideBooks()}>
+        <button
+          className="bookshelf__show-more"
+          onClick={() => showHideBooks()}
+        >
           Show More
-        </div>
+        </button>
       </div>
     </div>
   )

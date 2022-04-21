@@ -100,11 +100,13 @@ tbody tr + tr > td {
 
 .bookshelf__show-more {
   border: 1px solid var(--body-font-color);
+  background-color: var(--secondary-color);
   width: fit-content;
   padding: 5px 10px;
   border-radius: 5px;
   margin: 10px auto;
   -webkit-tap-highlight-color: transparent;
+  display: block;
 }
 
 .bookshelf__show-more:hover {
