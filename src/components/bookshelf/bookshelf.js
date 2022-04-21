@@ -70,7 +70,7 @@ const Bookshelf = () => {
     <div className="bookshelf" id="bookshelf">
       <h2>📚 Bookshelf</h2>
       <div className="bookshelf__wrapper">
-        <table className="bookshelf__table td_hide">
+        <table className="bookshelf__table">
           {/* <caption>
           Bookshelf containing previously read and currently reading books
         </caption> */}
