@@ -126,21 +126,29 @@
   margin-top: 5px;
   color: var(--grey-font-color);
   -webkit-text-fill-color: var(--grey-font-color);
-  /* font-size: 10px; */
 }
 
 .company-description {
   padding-bottom: 16px;
 }
 
-@media (max-width: 550px) {
-  .tab-menu > .tab-item:not(:first-child) {
-    margin-top: 0px;
+@media (max-width: 400px) {
+.tab-component {
+    display: block;
+    height: 800px;
   }
+}
 
+@media (max-width: 550px) and (min-width: 401px) {
   .tab-component {
     display: block;
     height: 655px;
+  }
+}
+
+@media (max-width: 550px) {
+  .tab-menu > .tab-item:not(:first-child) {
+    margin-top: 0px;
   }
 
   .tab-menu {
