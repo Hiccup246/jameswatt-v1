@@ -3,7 +3,11 @@ import * as React from 'react'
 import './content-toggle.css'
 
 const ContentToggle = ({ onClickCallback }) => (
-  <button className="icon" onClick={onClickCallback}>
+  <button
+    aria-label="Hide/Display Project Content"
+    className="icon"
+    onClick={onClickCallback}
+  >
     <svg
       className="tile-icon-alt"
       xmlns="http://www.w3.org/2000/svg"

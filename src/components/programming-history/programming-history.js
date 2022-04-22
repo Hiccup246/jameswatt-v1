@@ -66,6 +66,7 @@ const clickOnTab = (e, tabIndex) => {
 const tabs = PROGRAMMING_EXPERIENCES.map((element, index) => {
   return (
     <button
+      aria-label={element.company + ' work experience'}
       key={index}
       className="tab-item"
       id={'tab-' + index}

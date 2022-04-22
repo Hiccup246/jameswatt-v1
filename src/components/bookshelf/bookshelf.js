@@ -85,6 +85,7 @@ const Bookshelf = () => {
         </table>
 
         <button
+          aria-label="Show More Books"
           className="bookshelf__show-more"
           onClick={() => showHideBooks()}
         >
