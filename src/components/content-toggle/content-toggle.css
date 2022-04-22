@@ -1,8 +1,9 @@
 .icon {
   cursor: pointer;
   background-color: black;
-  border-radius: 50%;
+  border-radius: 22px;
   fill: var(--secondary-color);
+  padding: 0;
   height: 22px;
   width: 22px;
   display: flex;
