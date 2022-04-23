@@ -20,9 +20,9 @@ const About = () => (
       </p>
 
       <p>
-        Outside of programming my interests include writing, politics, hiking
+        Outside of programming my interests include writing, journalism, hiking
         throughout the world, exploring Londons historic pubs, running, reading
-        books relating to topics such as sociology, politics, fantasy,
+        books relating to topics such as sociology, fantasy, politics,
         philosophy and...sensory deprivation tanks ;)
       </p>
     </div>
