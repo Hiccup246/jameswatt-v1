@@ -2,8 +2,6 @@ import * as React from 'react'
 
 import './about.css'
 
-const toggleDescription = () => {}
-
 const About = () => (
   <div className="about">
     <div className="about__header">
@@ -11,12 +9,12 @@ const About = () => (
     </div>
     <div className="about__description-short selected">
       <p>
-        I'm a 24 year old full stack software developer based out of London,
-        England and an xpat of New Zealand. I enjoy software development for its
-        sometimes mind bending mix of subjectiveness and objectivness where
-        there is almost never a sliver bullet. This has helped me develop
-        extensive software skill over 6 years of programming and 3 years of
-        working in high performing agile teams.
+        I'm a full stack software developer based out of London, England and an
+        xpat of New Zealand. I enjoy software development for its sometimes mind
+        bending mix of subjectiveness and objectivness where there is almost
+        never a sliver bullet. This has helped me develop extensive software
+        skill over 6 years of programming and 3 years of working in high
+        performing agile teams.
       </p>
 
       <p>

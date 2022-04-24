@@ -3,8 +3,10 @@ import * as React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
 import './author.css'
+import ResumeFile from '../../../static/jameswatt-resume.pdf'
 import Email from '../../assets/svg/at-solid.svg'
 import LinkedIn from '../../assets/svg/linkedin-brands.svg'
+import Resume from '../../assets/svg/resume.svg'
 
 const Author = () => (
   <div className="author">
@@ -32,7 +34,7 @@ const Author = () => (
         </a>
 
         <a
-          href="https://www.linkedin.com/in/james-watt-a6b682147"
+          href="https://www.linkedin.com/in/jameswattpro"
           target="_blank"
           className="author-icon-wrapper"
           rel="noreferrer"
@@ -40,7 +42,15 @@ const Author = () => (
         >
           <LinkedIn className="author__icon" />
         </a>
-        {/* TODO Add CV Icon */}
+        <a
+          href={ResumeFile}
+          target="_blank"
+          className="author-icon-wrapper"
+          rel="noreferrer"
+          aria-label="Resume"
+        >
+          <Resume className="author__icon" />
+        </a>
       </div>
     </div>
   </div>
