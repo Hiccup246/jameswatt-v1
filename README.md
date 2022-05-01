@@ -1,15 +1,12 @@
 ## TODO
-- ~~Update the projects component~~
-- ~~Update projects text and images~~
-- Refactor any messy components
-- ~~Check lighthouse report and fix performance issues~~
-- Convert divs to buttons where possible
+- Update blog home to fit designs
+- Check plugins gatsby-remark-prismjs, gatsby-remark-copy-linked-files, gatsby-remark-smartypants and see if I need them
+- Compare rendering of blog template with my site
+- Update blog post template
+- Sort out SEO and what the blog template stuff did with it
+- Remove test templates and push change
 - Fix contrast colour issues (1/2 Completed)
-- ~~Fix header accessability issues~~
-- Make employment history buttons more button like
-- Update skills sections
-- Optimise for lighthouse mobile
-- Try to load text from cdn
+
 
 
 ## 🚀 Quick start
