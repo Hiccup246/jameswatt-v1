@@ -13,7 +13,10 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
           siteMetadata {
             title
             description
-            author
+            author {
+              name
+              summary
+            }
             keywords
             siteUrl
             headline
@@ -28,7 +31,7 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
   const siteUrl = site.siteMetadata.siteUrl
   const headline = site.siteMetadata.headline
   const siteLanguage = lang
-  const author = site.siteMetadata.author
+  const author = site.siteMetadata.author.name
   const metaDescription = description || site.siteMetadata.description
   const metaTitle = title || site.siteMetadata.title
   const image =

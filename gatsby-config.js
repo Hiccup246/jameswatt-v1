@@ -2,8 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `James Watt`,
     titleAlt: '',
-    description: `The personal portfolio for new zealand based software engineer and developer James Watt.`,
-    author: `James Watt`,
+    description: `The personal portfolio for London based software engineer and developer James Watt.`,
+    author: {
+      name: `James Watt`,
+      summary: '',
+    },
     siteUrl: 'https://jameswatt.io',
     siteLanguage: 'en',
     headline: 'The personal portfolio for James Watt',
@@ -28,6 +31,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify`,
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
@@ -101,6 +105,13 @@ module.exports = {
           // Avoids sending pageview hits from custom paths
           exclude: [],
         },
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/blog-posts`,
+        name: `blog`,
       },
     },
   ],
