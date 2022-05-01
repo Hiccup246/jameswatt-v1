@@ -23,8 +23,10 @@
 .header__blogmoon {
   display: flex;
   vertical-align: middle;
+  line-height: 40px;
 }
 
-.header__content .link--regular-font::before {
+.header__content .link--regular-font::before,
+.header__blogmoon .link--regular-font::before {
   top: 28px;
 }

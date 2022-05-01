@@ -14,7 +14,7 @@ import { ThemeProvider } from '../components/theme-context/theme-context'
 
 const IndexPage = () => (
   <ThemeProvider>
-    <BaseLayout id="top">
+    <BaseLayout id="home">
       <Seo title="James Watt" />
       <Author />
       <About />

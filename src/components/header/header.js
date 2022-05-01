@@ -1,19 +1,21 @@
 import * as React from 'react';
 
+import { Link } from 'gatsby'
+
 import ThemeToggle from '../theme-toggle/theme-toggle'
 import './header.css'
 
 const Header = () => (
   <div className="header">
     <div className="header__content">
-      <a href="#top" className="link--regular-font">
+      <Link to="/" location="#home" className="link--regular-font">
         Home
-      </a>
+      </Link>
+
       <div className="header__blogmoon">
-        {/* TODO Add blog nav
-          <a classNameName="link--regular-font">
-            Blog
-          </a> */}
+        <Link to="/blog" className="link--regular-font">
+          Blog
+        </Link>
         <ThemeToggle />
       </div>
     </div>
