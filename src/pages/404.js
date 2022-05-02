@@ -1,42 +1,20 @@
 import * as React from 'react'
 
-import { Link } from 'gatsby'
+import '../styles/not-found.css'
 
-// styles
-const pageStyles = {
-  maxWidth: '768px',
-  padding: 'var(--side-padding)',
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-
-// markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
+    <div className="not-found">
       <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
+      <h1>Page not found</h1>
+      <p>
         Sorry{' '}
         <span role="img" aria-label="Pensive emoji">
           😔
-        </span>
-        {''}
+        </span>{' '}
         we couldn’t find what you were looking for.
-        <br />
-        <br />
-        <Link className="link--regular-font link--bottom" to="/">
-          Go home.
-        </Link>
       </p>
-    </main>
+    </div>
   )
 }
 
