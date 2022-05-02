@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .post-list__item {
@@ -23,4 +24,6 @@
 .post-list h1 {
   font-size: 1em;
   margin: 0;
+  margin-right: 40px;
+  width: 50vw;
 }

@@ -7,4 +7,14 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.blog-post__header p {
+  margin: 0;
+}
+
+.blog-post__header h1 {
+  margin: 0;
+  margin-right: 40px;
 }
