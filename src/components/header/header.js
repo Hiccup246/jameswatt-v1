@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import { Link } from 'gatsby'
 
+import RssButton from '../rss-button/rss-button'
 import ThemeToggle from '../theme-toggle/theme-toggle'
 import './header.css'
 
@@ -16,6 +17,7 @@ const Header = () => (
         <Link to="/blog" className="link--regular-font">
           Blog
         </Link>
+        <RssButton />
         <ThemeToggle />
       </div>
     </div>

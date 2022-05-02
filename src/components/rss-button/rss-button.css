@@ -1,0 +1,14 @@
+.rss-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.rss-icon-wrapper:hover {
+  cursor: pointer;
+}
+
+.rss-icon-wrapper svg {
+  stroke: var(--body-font-color);
+}

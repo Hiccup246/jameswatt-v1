@@ -1,24 +1,23 @@
 .theme-toggle {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 20px;
-    -webkit-tap-highlight-color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .theme-toggle:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .theme-toggle__theme-icon {
-    width: 19px;
-    display: block;
-    height: 19px;
-    /* padding-bottom: 5px; */
-    fill: var(--body-font-color);
+  width: 19px;
+  display: block;
+  height: 19px;
+  fill: var(--body-font-color);
 }
 
 .theme-toggle__theme-icon  svg {
-    width: 19px;
-    height: 19px;
+  width: 19px;
+  height: 19px;
 }

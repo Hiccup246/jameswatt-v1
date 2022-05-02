@@ -26,6 +26,11 @@
   line-height: 40px;
 }
 
+.header__blogmoon > * {
+  margin-left: 20px;
+  padding-left: 6px;
+}
+
 .header__content .link--regular-font::before,
 .header__blogmoon .link--regular-font::before {
   top: 28px;
