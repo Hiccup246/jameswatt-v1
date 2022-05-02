@@ -9,6 +9,9 @@ import 'prismjs/themes/prism.css'
 // styles taken from blog post template
 import './src/styles/blog-post-globals.css'
 
+// normalize CSS across browsers
+import './src/styles/normalize.css'
+
 import BaseLayout from './src/components/base-layout/base-layout'
 import { ThemeProvider } from './src/components/theme-context/theme-context'
 import {

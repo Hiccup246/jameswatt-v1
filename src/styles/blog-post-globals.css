@@ -82,9 +82,8 @@ blockquote > ol {
 /* Custom classes */
 
 .global-wrapper {
-  margin: var(--spacing-0) auto;
-  max-width: var(--maxWidth-wrapper);
-  padding: var(--spacing-10) var(--spacing-5);
+  padding: var(--side-padding);
+  padding-top: 0;
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {

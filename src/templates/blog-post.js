@@ -8,20 +8,13 @@ const BlogPostTemplate = ({ data, location }) => {
   const { previous, next } = data
 
   return (
-    <div className="blog-post-wrapper">
-      <article
-        className="blog-post"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
+    <div className="global-wrapper">
+      <article className="blog-post" itemType="http://schema.org/Article">
         <header className="blog-post__header">
           <h1>{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
+        <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr />
         <footer></footer>
       </article>

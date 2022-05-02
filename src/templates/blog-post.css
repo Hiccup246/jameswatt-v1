@@ -1,4 +1,4 @@
-.blog-post-wrapper {
+.global-wrapper {
   margin-top: 26px;
 }
 
@@ -17,4 +17,8 @@
 .blog-post__header h1 {
   margin: 0;
   margin-right: 40px;
+}
+
+.blog-post {
+  width: 100%;
 }
