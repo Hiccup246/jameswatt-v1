@@ -5,6 +5,12 @@
   margin-top: 26px;
 }
 
+.no-posts {
+  margin-top: 26px;
+  width: 100%;
+  text-align: center;
+}
+
 .post-list__header {
   width: 100%;
   display: flex;
