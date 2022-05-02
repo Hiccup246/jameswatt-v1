@@ -1,0 +1,10 @@
+.blog-post-wrapper {
+  margin-top: 80px;
+}
+
+.blog-post__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}

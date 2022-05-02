@@ -12,14 +12,15 @@
   flex-direction: row;
 }
 
-.post-list__header h4 {
-  margin: 0;
-}
-
 .post-list__item {
   margin-bottom: 25px;
 }
 
 .post-list__header .link--regular-font::before {
   top: 20px;
+}
+
+.post-list h1 {
+  font-size: 1em;
+  margin: 0;
 }

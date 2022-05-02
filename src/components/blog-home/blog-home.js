@@ -18,11 +18,11 @@ const BlogHome = ({ data }) => {
           <li key={postLink} className="post-list__item">
             <article itemType="http://schema.org/Article">
               <header className="post-list__header">
-                <h4>
+                <h1>
                   <Link className="link--regular-font" to={postLink}>
                     {title}
                   </Link>
-                </h4>
+                </h1>
                 <small>{date}</small>
               </header>
             </article>
