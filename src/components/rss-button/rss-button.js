@@ -6,10 +6,10 @@ import './rss-button.css'
 const RssButton = () => (
   <a
     target="_blank"
+    rel="noopener noreferrer"
     href="/blog/rss.xml"
     className="rss-icon-wrapper"
-    rel="noopener noreferrer"
-    aria-labelledby="rss-title"
+    aria-labelledby="rss-feed"
   >
     <RssIcon />
   </a>

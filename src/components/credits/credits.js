@@ -41,6 +41,11 @@ const Credits = () => (
             Marguerite Roth (Inspired the bookshelf component)
           </a>
         </li>
+        <li>
+          <a className="link--regular-font" href="https://www.joshwcomeau.com/">
+            Josh Comeau (Rss icon)
+          </a>
+        </li>
       </ul>
     </div>
   </div>
