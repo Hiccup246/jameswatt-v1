@@ -11,8 +11,7 @@ const BlogPostTemplate = ({ data, location }) => {
   const { previous, next } = data
 
   return (
-    <ThemeProvider>
-      <BaseLayout>
+   <div>
         <div className="blog-post-wrapper">
           <article
             className="blog-post"
@@ -57,8 +56,7 @@ const BlogPostTemplate = ({ data, location }) => {
             </ul>
           </nav>
         </div>
-      </BaseLayout>
-    </ThemeProvider>
+      </div>
   )
 }
 

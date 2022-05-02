@@ -2,18 +2,14 @@ import * as React from 'react'
 
 import { graphql } from 'gatsby'
 
-import BaseLayout from '../components/base-layout/base-layout'
 import BlogHome from '../components/blog-home/blog-home'
 import Seo from '../components/seo/seo'
-import { ThemeProvider } from '../components/theme-context/theme-context'
 
 const Blog = ({ data }) => (
-  <ThemeProvider>
-    <BaseLayout id="blog">
-      <Seo title="James Watt Blog" />
-      <BlogHome data={data} />
-    </BaseLayout>
-  </ThemeProvider>
+  <div className="blog-home">
+    <Seo title="James Watt Blog" />
+    <BlogHome data={data} />
+  </div>
 )
 
 export default Blog
