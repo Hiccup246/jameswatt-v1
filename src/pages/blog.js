@@ -2,17 +2,18 @@ import * as React from 'react'
 
 import { graphql } from 'gatsby'
 
-import BaseLayout from '../components/base-layout/base-layout'
 import '../styles/global.css'
+
+import BaseLayout from '../components/base-layout/base-layout'
 import BlogHome from '../components/blog-home/blog-home'
 import Seo from '../components/seo/seo'
 import { ThemeProvider } from '../components/theme-context/theme-context'
 
-const Blog = ({ data, location }) => (
+const Blog = ({ data }) => (
   <ThemeProvider>
     <BaseLayout id="blog">
       <Seo title="James Watt Blog" />
-      <BlogHome data={data} location={location} />
+      <BlogHome data={data} />
     </BaseLayout>
   </ThemeProvider>
 )
@@ -35,7 +36,6 @@ export const pageQuery = graphql`
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
-          description
         }
       }
     }

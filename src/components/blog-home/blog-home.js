@@ -1,75 +1,36 @@
 import * as React from 'react'
 
-import { Link, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 
 import './blog-home.css'
 
-const BlogHome = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-
+const BlogHome = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
 
   return (
-    <div className="blog-home">
-      <p>Testing the rendering of blog home</p>
+    <ol className="post-list">
+      {posts.map((post) => {
+        const postLink = post.fields.slug
+        const title = post.frontmatter.title || postLink
+        const date = post.frontmatter.date
 
-      <ol style={{ listStyle: `none` }}>
-        {posts.map((post) => {
-          const title = post.frontmatter.title || post.fields.slug
-
-          return (
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
-              </article>
-            </li>
-          )
-        })}
-      </ol>
-    </div>
+        return (
+          <li key={postLink} className="post-list__item">
+            <article itemType="http://schema.org/Article">
+              <header className="post-list__header">
+                <h4>
+                  <Link className="link--regular-font" to={postLink}>
+                    {title}
+                  </Link>
+                </h4>
+                <small>{date}</small>
+              </header>
+            </article>
+          </li>
+        )
+      })}
+    </ol>
   )
 }
 
 export default BlogHome
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
-        }
-      }
-    }
-  }
-`

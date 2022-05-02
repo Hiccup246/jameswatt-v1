@@ -1,3 +1,25 @@
-.blog-home {
-  margin-top: 20px;
+.post-list {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.post-list__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.post-list__header h4 {
+  margin: 0;
+}
+
+.post-list__item {
+  margin-bottom: 25px;
+}
+
+.post-list__header .link--regular-font::before {
+  top: 20px;
 }
