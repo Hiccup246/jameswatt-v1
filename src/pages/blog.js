@@ -2,8 +2,6 @@ import * as React from 'react'
 
 import { graphql } from 'gatsby'
 
-import '../styles/global.css'
-
 import BaseLayout from '../components/base-layout/base-layout'
 import BlogHome from '../components/blog-home/blog-home'
 import Seo from '../components/seo/seo'

@@ -24,6 +24,15 @@
 .post-list h1 {
   font-size: 1em;
   margin: 0;
-  margin-right: 40px;
-  width: 50vw;
+  margin-right: 70px;
+  width: 40vw;
+}
+
+@media (max-width: 340px) {
+  .post-list h1 {
+    font-size: 1em;
+    margin: 0;
+    margin-right: 0;
+    width: 100%;
+  }
 }

@@ -4,7 +4,6 @@ import About from '../components/about/about';
 import Author from '../components/author/author'
 import BaseLayout from '../components/base-layout/base-layout'
 import Bookshelf from '../components/bookshelf/bookshelf'
-import '../styles/global.css'
 import CoreCompetencies from '../components/core-competencies/core-competencies'
 import Credits from '../components/credits/credits'
 import ProgrammingHistory from '../components/programming-history/programming-history'
