@@ -2,6 +2,8 @@ import * as React from 'react'
 
 import '../styles/index.css'
 
+import { graphql } from 'gatsby'
+
 import About from '../components/about/about'
 import Author from '../components/author/author'
 import Bookshelf from '../components/bookshelf/bookshelf'
@@ -11,9 +13,14 @@ import ProgrammingHistory from '../components/programming-history/programming-hi
 import Projects from '../components/projects/projects'
 import Seo from '../components/seo/seo'
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <div className="home-page">
-    <Seo title="James Watt" />
+    <Seo
+      title={data.site.siteMetadata.title}
+      keywords={data.site.siteMetadata.keywords}
+      headline={data.site.siteMetadata.headline}
+      description={data.site.siteMetadata.description}
+    />
     <Author />
     <About />
     <ProgrammingHistory />
@@ -25,3 +32,21 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        description
+        author {
+          name
+          summary
+        }
+        keywords
+        headline
+        description
+      }
+    }
+  }
+`

@@ -7,7 +7,13 @@ import Seo from '../components/seo/seo'
 
 const Blog = ({ data }) => (
   <div className="blog-home">
-    <Seo title="James Watt Blog" />
+    <Seo
+      title="James Watt Blog"
+      keywords={['James Watt Blog', 'James Watt Journal', 'James Watt Diary']}
+      description={
+        'Personal blog for London based software engineer James Watt'
+      }
+    />
     <BlogHome data={data} />
   </div>
 )
@@ -30,6 +36,8 @@ export const pageQuery = graphql`
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
+          keywords
+          description
         }
       }
     }

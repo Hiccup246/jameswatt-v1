@@ -5,35 +5,33 @@ import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 
 // Taken from https://www.gatsbyjs.com/tutorial/seo-and-social-sharing-cards-tutorial
-function SEO({ description, lang, meta, image: metaImage, title }) {
+function SEO({
+  description,
+  lang,
+  meta,
+  image: metaImage,
+  title,
+  keywords,
+  headline,
+}) {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
-            title
-            description
             author {
               name
               summary
             }
-            keywords
             siteUrl
-            headline
-            siteLanguage
           }
         }
       }
     `
   )
 
-  const keywords = site.siteMetadata.keywords
   const siteUrl = site.siteMetadata.siteUrl
-  const headline = site.siteMetadata.headline
-  const siteLanguage = lang
   const author = site.siteMetadata.author.name
-  const metaDescription = description || site.siteMetadata.description
-  const metaTitle = title || site.siteMetadata.title
   const image =
     metaImage && metaImage.src
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
@@ -46,10 +44,10 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
     '@type': 'WebPage',
     url: siteUrl,
     headline,
-    inLanguage: siteLanguage,
+    inLanguage: lang,
     mainEntityOfPage: siteUrl,
-    description: metaDescription,
-    name: metaTitle,
+    description: description,
+    name: title,
     author: {
       '@type': 'Person',
       name: author,
@@ -79,7 +77,7 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
       link={[
         {
           rel: 'canonical',
-          href: site.siteMetadata.siteUrl,
+          href: siteUrl,
         },
         {
           rel: 'icon',
@@ -113,11 +111,11 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
           rel: 'author',
         },
       ]}
-      title={metaTitle}
+      title={title}
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: description,
         },
         {
           name: 'keywords',
@@ -125,11 +123,11 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
         },
         {
           property: `og:title`,
-          content: metaTitle,
+          content: title,
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: description,
         },
         {
           property: `og:type`,
@@ -141,11 +139,11 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
         },
         {
           name: `twitter:title`,
-          content: metaTitle,
+          content: title,
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: description,
         },
       ]
         .concat(
@@ -185,9 +183,11 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: 'en',
   meta: [],
-  description: ``,
+  description: '',
+  twitter: '@itsjameswatt',
+  author: { name: 'James Watt', summary: '' },
 }
 
 SEO.propTypes = {

@@ -1,7 +1,9 @@
 import * as React from 'react'
 
 import { Link, graphql } from 'gatsby'
+
 import './blog-post.css'
+import Seo from '../components/seo/seo'
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -9,6 +11,11 @@ const BlogPostTemplate = ({ data, location }) => {
 
   return (
     <div className="global-wrapper">
+      <Seo
+        title={post.frontmatter.title}
+        keywords={post.frontmatter.keywords}
+        description={post.frontmatter.description}
+      />
       <article className="blog-post" itemType="http://schema.org/Article">
         <header className="blog-post__header">
           <h1>{post.frontmatter.title}</h1>
@@ -69,6 +76,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        keywords
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
@@ -77,6 +85,8 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        keywords
+        description
       }
     }
     next: markdownRemark(id: { eq: $nextPostId }) {
@@ -85,6 +95,8 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        keywords
+        description
       }
     }
   }

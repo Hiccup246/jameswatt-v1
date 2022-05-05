@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `James Watt`,
+    title: `James Watt Portfolio`,
     titleAlt: '',
-    description: `The personal portfolio for London based software engineer and developer James Watt.`,
+    description: `The personal portfolio for London based software engineer James Watt.`,
     author: {
       name: `James Watt`,
       summary: '',
@@ -14,15 +14,13 @@ module.exports = {
     twitter: '@itsjameswatt',
     keywords: [
       'James Watt',
-      'James Watt Software Engineer',
-      'James Watt Portfolio',
-      'James Watt Software Developer',
-      'James Watt Tech',
-      'James Watt Developer',
-      'James Watt Website',
       'James Watt Coder',
       'James Watt Programmer',
-      'James Watt Full Stach Developer',
+      'James Watt Website',
+      'James Watt Software',
+      'James Watt Developer',
+      'James Watt Portfolio',
+      'James Watt Tech',
       'James Watt Crypto',
     ],
   },
