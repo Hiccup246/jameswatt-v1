@@ -31,6 +31,7 @@ module.exports = {
       options: {
         path: `${__dirname}/blog-posts`,
         name: `blog`,
+        ignore: [`**/.*`],
       },
     },
     {
