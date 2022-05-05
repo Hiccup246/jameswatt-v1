@@ -4,6 +4,7 @@
   flex-direction: column;
   margin-left: 20px;
   -webkit-tap-highlight-color: transparent;
+  padding: 0;
 }
 
 .theme-toggle:hover {
