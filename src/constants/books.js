@@ -1,9 +1,23 @@
 export const BOOKS = [
   {
+    name: 'Cultish: The Language of Fanaticism',
+    author: 'Amanda Montell',
+    genre: 'Nonfiction',
+    status: 'Reading',
+    dateCompleted: '',
+  },
+  {
+    name: 'The Alchemist',
+    author: 'Paulo Coelho',
+    genre: 'Philosophy',
+    status: 'Read',
+    dateCompleted: '',
+  },
+  {
     name: 'A Promised Land',
     author: 'Barack Obama',
     genre: 'Politics',
-    status: 'Reading',
+    status: 'Read',
     dateCompleted: '',
   },
   {
