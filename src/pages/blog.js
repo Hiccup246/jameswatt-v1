@@ -9,7 +9,13 @@ const Blog = ({ data }) => (
   <div className="blog-home">
     <Seo
       title="James Watt Blog"
-      keywords={['James Watt Blog', 'James Watt Journal', 'James Watt Diary']}
+      keywords={[
+        'James Watt Blog',
+        'James Watt Journal',
+        'James Watt Diary',
+        'James Watt Software Blog',
+        'James Watt Tech Blog',
+      ]}
       description={
         'Personal blog for London based software engineer James Watt'
       }
