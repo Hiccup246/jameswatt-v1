@@ -22,6 +22,8 @@ module.exports = {
       'James Watt Portfolio',
       'James Watt Tech',
       'James Watt Crypto',
+      'James Watt Engineer',
+      'James Watt Software Engineer',
     ],
   },
   plugins: [
