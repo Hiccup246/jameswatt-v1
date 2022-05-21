@@ -2,14 +2,14 @@ import * as React from 'react'
 
 export const PROGRAMMING_EXPERIENCES = [
   {
-    role: 'Full Stack Developer',
+    role: 'Software Engineer',
     company: 'AplyiD',
     dateRange: '2020/01 - Present',
     description:
       'APLYiD is a trusted & accredited digital ID solution (AML + KYC) designed to streamline your customer onboarding with a first-class user experience',
     bullets: [
       <p>
-        Currently working as a full stack developer utilising <b>Vue.JS</b>,
+        Currently performing full stack development utilising <b>Vue.JS</b>,
         Angular.JS and <b>Ruby on Rails</b> to create KYC/AML and financial
         onboarding products from inception and design to deployment and
         maintenance
@@ -29,7 +29,7 @@ export const PROGRAMMING_EXPERIENCES = [
     ],
   },
   {
-    role: 'Full Stack Developer',
+    role: 'Software Engineer',
     company: 'Hypebeat',
     dateRange: '2019/04 - 2019/09',
     description:
