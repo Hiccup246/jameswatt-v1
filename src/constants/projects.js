@@ -4,6 +4,41 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 export const PROJECTS = [
   {
+    name: 'Norm Macdonald Quote Site',
+    imageName: 'Norm Macdonald Quote Site',
+    imageSrc: (
+      <StaticImage
+        height={210}
+        imgStyle={{ objectFit: 'scale-down' }}
+        className="project-overview__image"
+        src="../assets/project-images/norm-face.webp"
+        alt="Image of Norm Macdonald Quote site"
+      />
+    ),
+    description: (
+      <div>
+        <p>
+          I created a website which generates random Norm Macdonald quotes to
+          honour the late and great comedian.
+        </p>
+        <p>
+          The website was designed in <b>figma</b> and developed using{' '}
+          <b>Svelte</b>. Svelte is a next generation front end framework which
+          shifts work that is usually done in a browser into a compile step that
+          happens when you build your app.
+        </p>
+      </div>
+    ),
+    completedDate: 'Completed - 05/2022',
+    type: 'Personal Project',
+    links: [
+      {
+        linkText: 'normmacdonaldquotes.com',
+        link: 'https://www.normmacdonaldquotes.com/',
+      },
+    ],
+  },
+  {
     name: 'Personal Website (This Site)',
     imageName: 'jamesWattWebsite',
     imageSrc: (
