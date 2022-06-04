@@ -7,17 +7,17 @@ export const BOOKS = [
     dateCompleted: '',
   },
   {
-    name: 'How to Lie with Statistics',
-    author: 'Darrell Huff',
-    genre: 'Mathmatics',
-    status: 'Reading',
-    dateCompleted: '',
-  },
-  {
     name: 'The Pragmatic Programmer: From Journeyman to Master',
     author: 'Andy Hunt, Dave Thomas',
     genre: 'Programming',
     status: 'Reading',
+    dateCompleted: '',
+  },
+  {
+    name: 'How to Lie with Statistics',
+    author: 'Darrell Huff',
+    genre: 'Mathmatics',
+    status: 'Read',
     dateCompleted: '',
   },
   {
