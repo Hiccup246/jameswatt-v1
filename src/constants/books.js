@@ -1,7 +1,7 @@
 export const BOOKS = [
   {
-    name: 'Cultish: The Language of Fanaticism',
-    author: 'Amanda Montell',
+    name: 'Modern Conspiracies in America: Separating Fact from Fiction',
+    author: 'Michael D. Gambone',
     genre: 'Nonfiction',
     status: 'Reading',
     dateCompleted: '',
@@ -11,6 +11,13 @@ export const BOOKS = [
     author: 'Andy Hunt, Dave Thomas',
     genre: 'Programming',
     status: 'Reading',
+    dateCompleted: '',
+  },
+  {
+    name: 'Cultish: The Language of Fanaticism',
+    author: 'Amanda Montell',
+    genre: 'Nonfiction',
+    status: 'Read',
     dateCompleted: '',
   },
   {
