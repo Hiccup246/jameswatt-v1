@@ -1,17 +1,17 @@
 export const BOOKS = [
   {
-    name: 'Modern Conspiracies in America: Separating Fact from Fiction',
-    author: 'Michael D. Gambone',
-    genre: 'Nonfiction',
-    status: 'Reading',
-    dateCompleted: '',
-  },
-  {
     name: 'The Pragmatic Programmer: From Journeyman to Master',
     author: 'Andy Hunt, Dave Thomas',
     genre: 'Programming',
     status: 'Reading',
     dateCompleted: '',
+  },
+  {
+    name: 'Modern Conspiracies in America: Separating Fact from Fiction',
+    author: 'Michael D. Gambone',
+    genre: 'Nonfiction',
+    status: 'Read',
+    dateCompleted: '26/06/2022',
   },
   {
     name: 'Cultish: The Language of Fanaticism',
