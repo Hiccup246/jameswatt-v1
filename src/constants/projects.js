@@ -26,7 +26,7 @@ export const PROJECTS = [
         </p>
       </div>
     ),
-    completedDate: 'Completed - 06/2022',
+    completedDate: 'Completed - 13/06/2022',
     type: 'Personal Project',
     links: [
       {
@@ -61,7 +61,7 @@ export const PROJECTS = [
         </p>
       </div>
     ),
-    completedDate: 'Completed - 05/2022',
+    completedDate: 'Completed - 26/05/2022',
     type: 'Personal Project',
     links: [
       {
@@ -101,7 +101,7 @@ export const PROJECTS = [
         </ul>
       </div>
     ),
-    completedDate: 'Completed - 2022',
+    completedDate: 'Completed - 22/11/2022',
     type: 'Personal Project',
     links: [
       {
@@ -134,7 +134,7 @@ export const PROJECTS = [
         </p>
       </div>
     ),
-    completedDate: 'Completed - 2021',
+    completedDate: 'Completed - 30/11/2021',
     type: 'Personal Project',
     links: [
       {
@@ -204,7 +204,7 @@ export const PROJECTS = [
         </ul>
       </div>
     ),
-    completedDate: 'Completed - 2021',
+    completedDate: 'Completed - 27/06/2021',
     type: 'Youtube Tutorial Series',
     links: [
       {
