@@ -27,7 +27,7 @@ const Author = () => (
           href="mailto:james@jameswatt.io"
           target="_blank"
           rel="noopener noreferrer"
-          className="author-icon-wrapper"
+          className="author__icon-wrapper"
           aria-label="Email Link"
         >
           <Email className="author__icon" />
@@ -36,7 +36,7 @@ const Author = () => (
         <a
           href="https://www.linkedin.com/in/jameswattpro"
           target="_blank"
-          className="author-icon-wrapper"
+          className="author__icon-wrapper"
           rel="noreferrer"
           aria-label="Linked In Profile"
         >
@@ -45,7 +45,7 @@ const Author = () => (
         <a
           href={ResumeFile}
           target="_blank"
-          className="author-icon-wrapper"
+          className="author__icon-wrapper"
           rel="noreferrer"
           aria-label="Resume"
         >

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import bookDark from '../../assets/book-dark-2.gif'
 import bookLight from '../../assets/book-light.gif'
@@ -10,24 +10,21 @@ import './bookshelf.css'
 
 const Bookshelf = () => {
   const { siteTheme } = React.useContext(ThemeContext)
+  const previewBooks = 4
+  const [buttonText, setButtonText] = useState('Show More')
 
   const showHideBooks = () => {
-    const shortBooksLength = 4
     const totalBooks = BOOKS.length
 
-    for (let step = shortBooksLength; step < totalBooks; step++) {
+    for (let step = previewBooks; step < totalBooks; step++) {
       document.getElementById('book-' + step).classList.toggle('inactive')
     }
 
-    if (
-      document.getElementsByClassName('bookshelf__show-more')[0].innerHTML ===
-      'Show More'
-    ) {
-      document.getElementsByClassName('bookshelf__show-more')[0].innerHTML =
-        'Show Less'
+    if (buttonText === 'Show More') {
+      setButtonText('Show Less')
+      console.log('HERE')
     } else {
-      document.getElementsByClassName('bookshelf__show-more')[0].innerHTML =
-        'Show More'
+      setButtonText('Show More')
     }
   }
 
@@ -71,9 +68,6 @@ const Bookshelf = () => {
       <h2>📚 Bookshelf</h2>
       <div className="bookshelf__wrapper">
         <table className="bookshelf__table">
-          {/* <caption>
-          Bookshelf containing previously read and currently reading books
-        </caption> */}
           <thead>
             <tr>
               <th>Book</th>
@@ -89,7 +83,7 @@ const Bookshelf = () => {
           className="bookshelf__show-more"
           onClick={() => showHideBooks()}
         >
-          Show More
+          {buttonText}
         </button>
       </div>
     </div>

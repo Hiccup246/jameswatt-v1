@@ -7,7 +7,7 @@ const About = () => (
     <div className="about__header">
       <h2>💬 About Me</h2>
     </div>
-    <div className="about__description-short selected">
+    <div className="about__description">
       <p>
         I'm a software engineer based out of London, England and an xpat of New
         Zealand. I enjoy software engineering for its sometimes mind bending mix

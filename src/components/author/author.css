@@ -28,13 +28,12 @@
   fill: var(--body-font-color);
 }
 
-
 .author__icon:hover {
   background-color: var(--secondary-color);
   opacity: 0.7;
 }
 
-.author-icon-wrapper + .author-icon-wrapper {
+.author__icon-wrapper + .author__icon-wrapper {
   margin-left: 10px;
 }
 
