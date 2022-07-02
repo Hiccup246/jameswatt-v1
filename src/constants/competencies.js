@@ -27,8 +27,11 @@ export const CORE_PERSONAL_COMPETENCIES = [
     percentage: '20',
   },
   {
-    name: 'Python',
-    percentage: '30',
-    category: 'played',
+    name: 'Svelte',
+    percentage: '10',
+  },
+  {
+    name: 'Nuxt 3',
+    percentage: '10',
   },
 ]
