@@ -4,6 +4,38 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 export const PROJECTS = [
   {
+    name: 'Gun Control Site',
+    imageName: 'Gun Control Site',
+    imageSrc: (
+      <StaticImage
+        height={210}
+        className="project-overview__image"
+        src="../assets/project-images/gun-control-site.webp"
+        alt="Image of Gun Control site"
+      />
+    ),
+    description: (
+      <div>
+        <p>
+          I created a website which lists 10 different gun control policies to
+          reduce gun violence in America.
+        </p>
+        <p>
+          The website was designed in <b>figma</b> and developed using{' '}
+          <b>Nuxt.JS 3</b>. Nuxt.JS 3 is an open source hybrid vue framework.
+        </p>
+      </div>
+    ),
+    completedDate: 'Completed - 06/2022',
+    type: 'Personal Project',
+    links: [
+      {
+        linkText: 'guncontrolpolicies.com',
+        link: 'https://www.guncontrolpolicies.com/',
+      },
+    ],
+  },
+  {
     name: 'Norm Macdonald Quote Site',
     imageName: 'Norm Macdonald Quote Site',
     imageSrc: (

@@ -2,14 +2,7 @@ import * as React from 'react'
 
 import './project-overview.css'
 
-const ProjectOverview = ({
-  imageSrc,
-  imageAlt,
-  name,
-  type,
-  links,
-  completedDate,
-}) => {
+const ProjectOverview = ({ imageSrc, name, type, links, completedDate }) => {
   function generateLinksList(projectLinks) {
     return projectLinks.map((item, index) => (
       <li key={index}>
@@ -37,18 +30,7 @@ const ProjectOverview = ({
   )
 
   function projectOverviewImage() {
-    return (
-      <div className="project-overview__image-wrapper">
-        {imageSrc}
-        {/* <img
-          width="258px"
-          height="110px"
-          className="project-overview__image"
-          src={imageSrc}
-          alt={imageAlt}
-        /> */}
-      </div>
-    )
+    return <div className="project-overview__image-wrapper">{imageSrc}</div>
   }
 
   return (
