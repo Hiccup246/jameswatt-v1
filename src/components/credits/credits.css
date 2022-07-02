@@ -5,7 +5,6 @@
 }
 
 .credits-list .link--regular-font::before {
-  /* top: 17px; */
   top: unset;
   bottom: 0;
 }
