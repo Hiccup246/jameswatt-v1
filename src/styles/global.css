@@ -109,3 +109,7 @@ button {
 hr {
   border-color: var(--body-font-color);
 }
+
+* {
+  box-sizing: border-box;
+}

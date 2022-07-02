@@ -18,7 +18,7 @@
 
 .project-overview__description {
   height: 40%;
-  overflow: scroll;
+  overflow: visible;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -37,4 +37,10 @@
 
 .project-overview__completed-date {
   font-size: small;
+}
+
+@media (max-width: 42rem) {
+  ul {
+    list-style-position: inherit;
+  }
 }

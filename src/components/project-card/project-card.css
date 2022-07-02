@@ -56,3 +56,7 @@
 .projects__icon-wrapper--dark .icon {
   fill: var(--body-font-color);
 }
+
+.project-overview__links-list {
+  padding-left: 20px;
+}
