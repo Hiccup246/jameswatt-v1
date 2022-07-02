@@ -4,9 +4,9 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 import './author.css'
 import ResumeFile from '../../../static/jameswatt-resume.pdf'
-import Email from '../../assets/svg/at-solid.svg'
-import LinkedIn from '../../assets/svg/linkedin-brands.svg'
-import Resume from '../../assets/svg/resume.svg'
+import Email from '../../assets/svg/at-symbol-solid.svg'
+import Envelope from '../../assets/svg/envelope-solid.svg'
+import LinkedIn from '../../assets/svg/linkedin-solid.svg'
 
 const Author = () => (
   <div className="author">
@@ -49,7 +49,7 @@ const Author = () => (
           rel="noreferrer"
           aria-label="Resume"
         >
-          <Resume className="author__icon" />
+          <Envelope className="author__icon" />
         </a>
       </div>
     </div>

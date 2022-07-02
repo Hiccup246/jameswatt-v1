@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import Moon from '../../assets/svg/fa-moon-regular.svg'
-import Sun from '../../assets/svg/icons8-sun-regular.svg'
+import Moon from '../../assets/svg/moon-regular.svg'
+import Sun from '../../assets/svg/sun-regular.svg'
 import './theme-toggle.css'
 import { ThemeContext } from '../theme-context/theme-context'
 
