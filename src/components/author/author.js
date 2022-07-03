@@ -6,6 +6,7 @@ import './author.css'
 import ResumeFile from '../../../static/jameswatt-resume.pdf'
 import Email from '../../assets/svg/at-symbol-solid.svg'
 import Envelope from '../../assets/svg/envelope-solid.svg'
+import Github from '../../assets/svg/github-solid.svg'
 import LinkedIn from '../../assets/svg/linkedin-solid.svg'
 
 const Author = () => (
@@ -42,6 +43,17 @@ const Author = () => (
         >
           <LinkedIn className="author__icon" />
         </a>
+
+        <a
+          href="https://github.com/Hiccup246"
+          target="_blank"
+          className="author__icon-wrapper"
+          rel="noreferrer"
+          aria-label="Github Profile"
+        >
+          <Github className="author__icon" />
+        </a>
+
         <a
           href={ResumeFile}
           target="_blank"
