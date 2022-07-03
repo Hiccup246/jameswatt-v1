@@ -15,7 +15,7 @@
 }
 
 .tab-menu > .tab-item:not(:first-child) {
-  margin-top: 31.25px;
+  margin-top: var(--tab-margin-top);
 }
 
 .tab-item {
@@ -168,8 +168,8 @@
   }
 
   .tab-item {
-    flex: 0 0 120px;
-    max-width: 120px;
+    flex: 0 0 var( --tab-width);
+    max-width: var( --tab-width);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,11 +188,11 @@
   .selected-tab-item {
     top: auto;
     bottom: 0;
-    width: 120px;
+    width: var( --tab-width);
     height: 2px;
     z-index: 5;
     background-color: var(--body-font-color);
-    transform: translateX(calc(0 * 120px));
+    transform: translateX(calc(0 * var( --tab-width)));
   }
 }
 

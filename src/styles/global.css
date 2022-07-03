@@ -7,6 +7,8 @@ body {
   --header-bold: sf-pro-text-bold;
   --side-padding: 16px;
   --tab-height: 42px;
+  --tab-margin-top: 31.25px;
+  --tab-width: 120px;
 }
 
 h1,
