@@ -6,7 +6,6 @@ const Skill = ({ name, percentage }) => (
   <div className="skill">
     <div className="skill__text-wrapper">
       <div>{name}</div>
-      {/* <div className="percentage">{percentage}%</div> */}
     </div>
 
     <div className="skill__background-bar">

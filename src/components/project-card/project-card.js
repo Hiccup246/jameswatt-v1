@@ -9,18 +9,10 @@ import './project-card.css'
 
 const ProjectCard = ({ data }) => {
   const { imageSrc, description, name, completedDate, type, links } = data
+  const [showDescription, setShowDescription] = React.useState(false)
 
-  const toggleCardContent = (element) => {
-    element.preventDefault()
-
-    const card = element.currentTarget.closest('.projects__card')
-
-    card
-      .querySelector('.projects__description-wrapper')
-      .classList.toggle('projects__description-wrapper--checked')
-    card
-      .querySelector('.projects__overview-wrapper')
-      .classList.toggle('projects__overview-wrapper--checked')
+  const toggleCardContent = () => {
+    setShowDescription(!showDescription)
   }
 
   const { siteTheme } = React.useContext(ThemeContext)
@@ -28,7 +20,13 @@ const ProjectCard = ({ data }) => {
   return (
     <div className="projects__card">
       <div className="projects__content-wrapper">
-        <div className="projects__overview-wrapper">
+        <div
+          className={
+            showDescription
+              ? 'projects__overview-wrapper projects__overview-wrapper--checked'
+              : 'projects__overview-wrapper'
+          }
+        >
           <ProjectOverview
             className="projects__card-body"
             imageSrc={imageSrc}
@@ -48,7 +46,13 @@ const ProjectCard = ({ data }) => {
           <ContentToggle onClickCallback={toggleCardContent} />
         </div>
 
-        <div className="projects__description-wrapper">
+        <div
+          className={
+            showDescription
+              ? 'projects__description-wrapper projects__description-wrapper--checked'
+              : 'projects__description-wrapper'
+          }
+        >
           <ProjectDescription
             className="projects__body-overlay"
             description={description}

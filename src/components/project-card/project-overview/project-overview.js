@@ -3,16 +3,6 @@ import * as React from 'react'
 import './project-overview.css'
 
 const ProjectOverview = ({ imageSrc, name, type, links, completedDate }) => {
-  const generateLinksList = (projectLinks) => {
-    return projectLinks.map((item, index) => (
-      <li key={index}>
-        <a className="link--regular-font link--bottom" href={item.link}>
-          {item.linkText}
-        </a>
-      </li>
-    ))
-  }
-
   return (
     <div className="project-overview">
       <div className="project-overview__image-wrapper">{imageSrc}</div>
@@ -24,7 +14,13 @@ const ProjectOverview = ({ imageSrc, name, type, links, completedDate }) => {
           {type}
 
           <ul className="project-overview__links-list">
-            {generateLinksList(links)}
+            {links.map((item, index) => (
+              <li key={index}>
+                <a className="link--regular-font link--bottom" href={item.link}>
+                  {item.linkText}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
