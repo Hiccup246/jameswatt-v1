@@ -7,6 +7,13 @@ import './bookshelf.css'
 
 const Bookshelf = () => {
   const previewBooks = 4
+
+  const renderBooks = (numberOfBooks) => {
+    return BOOKS.slice(0, numberOfBooks).map((book, index) => {
+      return <BookshelfRow key={index} book={book} />
+    })
+  }
+
   const [buttonText, setButtonText] = useState('Show More')
   const [books, setBooks] = useState(renderBooks(previewBooks))
 
@@ -18,12 +25,6 @@ const Bookshelf = () => {
       setBooks(renderBooks(previewBooks))
       setButtonText('Show More')
     }
-  }
-
-  function renderBooks(numberOfBooks) {
-    return BOOKS.slice(0, numberOfBooks).map((book, index) => {
-      return <BookshelfRow key={index} book={book} />
-    })
   }
 
   return (
