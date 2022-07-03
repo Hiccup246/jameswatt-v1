@@ -64,6 +64,11 @@
   width: 100%;
   opacity: 0;
   transition: opacity 0.6s ease-in-out;
+
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  padding: 0;
 }
 
 .tab-panel h3 {
@@ -172,6 +177,7 @@
     padding: 0;
     border-bottom: 2px solid var(--secondary-color);
     text-align: center;
+    color: var(--grey-font-color);
   }
 
   .tab-content {
@@ -188,4 +194,15 @@
     background-color: var(--body-font-color);
     transform: translateX(calc(0 * 120px));
   }
+}
+
+.tab-panel.activated {
+  padding-top: 10px;
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+}
+
+.tab-item.activated {
+  color: var(--body-font-color);
 }
