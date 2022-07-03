@@ -10,17 +10,16 @@ import './project-card.css'
 const ProjectCard = ({ data }) => {
   const { imageSrc, description, name, completedDate, type, links } = data
 
-  function rotateIcon(e) {
-    e.preventDefault()
+  const toggleCardContent = (element) => {
+    element.preventDefault()
 
-    const card = e.currentTarget.closest('.projects__card')
+    const card = element.currentTarget.closest('.projects__card')
 
-    card.getElementsByClassName('icon')[0].classList.toggle('icon--checked')
     card
-      .getElementsByClassName('projects__description-wrapper')[0]
+      .querySelector('.projects__description-wrapper')
       .classList.toggle('projects__description-wrapper--checked')
     card
-      .getElementsByClassName('projects__overview-wrapper')[0]
+      .querySelector('.projects__overview-wrapper')
       .classList.toggle('projects__overview-wrapper--checked')
   }
 
@@ -46,7 +45,7 @@ const ProjectCard = ({ data }) => {
             (siteTheme === 'dark' ? 'projects__icon-wrapper--dark' : '')
           }
         >
-          <ContentToggle onClickCallback={rotateIcon} />
+          <ContentToggle onClickCallback={toggleCardContent} />
         </div>
 
         <div className="projects__description-wrapper">
