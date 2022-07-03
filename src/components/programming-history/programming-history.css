@@ -53,9 +53,6 @@
   width: 100%;
   margin-left: 20px;
 }
-.tab-panel-0 {
-  padding-top: 10px
-}
 
 .tab-panel {
   position: absolute;
@@ -140,14 +137,12 @@
 @media (max-width: 400px) {
 .tab-component {
     display: block;
-    height: 800px;
   }
 }
 
 @media (max-width: 550px) and (min-width: 401px) {
   .tab-component {
     display: block;
-    height: 655px;
   }
 }
 
