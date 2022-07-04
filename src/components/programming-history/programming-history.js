@@ -9,15 +9,16 @@ const ProgrammingHistory = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [sliderStyle, setSliderStyle] = useState({ width: '100px' })
 
-  const sliderComponentRef = React.createRef()
+  const tabComponentRef = React.createRef()
   const mobileViewWidth = '550px'
 
-  const setupTabs = () => {
-    // const newSliderWidth = `${
-    //   tabComponentRef.current.querySelector(`#tab-${currentIndex}`).clientWidth
-    // }px`
-    // sliderComponentRef.current.style.width = newSliderWidth
-    // tabComponentRef.current.style.height = largestPanelHeight()
+  const setup = () => {
+    const newSliderWidth = `${
+      tabComponentRef.current.querySelector('.tab-item.activated').clientWidth
+    }px`
+    tabComponentRef.current.querySelector('.selected-tab-item').style.width =
+      newSliderWidth
+    tabComponentRef.current.style.height = largestPanelHeight()
   }
 
   const largestPanelHeight = () => {
@@ -25,7 +26,7 @@ const ProgrammingHistory = () => {
 
     for (let i = 0; i < PROGRAMMING_EXPERIENCES.length; i++) {
       const panelHeight =
-        tabComponentRef.current.querySelector(`.tab-panel`).clientHeight
+        tabComponentRef.current.querySelector('.tab-panel').clientHeight
 
       if (panelHeight > largestPanelHeight) {
         largestPanelHeight = panelHeight
@@ -59,18 +60,18 @@ const ProgrammingHistory = () => {
   }
 
   useEffect(() => {
-    setupTabs()
+    setup()
   }, [])
 
   return (
     <div className="programming-history">
       <h2>📜 Programming History</h2>
-      <div className="tab-component">
+      <div ref={tabComponentRef} className="tab-component">
         <div className="tab-menu">
           {PROGRAMMING_EXPERIENCES.map((job, index) => {
             return (
               <ContentPanelButton
-                job={job}
+                companyName={job.company}
                 activated={index === currentIndex}
                 clickHandler={(width) => clickOnMenuItem(index, width)}
               />

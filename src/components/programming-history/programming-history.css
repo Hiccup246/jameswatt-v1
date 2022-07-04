@@ -7,11 +7,9 @@
   position: relative;
   z-index: 3;
   width: max-content;
-  padding: 0;
   margin: 0;
   list-style: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0;
 }
 
 .tab-menu > .tab-item:not(:first-child) {

@@ -2,14 +2,14 @@ import React from 'react'
 
 import './content-panel-button.css'
 
-const ContentPanelButton = ({ job, activated, clickHandler }) => {
+const ContentPanelButton = ({ companyName, activated, clickHandler }) => {
   return (
     <button
-      aria-label={job.company}
+      aria-label={companyName}
       className={activated ? 'tab-item activated' : 'tab-item'}
       onClick={(element) => clickHandler(element.currentTarget.clientWidth)}
     >
-      {job.company}
+      {companyName}
     </button>
   )
 }
