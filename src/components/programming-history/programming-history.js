@@ -6,19 +6,22 @@ import ContentPanelButton from './content-panel-button/content-panel-button'
 import ContentPanel from './content-panel/content-panel'
 
 const ProgrammingHistory = () => {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [sliderStyle, setSliderStyle] = useState({ width: '100px' })
+  const [currentTabIndex, setCurrentTabIndex] = useState(0)
+  const [sliderStyle, setSliderStyle] = useState({ width: '' })
 
   const tabComponentRef = React.createRef()
   const mobileViewWidth = '550px'
 
-  const setup = () => {
-    const newSliderWidth = `${
-      tabComponentRef.current.querySelector('.tab-item.activated').clientWidth
-    }px`
-    tabComponentRef.current.querySelector('.selected-tab-item').style.width =
-      newSliderWidth
-    tabComponentRef.current.style.height = largestPanelHeight()
+  const setupComponent = () => {
+    const panelContainer = tabComponentRef.current
+    const newSliderWidth = panelContainer.querySelector(
+      '.tab-item.activated'
+    ).clientWidth
+    const selectedTabItemWidth =
+      tabComponentRef.current.querySelector('.selected-tab-item')
+
+    selectedTabItemWidth.style.width = `${newSliderWidth}px`
+    panelContainer.style.height = largestPanelHeight()
   }
 
   const largestPanelHeight = () => {
@@ -36,31 +39,35 @@ const ProgrammingHistory = () => {
     return `${largestPanelHeight}px`
   }
 
-  const clickOnMenuItem = (newTabIndex, buttonWidth) => {
-    updateTabMenu(newTabIndex, `${buttonWidth}px`)
-    setCurrentIndex(newTabIndex)
+  const clickOnTab = (newTabIndex, buttonWidth) => {
+    updateSelectedTabItem(newTabIndex, `${buttonWidth}px`)
+    setCurrentTabIndex(newTabIndex)
   }
 
-  const updateTabMenu = (newTabIndex, newSliderWidth) => {
-    const mediaQuery = window.matchMedia(`(max-width: ${mobileViewWidth})`)
-    let sliderTransform
+  const updateSelectedTabItem = (newTabIndex, newSliderWidth) => {
+    const isMobile = window.matchMedia(
+      `(max-width: ${mobileViewWidth})`
+    ).matches
+    let sliderTransformString
 
-    if (mediaQuery.matches) {
-      const tabWidthGap = `calc(${newTabIndex}*var(--tab-width))`
-      const transformXString = `translateX(${tabWidthGap})`
-      sliderTransform = transformXString
+    if (isMobile) {
+      // If the device is a mobile the tabs are horizontal
+      const paddingX = `calc(${newTabIndex}*var(--tab-width))`
+      const transformXString = `translateX(${paddingX})`
+      sliderTransformString = transformXString
     } else {
-      const paddingGap = `calc(${newTabIndex}* var(--tab-margin-top))`
-      const tabHeightGap = `calc(${newTabIndex}* var(--tab-height))`
-      const transformYString = `translateY(calc(${tabHeightGap} + ${paddingGap}))`
-      sliderTransform = transformYString
+      // If the device is a tablet or dekstop then the tabs are vertical
+      const paddingY = `calc(${newTabIndex}* var(--tab-margin-top))`
+      const heightGap = `calc(${newTabIndex}* var(--tab-height))`
+      const transformYString = `translateY(calc(${paddingY} + ${heightGap}))`
+      sliderTransformString = transformYString
     }
 
-    setSliderStyle({ width: newSliderWidth, transform: sliderTransform })
+    setSliderStyle({ width: newSliderWidth, transform: sliderTransformString })
   }
 
   useEffect(() => {
-    setup()
+    setupComponent()
   }, [])
 
   return (
@@ -71,9 +78,10 @@ const ProgrammingHistory = () => {
           {PROGRAMMING_EXPERIENCES.map((job, index) => {
             return (
               <ContentPanelButton
+                key={index + job.company}
                 companyName={job.company}
-                activated={index === currentIndex}
-                clickHandler={(width) => clickOnMenuItem(index, width)}
+                activated={index === currentTabIndex}
+                clickHandler={(width) => clickOnTab(index, width)}
               />
             )
           })}
@@ -84,7 +92,13 @@ const ProgrammingHistory = () => {
 
         <div className="tab-content">
           {PROGRAMMING_EXPERIENCES.map((job, index) => {
-            return <ContentPanel job={job} activated={index === currentIndex} />
+            return (
+              <ContentPanel
+                key={index + job.dateRange}
+                job={job}
+                activated={index === currentTabIndex}
+              />
+            )
           })}
         </div>
       </div>
