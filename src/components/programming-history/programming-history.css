@@ -12,8 +12,8 @@
   padding: 10px 0;
 }
 
-.tab-menu > .tab-item:not(:first-child) {
-  margin-top: var(--tab-margin-top);
+.tab-menu > .tab-item:first-child {
+  margin-top: 0;
 }
 
 .selected-tab {
@@ -64,8 +64,11 @@
 }
 
 @media (max-width: 550px) {
-  .tab-menu > .tab-item:not(:first-child) {
-    margin-top: 0px;
+  .tab-menu > .tab-item {
+    margin-top: 0;
+    max-width: var(--tab-width);
+    flex: 0 0 var(--tab-width);
+    justify-content: center;
   }
 
   .tab-menu {

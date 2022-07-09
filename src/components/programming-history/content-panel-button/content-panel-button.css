@@ -10,7 +10,6 @@
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  width: 80px;
   width: fit-content;
   height: var(--tab-height);
   line-height: 42px;
@@ -21,6 +20,7 @@
   z-index: 4;
   color: var(--grey-font-color);
   -webkit-tap-highlight-color: transparent;
+  margin-top: var(--tab-margin-top);
 }
 
 .tab-item:focus-visible {

@@ -7,7 +7,7 @@ const ContentPanelButton = ({ companyName, activated, clickHandler }) => {
     <button
       aria-label={companyName}
       className={activated ? 'tab-item activated' : 'tab-item'}
-      onClick={(element) => clickHandler(element.currentTarget.clientWidth)}
+      onClick={(element) => clickHandler(element.currentTarget.offsetWidth)}
     >
       {companyName}
     </button>
