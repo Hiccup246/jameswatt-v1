@@ -1,5 +1,12 @@
 export const BOOKS = [
   {
+    name: 'Brave New World',
+    author: 'Aldous Huxley',
+    genre: 'Fiction',
+    status: 'Reading',
+    dateCompleted: '',
+  },
+  {
     name: 'The Pragmatic Programmer: From Journeyman to Master',
     author: 'Andy Hunt, Dave Thomas',
     genre: 'Programming',
