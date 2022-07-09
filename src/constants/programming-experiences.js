@@ -4,7 +4,7 @@ export const PROGRAMMING_EXPERIENCES = [
   {
     role: 'UK Team Lead',
     company: 'AplyiD',
-    dateRange: '2022/07 - Present',
+    dateRange: '2022/02 - Present',
     description:
       'APLYiD is a trusted & accredited digital ID solution (AML + KYC) designed to streamline your customer onboarding with a first-class user experience',
     bullets: [
@@ -30,7 +30,7 @@ export const PROGRAMMING_EXPERIENCES = [
   {
     role: 'Software Engineer',
     company: 'AplyiD',
-    dateRange: '2020/01 - 2022/07',
+    dateRange: '2020/01 - 2022/02',
     description:
       'APLYiD is a trusted & accredited digital ID solution (AML + KYC) designed to streamline your customer onboarding with a first-class user experience',
     bullets: [
