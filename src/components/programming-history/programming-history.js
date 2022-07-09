@@ -87,7 +87,7 @@ const ProgrammingHistory = () => {
           })}
 
           <div style={sliderStyle} className="selected-tab-item"></div>
-          <div className="menu-border"></div>
+          <div className="menu-border" />
         </div>
 
         <div className="tab-content">

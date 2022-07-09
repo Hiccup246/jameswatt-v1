@@ -43,12 +43,12 @@
 .menu-border {
   visibility: visible;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 2px;
-  height: 340px;
   background: var(--body-font-color);
   margin-left: 4px;
+  height: calc(100% - var(--tab-margin-top))
 }
 
 @media (max-width: 400px) {
