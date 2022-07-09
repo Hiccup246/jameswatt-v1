@@ -2,9 +2,35 @@ import * as React from 'react'
 
 export const PROGRAMMING_EXPERIENCES = [
   {
+    role: 'UK Team Lead',
+    company: 'AplyiD',
+    dateRange: '2022/07 - Present',
+    description:
+      'APLYiD is a trusted & accredited digital ID solution (AML + KYC) designed to streamline your customer onboarding with a first-class user experience',
+    bullets: [
+      <p>
+        Currently leading all software development initiatives for the UK office
+        which involves managing and participating in product/feature development
+        from conception and planning to production deployment.
+      </p>,
+      <p>
+        Building desktop and mobile optimised web applications in <b>Vue.JS</b>{' '}
+        and <b>Ruby on Rails</b> with an emphasis on the development process to
+        produce high quality code. Key aspects of this development process
+        involve supporting product managers, performing technical review and
+        knowledge sharing.
+      </p>,
+      <p>
+        Communicated closley with existing and potential clients to provide
+        technical support for key API intgerations and with partners to explore
+        possible business opportunities.
+      </p>,
+    ],
+  },
+  {
     role: 'Software Engineer',
     company: 'AplyiD',
-    dateRange: '2020/01 - Present',
+    dateRange: '2020/01 - 2022/07',
     description:
       'APLYiD is a trusted & accredited digital ID solution (AML + KYC) designed to streamline your customer onboarding with a first-class user experience',
     bullets: [
