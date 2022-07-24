@@ -1,8 +1,8 @@
 export const BOOKS = [
   {
-    name: 'Brave New World',
-    author: 'Aldous Huxley',
-    genre: 'Fiction',
+    name: 'Steve Jobs',
+    author: 'Walter Isaacson',
+    genre: 'Biography',
     status: 'Reading',
     dateCompleted: '',
   },
@@ -11,6 +11,13 @@ export const BOOKS = [
     author: 'Andy Hunt, Dave Thomas',
     genre: 'Programming',
     status: 'Reading',
+    dateCompleted: '',
+  },
+  {
+    name: 'Brave New World',
+    author: 'Aldous Huxley',
+    genre: 'Fiction',
+    status: 'Read',
     dateCompleted: '',
   },
   {
