@@ -40,6 +40,8 @@ function setInitialSiteTheme() {
   })
 }
 
+// The idea for this MagicScriptTag was taken from Josh Comeau's guide to the
+// perfect dark theme which can be found at https://www.joshwcomeau.com/react/dark-mode/
 const MagicScriptTag = () => {
   let functionString = String(setInitialSiteTheme)
 
@@ -67,9 +69,9 @@ export const onRenderBody = ({ setPreBodyComponents }) => {
 export const wrapPageElement = ({ element, props }) => {
   // props provide same data to Layout as Page element will get
   // including location, data, etc - you don't need to pass it
-  return (
-    <ThemeProvider {...props}>
-      <BaseLayout {...props}>{element}</BaseLayout>
-    </ThemeProvider>
-  )
+  return <BaseLayout {...props}>{element}</BaseLayout>
+}
+
+export const wrapRootElement = ({ element, props }) => {
+  return <ThemeProvider {...props}>{element}</ThemeProvider>
 }
