@@ -29,7 +29,11 @@ The project itself is a static website that is mobile-friendly, designed in [Fig
 # 🧠 Understanding the Project
 The easiest way to get to grips with this project is to take a look at the `src/pages/index.js` file. This file serves as an entry point to understanding the application and a base from which to explore the rest of the project and its components.
 
-The file itself composes a series of core components that are named almost identically to the core sections of the website and mimic the structure of the main page.
+The file itself composes a series of core components that are named almost identically to the core sections of the website and mimic the structure of the main page. This similarity in structure is expressed by the following hierarchical diagram.
+
+![](https://i.imgur.com/Uc1XfPM.png)
+
+The rest of this section will explain the different groups of modules which make up the project including components, data, layouts and theming
 
 <br>
 
@@ -96,6 +100,7 @@ More commands can be found in the scripts section of the `package.json` and the 
 <br>
 
 # ⛰️ Future Improvements
+- Update all components to have two word names
 - Update blog template to use BEM CSS structure
 - Consider the google lighthouse report color contrast issues and think about potential theme changes to correct this
 - Analyse the programming history component and think about ways to eliminate component Ref usage in favor of state or functional components
