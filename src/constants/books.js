@@ -1,9 +1,10 @@
 export const BOOKS = [
   {
-    name: 'Steve Jobs',
-    author: 'Walter Isaacson',
-    genre: 'Biography',
+    name: 'Wordslut: A Feminist Guide to Taking Back the English Language',
+    author: 'Amanda Montell',
+    genre: 'Nonfiction',
     status: 'Reading',
+    dateStarted: '12/09/2022',
     dateCompleted: '',
   },
   {
@@ -12,6 +13,14 @@ export const BOOKS = [
     genre: 'Programming',
     status: 'Reading',
     dateCompleted: '',
+  },
+  {
+    name: 'Steve Jobs',
+    author: 'Walter Isaacson',
+    genre: 'Biography',
+    status: 'Read',
+    dateStarted: '24/07/2022',
+    dateCompleted: '11/09/2022',
   },
   {
     name: 'Brave New World',
