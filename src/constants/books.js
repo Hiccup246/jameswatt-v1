@@ -1,11 +1,10 @@
 export const BOOKS = [
   {
-    name: 'Wordslut: A Feminist Guide to Taking Back the English Language',
-    author: 'Amanda Montell',
+    name: 'The Black Swan: The Impact of the Highly Improbable',
+    author: 'Nassim Nicholas Taleb',
     genre: 'Nonfiction',
     status: 'Reading',
-    dateStarted: '12/09/2022',
-    dateCompleted: '',
+    dateStarted: '26/09/2022',
   },
   {
     name: 'The Pragmatic Programmer: From Journeyman to Master',
@@ -13,6 +12,14 @@ export const BOOKS = [
     genre: 'Programming',
     status: 'Reading',
     dateCompleted: '',
+  },
+  {
+    name: 'Wordslut: A Feminist Guide to Taking Back the English Language',
+    author: 'Amanda Montell',
+    genre: 'Nonfiction',
+    status: 'Read',
+    dateStarted: '12/09/2022',
+    dateCompleted: '25/09/2022',
   },
   {
     name: 'Steve Jobs',
