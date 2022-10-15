@@ -14,7 +14,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "gatsby": "^4.2.0",
+    "gatsby": "^4.24.4",
     "gatsby-plugin-feed": "^4.13.0",
     "gatsby-plugin-google-gtag": "^4.2.0",
     "gatsby-plugin-image": "^2.2.0",
