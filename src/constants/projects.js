@@ -4,6 +4,42 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 export const PROJECTS = [
   {
+    name: 'Calling Card Web Component',
+    imageName: 'James Watt Calling Card',
+    imageSrc: (
+      <StaticImage
+        height={210}
+        className="project-overview__image"
+        src="../assets/project-images/james-watt-calling-card.webp"
+        alt="Image of James Watt Calling Card"
+      />
+    ),
+    description: (
+      <div>
+        <p>
+          I created a custom web component website which lists 10 different gun control policies to
+          reduce gun violence in America.
+        </p>
+        <p>
+          The website was designed in <b>figma</b> and developed using{' '}
+          <b>Nuxt.JS 3</b>. Nuxt.JS 3 is an open source hybrid vue framework.
+        </p>
+      </div>
+    ),
+    completedDate: 'Completed - 7/10/2022',
+    type: 'Personal Project',
+    links: [
+      {
+        linkText: 'Github Repo',
+        link: 'https://github.com/Hiccup246/james-watt-calling-card',
+      },
+      {
+        linkText: 'Npm Package',
+        link: 'https://www.npmjs.com/package/james-watt-calling-card',
+      },
+    ],
+  },
+  {
     name: 'Gun Control Site',
     imageName: 'Gun Control Site',
     imageSrc: (
