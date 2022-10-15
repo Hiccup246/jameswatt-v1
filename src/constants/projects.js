@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 export const PROJECTS = [
   {
-    name: 'Calling Card Web Component',
+    name: 'Developer Calling Card',
     imageName: 'James Watt Calling Card',
     imageSrc: (
       <StaticImage
@@ -17,12 +17,10 @@ export const PROJECTS = [
     description: (
       <div>
         <p>
-          I created a custom web component website which lists 10 different gun control policies to
-          reduce gun violence in America.
+          I created a modal that directs users back to my portfolio website (the one you are currently viewing).
         </p>
         <p>
-          The website was designed in <b>figma</b> and developed using{' '}
-          <b>Nuxt.JS 3</b>. Nuxt.JS 3 is an open source hybrid vue framework.
+          The calling card modal is a framework-agnostic <b>web component</b> allowing it to be used across any of my projects.
         </p>
       </div>
     ),
@@ -30,11 +28,7 @@ export const PROJECTS = [
     type: 'Personal Project',
     links: [
       {
-        linkText: 'Github Repo',
-        link: 'https://github.com/Hiccup246/james-watt-calling-card',
-      },
-      {
-        linkText: 'Npm Package',
+        linkText: 'NPM Package',
         link: 'https://www.npmjs.com/package/james-watt-calling-card',
       },
     ],
