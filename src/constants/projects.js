@@ -4,6 +4,36 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 export const PROJECTS = [
   {
+    name: 'Custom Sound Board',
+    imageName: 'Custom Sound Board',
+    imageSrc: (
+      <StaticImage
+        height={210}
+        className="project-overview__image"
+        src="../assets/project-images/custom-sound-board.webp"
+        alt="Image of Custom Sound Board"
+      />
+    ),
+    description: (
+      <div>
+        <p>
+          I created a digital sound board where mp3 files can be added and played for one's pleasure.
+        </p>
+        <p>
+          The project was built using the <b>Fres$h</b> framework which utilizes <b>Deno</b> (an alternative to <b>Node.JS</b>).
+        </p>
+      </div>
+    ),
+    completedDate: 'Completed - 5/11/2022',
+    type: 'Personal Project',
+    links: [
+      {
+        linkText: 'custom-sound-board.com',
+        link: 'https://www.custom-sound-board.com',
+      }
+    ],
+  },
+  {
     name: 'Developer Calling Card',
     imageName: 'James Watt Calling Card',
     imageSrc: (
