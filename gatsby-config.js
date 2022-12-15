@@ -1,17 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: `James Watt Portfolio`,
+    title: `James Watt - v1`,
     titleAlt: '',
-    description: `The personal portfolio for London based software engineer James Watt.`,
+    description: `The v1 personal portfolio for London based software engineer James Watt`,
     author: {
       name: `James Watt`,
       summary: '',
     },
-    siteUrl: 'https://jameswatt.io',
+    siteUrl: 'https://jameswatt-v1.netlify.app',
     siteLanguage: 'en',
-    headline: 'The personal portfolio for James Watt',
+    headline: 'The v1 personal portfolio for James Watt',
     shortName: 'James Watt',
-    twitter: '@itsjameswatt',
+    twitter: '@jameswattnz',
     keywords: [
       'James Watt',
       'James Watt Coder',

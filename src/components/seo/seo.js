@@ -186,7 +186,7 @@ SEO.defaultProps = {
   lang: 'en',
   meta: [],
   description: '',
-  twitter: '@itsjameswatt',
+  twitter: '@jameswattnz',
   author: { name: 'James Watt', summary: '' },
 }
 

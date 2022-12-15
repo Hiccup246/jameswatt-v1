@@ -166,7 +166,7 @@ export const PROJECTS = [
     links: [
       {
         linkText: 'jameswatt.io',
-        link: 'https://www.jameswatt.io',
+        link: 'https://jameswatt-v1.netlify.app',
       },
     ],
   },
