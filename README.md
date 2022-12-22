@@ -3,7 +3,7 @@
 ![](https://img.shields.io/github/languages/code-size/Hiccup246/jameswatt)
 ![](https://img.shields.io/netlify/d3078349-99f7-4d67-88bf-41dcfac156e9)
 
-![](https://i.imgur.com/CyKSg7h.png)
+![Site Screenshot](https://raw.githubusercontent.com/Hiccup246/jameswatt-v1/main/src/assets/site-screenshot.webp)
 
 This project acts as an interactive resume and displays my Job history, skills, projects and books that I am reading.
 
