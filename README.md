@@ -31,7 +31,7 @@ The easiest way to get to grips with this project is to take a look at the `src/
 
 The file itself composes a series of core components that are named almost identically to the core sections of the website and mimic the structure of the main page. This similarity in structure is expressed by the following hierarchical diagram.
 
-![](https://i.imgur.com/Uc1XfPM.png)
+![Site Directory](https://raw.githubusercontent.com/Hiccup246/jameswatt-v1/main/src/assets/site-diagram.webp)
 
 The rest of this section will explain the different groups of modules which make up the project including components, data, layouts and theming
 
@@ -40,7 +40,7 @@ The rest of this section will explain the different groups of modules which make
 ## Components
 Each of these core components and the sub-components which they utilize can be found within the `src/components` directory. Each component has a directory and contains an identically named `.js` and `.css` file which represent the component. Alongside these two files, the component can contain sub-components that mimic the same structure. An example of this structure is shown below.
 
-![](https://i.imgur.com/xFaWn2d.png)
+![Bookshelf Component Directory Screenshot](https://raw.githubusercontent.com/Hiccup246/jameswatt-v1/main/src/assets/bookshelf-directory.webp)
 
 <br>
 
