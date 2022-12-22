@@ -169,7 +169,7 @@ module.exports = {
         srcUrl: process.env.UMAMI_WEBSITE_URL,
         includeInDevelopment: false,
         autoTrack: true,
-        respectDoNotTrack: true
+        respectDoNotTrack: true,
       },
     },
   ],

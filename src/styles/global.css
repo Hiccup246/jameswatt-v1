@@ -15,8 +15,8 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--header-regular), 'Roboto', 'Franklin Gothic Medium',
-    Tahoma, sans-serif;
+  font-family: var(--header-regular), 'Roboto', 'Franklin Gothic Medium', Tahoma,
+    sans-serif;
   color: var(--header-font-color);
 }
 
@@ -34,8 +34,7 @@ h4 {
 
 p,
 div {
-  font-family: var(--body-regular), 'Open Sans', 'Segoe UI', Tahoma,
-    sans-serif;
+  font-family: var(--body-regular), 'Open Sans', 'Segoe UI', Tahoma, sans-serif;
   color: var(--body-font-color);
   line-height: 25px;
 }

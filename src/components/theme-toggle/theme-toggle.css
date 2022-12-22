@@ -18,7 +18,7 @@
   fill: var(--body-font-color);
 }
 
-.theme-toggle__theme-icon  svg {
+.theme-toggle__theme-icon svg {
   width: 19px;
   height: 19px;
 }

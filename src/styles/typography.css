@@ -1,31 +1,31 @@
 @font-face {
-    font-family: 'avenir-next';
-    src: url('../fonts/avenir-next-regular.woff') format('woff'),
-         url('../fonts/avenir-next-regular.woff2') format('woff2'),
-         url('../fonts/avenir-next-regular.ttf') format('ttf');
-    font-display: swap;
+  font-family: 'avenir-next';
+  src: url('../fonts/avenir-next-regular.woff') format('woff'),
+    url('../fonts/avenir-next-regular.woff2') format('woff2'),
+    url('../fonts/avenir-next-regular.ttf') format('ttf');
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'avenir-next-bold';
-    src: url('../fonts/avenir-next-bold.woff') format('woff'),
-         url('../fonts/avenir-next-bold.woff2') format('woff2'),
-         url('../fonts/avenir-next-bold.ttf') format('ttf');
-    font-display: swap;
+  font-family: 'avenir-next-bold';
+  src: url('../fonts/avenir-next-bold.woff') format('woff'),
+    url('../fonts/avenir-next-bold.woff2') format('woff2'),
+    url('../fonts/avenir-next-bold.ttf') format('ttf');
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'sf-pro-text-medium';
-    src: url('../fonts/sf-pro-text-medium.woff') format('woff'),
-         url('../fonts/sf-pro-text-medium.woff2') format('woff2'),
-         url('../fonts/sf-pro-text-medium.ttf') format('ttf');
-    font-display: swap;
+  font-family: 'sf-pro-text-medium';
+  src: url('../fonts/sf-pro-text-medium.woff') format('woff'),
+    url('../fonts/sf-pro-text-medium.woff2') format('woff2'),
+    url('../fonts/sf-pro-text-medium.ttf') format('ttf');
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'sf-pro-text-bold';
-    src: url('../fonts/sf-pro-text-bold.woff') format('woff'),
-         url('../fonts/sf-pro-text-bold.woff') format('woff2'),
-         url('../fonts/sf-pro-text-bold.ttf') format('ttf');
-    font-display: swap;
+  font-family: 'sf-pro-text-bold';
+  src: url('../fonts/sf-pro-text-bold.woff') format('woff'),
+    url('../fonts/sf-pro-text-bold.woff') format('woff2'),
+    url('../fonts/sf-pro-text-bold.ttf') format('ttf');
+  font-display: swap;
 }

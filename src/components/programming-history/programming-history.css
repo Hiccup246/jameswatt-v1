@@ -37,7 +37,8 @@
   margin-top: 10px;
   margin-bottom: 10px;
   background: var(--secondary-color);
-  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s, width 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s,
+    width 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
 }
 
 .menu-border {
@@ -48,11 +49,11 @@
   width: 2px;
   background: var(--body-font-color);
   margin-left: 4px;
-  height: calc(100% - var(--tab-margin-top))
+  height: calc(100% - var(--tab-margin-top));
 }
 
 @media (max-width: 400px) {
-.tab-component {
+  .tab-component {
     display: block;
   }
 }
@@ -90,10 +91,10 @@
   .selected-tab-item {
     top: auto;
     bottom: 0;
-    width: var( --tab-width);
+    width: var(--tab-width);
     height: 2px;
     z-index: 5;
     background-color: var(--body-font-color);
-    transform: translateX(calc(0 * var( --tab-width)));
+    transform: translateX(calc(0 * var(--tab-width)));
   }
 }

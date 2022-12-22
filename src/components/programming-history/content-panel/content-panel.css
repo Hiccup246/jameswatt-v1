@@ -27,7 +27,7 @@
 }
 
 .experience-points li::before {
-  content: "→";
+  content: '→';
   position: absolute;
   left: 0px;
   color: var(--body-font-color);

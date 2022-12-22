@@ -17,10 +17,12 @@ export const PROJECTS = [
     description: (
       <div>
         <p>
-          I created a digital sound board where mp3 files can be added and played for one's pleasure.
+          I created a digital sound board where mp3 files can be added and
+          played for one's pleasure.
         </p>
         <p>
-          The project was built using the <b>Fres$h</b> framework which utilizes <b>Deno</b> (an alternative to <b>Node.JS</b>).
+          The project was built using the <b>Fres$h</b> framework which utilizes{' '}
+          <b>Deno</b> (an alternative to <b>Node.JS</b>).
         </p>
       </div>
     ),
@@ -30,7 +32,7 @@ export const PROJECTS = [
       {
         linkText: 'custom-sound-board.com',
         link: 'https://www.custom-sound-board.com',
-      }
+      },
     ],
   },
   {
@@ -47,10 +49,12 @@ export const PROJECTS = [
     description: (
       <div>
         <p>
-          I created a modal that directs users back to my portfolio website (the one you are currently viewing).
+          I created a modal that directs users back to my portfolio website (the
+          one you are currently viewing).
         </p>
         <p>
-          The calling card modal is a framework-agnostic <b>web component</b> allowing it to be used across any of my projects.
+          The calling card modal is a framework-agnostic <b>web component</b>{' '}
+          allowing it to be used across any of my projects.
         </p>
       </div>
     ),
