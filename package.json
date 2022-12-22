@@ -11,7 +11,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "format": "prettier --ignore-path .gitignore --write .",
-    "lint": "eslint"
+    "lint": "eslint src --fix"
   },
   "dependencies": {
     "gatsby": "^4.24.4",
