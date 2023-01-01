@@ -1,7 +1,7 @@
 # 👨🏻‍💻 [James Watt - v1](https://jameswatt-v1.netlify.app)
 
-![](https://img.shields.io/github/license/Hiccup246/jameswatt)
-![](https://img.shields.io/github/languages/code-size/Hiccup246/jameswatt)
+![](https://img.shields.io/github/license/Hiccup246/jameswatt-v1)
+![](https://img.shields.io/github/languages/code-size/Hiccup246/jameswatt-v1)
 ![](https://img.shields.io/netlify/d3078349-99f7-4d67-88bf-41dcfac156e9)
 
 ![Site Screenshot](https://raw.githubusercontent.com/Hiccup246/jameswatt-v1/main/src/assets/site-screenshot.webp)
