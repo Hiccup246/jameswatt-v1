@@ -145,6 +145,10 @@ function SEO({
           name: `twitter:description`,
           content: description,
         },
+        {
+          name: "robots",
+          content: "noindex",
+        }
       ]
         .concat(
           metaImage
