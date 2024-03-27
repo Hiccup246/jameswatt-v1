@@ -7,7 +7,7 @@ module.exports = {
       name: `James Watt`,
       summary: '',
     },
-    siteUrl: 'https://jameswatt-v1.netlify.app',
+    siteUrl: 'https://jameswatt-v1.vercel.app/',
     siteLanguage: 'en',
     headline: 'The v1 personal portfolio for James Watt',
     shortName: 'James Watt',

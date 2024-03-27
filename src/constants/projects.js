@@ -170,7 +170,7 @@ export const PROJECTS = [
     links: [
       {
         linkText: 'jameswatt.io',
-        link: 'https://jameswatt-v1.netlify.app',
+        link: 'https://jameswatt-v1.vercel.app/',
       },
     ],
   },
